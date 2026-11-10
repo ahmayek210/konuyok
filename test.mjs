@@ -7,6 +7,12 @@ assert.equal(data.schemaVersion, 1);
 assert.equal(data.modes.length, 2);
 assert.equal(data.secretMode?.id, 'gizli-kisisel');
 assert.equal(data.secretMode.categories.length, 5);
+assert.deepEqual(data.secretMode.categories.map(c => c.label), [
+  'İlk İzlenim', 'Sohbet & Uyum', 'Güven & Bağ', 'İçten Sorular', 'Cesur Sorular'
+]);
+assert.ok(!data.secretMode.categories.flatMap(c => c.items).some(i =>
+  /benden hoşlanıyor musun|flört sinyali|ilk adımı kim atmalı|kıskanır mısın/i.test(i.question)
+));
 assert.equal(data.modes[1].categories.flatMap(c => c.items).filter(i => ['dusunceler-018','anilar-018','baglar-014','biraz-derin-018'].includes(i.id)).length, 4);
 const allModes = [...data.modes, data.secretMode];
 

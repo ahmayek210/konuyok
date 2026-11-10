@@ -61,6 +61,46 @@
               "id": "sacma-010",
               "topic": "Kötü kahraman",
               "question": "Bir çizgi filmin en beceriksiz kötü karakteri olsan planın ne olurdu?"
+            },
+            {
+              "id": "sacma-011",
+              "topic": "Gölgenin isyanı",
+              "question": "Sabah uyandığında gölgen senden bağımsız hareket etse ilk ne yapardın?"
+            },
+            {
+              "id": "sacma-012",
+              "topic": "Alkışlı kelime",
+              "question": "Her gün tek bir kelimeyi söylediğinde alkış sesi çıksa hangi kelimeyi seçerdin?"
+            },
+            {
+              "id": "sacma-013",
+              "topic": "Takipçi patates",
+              "question": "Bir patates seni takip etmeye başlasa ona ne isim verirdin?"
+            },
+            {
+              "id": "sacma-014",
+              "topic": "Bilmece kapıları",
+              "question": "Bir günlüğüne tüm kapılar sana bilmece sorsa nasıl tepki verirdin?"
+            },
+            {
+              "id": "sacma-015",
+              "topic": "Hayvanlar meclisi",
+              "question": "Hayvanlar seni belediye başkanı seçse ilk vaadin ne olurdu?"
+            },
+            {
+              "id": "sacma-016",
+              "topic": "Duygusal telefon",
+              "question": "Telefonun duygularını sesli okusa en komik an hangisi olurdu?"
+            },
+            {
+              "id": "sacma-017",
+              "topic": "Saçma yetenek",
+              "question": "Bir yarışmada en saçma yeteneğini sergilesen ne yapardın?"
+            },
+            {
+              "id": "sacma-018",
+              "topic": "Danslı yürüyüş",
+              "question": "Sadece dans ederek yürünebilen bir dünyada ulaşım nasıl olurdu?"
             }
           ]
         },
@@ -117,6 +157,46 @@
               "id": "ikilem-010",
               "topic": "Tek dil mi tüm diller mi",
               "question": "Bütün dilleri konuşabilmek mi, bütün müzik aletlerini çalabilmek mi?"
+            },
+            {
+              "id": "ikilem-011",
+              "topic": "Rastgele gezi",
+              "question": "Her ay rastgele bir ülkeye seyahat etmek mi, tek bir ülkede sınırsız tatil mi?"
+            },
+            {
+              "id": "ikilem-012",
+              "topic": "Telefon mu internet mi",
+              "question": "Hiç şarjı bitmeyen telefon mu, hiç internet kesilmeyen ev mi?"
+            },
+            {
+              "id": "ikilem-013",
+              "topic": "Rüya seçimi",
+              "question": "Her rüyanı hatırlamak mı, istediğin rüyayı seçmek mi?"
+            },
+            {
+              "id": "ikilem-014",
+              "topic": "Mutfak mı sahne mi",
+              "question": "Harika yemek yapmak mı, beş müzik aletini orta seviyede çalmak mı?"
+            },
+            {
+              "id": "ikilem-015",
+              "topic": "Müzik mi sinema mı",
+              "question": "Her zaman doğru şarkıyı bulmak mı, her zaman doğru filmi seçmek mi?"
+            },
+            {
+              "id": "ikilem-016",
+              "topic": "Fısıltı mı şarkı mı",
+              "question": "Bir gün boyunca sadece fısıldamak mı, sadece şarkı söylemek mi?"
+            },
+            {
+              "id": "ikilem-017",
+              "topic": "On saniye mi bir gün mü",
+              "question": "İstediğinde zamanı on saniye durdurmak mı, bir kez bir gün geriye almak mı?"
+            },
+            {
+              "id": "ikilem-018",
+              "topic": "Soğuk mu sıcak mı",
+              "question": "Hiç üşümemek mi, hiç sıcaktan bunalmamak mı?"
             }
           ]
         },
@@ -173,6 +253,46 @@
               "id": "hayal-010",
               "topic": "Duyguların renkleri",
               "question": "Duyguların gerçekten renkleri olsa bugün çevrende hangi renkler görünürdü?"
+            },
+            {
+              "id": "hayal-011",
+              "topic": "Tuhaf müze",
+              "question": "Bir müze açsan içinde hangi tuhaf şeyleri sergilerdin?"
+            },
+            {
+              "id": "hayal-012",
+              "topic": "Bulutların üstünde",
+              "question": "Bulutların üzerinde bir evin olsa nasıl döşerdin?"
+            },
+            {
+              "id": "hayal-013",
+              "topic": "Yeni duygu",
+              "question": "İnsanlar yeni bir duygu keşfetse adını ne koyardın?"
+            },
+            {
+              "id": "hayal-014",
+              "topic": "Hayal parkı",
+              "question": "Bir park tasarlasan girişinde ziyaretçileri ne karşılardı?"
+            },
+            {
+              "id": "hayal-015",
+              "topic": "Kitaba yolculuk",
+              "question": "Bir kitap kapağından gerçek bir dünyaya geçebilsen hangisini seçerdin?"
+            },
+            {
+              "id": "hayal-016",
+              "topic": "Robot arkadaş",
+              "question": "Hayalindeki robot arkadaşın en şaşırtıcı özelliği ne olurdu?"
+            },
+            {
+              "id": "hayal-017",
+              "topic": "Şarkı söyleyen binalar",
+              "question": "Bir şehirde tüm binalar müzik çalsa en güzel mekân neresi olurdu?"
+            },
+            {
+              "id": "hayal-018",
+              "topic": "Yeni takımyıldız",
+              "question": "Kendi takımyıldızını keşfetsen ona ne isim verirdin?"
             }
           ]
         },
@@ -219,6 +339,46 @@
               "id": "hizli-secim-008",
               "topic": "Yağmur mu kar mı",
               "question": "Yağmur altında yürümek mi, karda yürümek mi?"
+            },
+            {
+              "id": "hizli-secim-009",
+              "topic": "Dağ mı sahil mi",
+              "question": "Dağ evi mi, sahil kasabası mı?"
+            },
+            {
+              "id": "hizli-secim-010",
+              "topic": "Fotoğrafın iki tarafı",
+              "question": "Fotoğraf çekmek mi, fotoğrafını çektirmek mi?"
+            },
+            {
+              "id": "hizli-secim-011",
+              "topic": "Resim mi hikâye mi",
+              "question": "Çizim yapmak mı, hikâye yazmak mı?"
+            },
+            {
+              "id": "hizli-secim-012",
+              "topic": "Film ortamı",
+              "question": "Sinema salonu mu, evde film gecesi mi?"
+            },
+            {
+              "id": "hizli-secim-013",
+              "topic": "Dışarıda bir gün",
+              "question": "Piknik mi, müze gezisi mi?"
+            },
+            {
+              "id": "hizli-secim-014",
+              "topic": "Dondurma seçimi",
+              "question": "Çilekli dondurma mı, limonlu dondurma mı?"
+            },
+            {
+              "id": "hizli-secim-015",
+              "topic": "Geceden sabaha",
+              "question": "Gece yürüyüşü mü, gün doğumunu izlemek mi?"
+            },
+            {
+              "id": "hizli-secim-016",
+              "topic": "Yemek keşfi",
+              "question": "Yeni bir yemek denemek mi, sevdiğin yemeği seçmek mi?"
             }
           ]
         },
@@ -270,6 +430,46 @@
               "id": "mini-oyun-009",
               "topic": "Kötü icat sunumu",
               "question": "Çok kötü bir icadı sanki mükemmelmiş gibi pazarlayabilir misin?"
+            },
+            {
+              "id": "mini-oyun-010",
+              "topic": "Üç ipucu",
+              "question": "Aklından bir nesne tut ve üç ipucu ver; karşı taraf tahmin etsin."
+            },
+            {
+              "id": "mini-oyun-011",
+              "topic": "Aynı renk",
+              "question": "Üçe kadar sayıp aynı anda bir renk söyleyin; aynı rengi seçebilecek misiniz?"
+            },
+            {
+              "id": "mini-oyun-012",
+              "topic": "Beş kelimelik hikâye",
+              "question": "Sırayla yalnızca beşer kelime ekleyerek birlikte bir hikâye kurun."
+            },
+            {
+              "id": "mini-oyun-013",
+              "topic": "Görünmez evcil hayvan",
+              "question": "Görünmeyen bir evcil hayvanın varmış gibi onu 15 saniyede tanıt."
+            },
+            {
+              "id": "mini-oyun-014",
+              "topic": "Şarkıyı tarif et",
+              "question": "Bir şarkıyı sözlerini kullanmadan üç kelimeyle tarif et."
+            },
+            {
+              "id": "mini-oyun-015",
+              "topic": "Eşyadan kahraman",
+              "question": "Rastgele bir eşya seçip ona süper kahraman adı ve gücü uydur."
+            },
+            {
+              "id": "mini-oyun-016",
+              "topic": "İki sıfat bir hayvan",
+              "question": "Birbirinizi iki sıfat ve bir hayvanla tarif edin; nedenini de söyleyin."
+            },
+            {
+              "id": "mini-oyun-017",
+              "topic": "Uzaylıya çay anlat",
+              "question": "Bir uzaylıya çayın ne olduğunu en komik şekilde anlatmayı dene."
             }
           ]
         },
@@ -316,6 +516,188 @@
               "id": "beklenmedik-008",
               "topic": "Gelecekten not",
               "question": "Gelecekteki sen bugünkü sana tek cümle gönderebilse ne yazsın isterdin?"
+            },
+            {
+              "id": "beklenmedik-009",
+              "topic": "Ayna tavsiyesi",
+              "question": "Aynadaki yansıman sana tavsiye verse ne derdi?"
+            },
+            {
+              "id": "beklenmedik-010",
+              "topic": "Emojisiz gün",
+              "question": "Yarın telefonundaki bütün emojiler kaybolsa yerine ne kullanırdın?"
+            },
+            {
+              "id": "beklenmedik-011",
+              "topic": "Ortak rüya",
+              "question": "Bir sabah herkes aynı rüyayı gördüğünü söylese ilk neyi sorardın?"
+            },
+            {
+              "id": "beklenmedik-012",
+              "topic": "Şarkılı yağmur",
+              "question": "Yağmur damlaları yere düşmeden önce şarkı söylese hangi şarkıyı duymak isterdin?"
+            },
+            {
+              "id": "beklenmedik-013",
+              "topic": "Duvar kapısı",
+              "question": "Evindeki bir duvar kapıya dönüşse ardında ne bulmak isterdin?"
+            },
+            {
+              "id": "beklenmedik-014",
+              "topic": "Hayat güncellemesi",
+              "question": "Hayatın bir video oyunu gibi güncelleme alsa ilk düzeltme ne olurdu?"
+            },
+            {
+              "id": "beklenmedik-015",
+              "topic": "Yer çekimsiz saat",
+              "question": "Bir saatliğine yer çekimsiz bir odada olsan ne denerdin?"
+            },
+            {
+              "id": "beklenmedik-016",
+              "topic": "Sahibe benzeyen hayvan",
+              "question": "Bir günlüğüne evcil hayvanlar sahiplerine benzese en komik eşleşme ne olurdu?"
+            }
+          ]
+        },
+        {
+          "id": "birlikte",
+          "label": "Birlikte",
+          "items": [
+            {
+              "id": "birlikte-001",
+              "topic": "Ortak ada",
+              "question": "İkimiz birlikte bir ada kursak ilk olarak ne inşa ederdik?"
+            },
+            {
+              "id": "birlikte-002",
+              "topic": "Podcast fikri",
+              "question": "Beraber bir podcast açsak adı ne olurdu?"
+            },
+            {
+              "id": "birlikte-003",
+              "topic": "Çizgi film karakterimiz",
+              "question": "Birlikte bir çizgi film karakteri tasarlasak en komik özelliği ne olurdu?"
+            },
+            {
+              "id": "birlikte-004",
+              "topic": "Bir günlük restoran",
+              "question": "Bir günlüğüne restoran işletseydik menüdeki imza yemek ne olurdu?"
+            },
+            {
+              "id": "birlikte-005",
+              "topic": "Gizem ekibi",
+              "question": "Beraber bir gizemi çözsek hangimiz hangi görevi üstlenirdi?"
+            },
+            {
+              "id": "birlikte-006",
+              "topic": "Takım adı",
+              "question": "İki kişilik bir takımın adı ve sloganı ne olsun?"
+            },
+            {
+              "id": "birlikte-007",
+              "topic": "Ortak oyun",
+              "question": "Birlikte bir oyun tasarlasak oyuncuların amacı ne olurdu?"
+            },
+            {
+              "id": "birlikte-008",
+              "topic": "Üç duraklı gezi",
+              "question": "Bir şehir gezisinde sadece üç yere gidebilsek hangi tür yerleri seçerdik?"
+            },
+            {
+              "id": "birlikte-009",
+              "topic": "Komik kötü karakterler",
+              "question": "İkimiz bir filmin kötü karakterleri olsak saçma planımız ne olurdu?"
+            },
+            {
+              "id": "birlikte-010",
+              "topic": "Zaman kapsülü",
+              "question": "Birlikte bir kapsül hazırlayıp on yıl sonra açsak içine ne koyardık?"
+            },
+            {
+              "id": "birlikte-011",
+              "topic": "Sırayla çizim",
+              "question": "Bir resme sırayla tek çizgi eklesek sonunda ne çizmek isterdin?"
+            },
+            {
+              "id": "birlikte-012",
+              "topic": "Barınak adı",
+              "question": "Bir hayvan barınağına isim koyacak olsak ne seçerdik?"
+            },
+            {
+              "id": "birlikte-013",
+              "topic": "Yeni kelime",
+              "question": "Birlikte rastgele bir kelimeye yeni anlam uydursak hangi kelimeyle başlardık?"
+            }
+          ]
+        },
+        {
+          "id": "sanat-muzik",
+          "label": "Sanat & Müzik",
+          "items": [
+            {
+              "id": "sanat-muzik-001",
+              "topic": "Şarkıyı çizmek",
+              "question": "Bir şarkıyı manzara olarak çizebilsen hangi şarkıyı seçerdin?"
+            },
+            {
+              "id": "sanat-muzik-002",
+              "topic": "Film sahnesi",
+              "question": "En sevdiğin filmde bir sahneyi değiştirme hakkın olsa hangisi olurdu?"
+            },
+            {
+              "id": "sanat-muzik-003",
+              "topic": "Albüm kapağı",
+              "question": "Bir albüm kapağı tasarlasan üstünde ne olurdu?"
+            },
+            {
+              "id": "sanat-muzik-004",
+              "topic": "Kitap karakteri",
+              "question": "Bir kitaptaki karakterle bir gün geçirsen kimi seçerdin?"
+            },
+            {
+              "id": "sanat-muzik-005",
+              "topic": "Sergi teması",
+              "question": "Bir resim sergisi açsan tek bir tema seçmek zorunda olsan ne seçerdin?"
+            },
+            {
+              "id": "sanat-muzik-006",
+              "topic": "Film müzikleri",
+              "question": "Bir filmin müziklerini sen seçsen hangi türden başlardın?"
+            },
+            {
+              "id": "sanat-muzik-007",
+              "topic": "Mevsim şarkısı",
+              "question": "Bir şarkı sana bir mevsimi hatırlatıyor mu; hangisi?"
+            },
+            {
+              "id": "sanat-muzik-008",
+              "topic": "Hayalî müzik grubu",
+              "question": "Bir müzik grubu kursan adını ne koyardın, hangi tarzda çalardınız?"
+            },
+            {
+              "id": "sanat-muzik-009",
+              "topic": "Çizgi film yenileme",
+              "question": "Çocukken sevdiğin bir çizgi filmi bugün yeniden yapsan neyi korurdun?"
+            },
+            {
+              "id": "sanat-muzik-010",
+              "topic": "Ek sahne",
+              "question": "Bir kitabın veya filmin sonuna ek sahne yazsan ne olurdu?"
+            },
+            {
+              "id": "sanat-muzik-011",
+              "topic": "Sanat öğrenmek",
+              "question": "Hangi sanat dalını bir günde öğrenmek isterdin?"
+            },
+            {
+              "id": "sanat-muzik-012",
+              "topic": "Üç kelimelik başlık",
+              "question": "Bir çizime üç kelimelik başlık koyman gerekse ne yazardın?"
+            },
+            {
+              "id": "sanat-muzik-013",
+              "topic": "Sıradan anın filmi",
+              "question": "Hayatındaki sıradan bir anı sinema sahnesi yapsan hangi an olurdu?"
             }
           ]
         }
@@ -374,6 +756,46 @@
               "id": "gunluk-hayat-009",
               "topic": "Bugünün güzelliği",
               "question": "Bugün iyi ki oldu dediğin küçücük bir şey var mı?"
+            },
+            {
+              "id": "gunluk-hayat-010",
+              "topic": "Sabah motivasyonu",
+              "question": "Sabah seni yataktan kaldıran küçük bir motivasyon ne?"
+            },
+            {
+              "id": "gunluk-hayat-011",
+              "topic": "Günü özel yapan",
+              "question": "Bir günü özel hissettiren tek bir ayrıntı seçsen ne olurdu?"
+            },
+            {
+              "id": "gunluk-hayat-012",
+              "topic": "Yeni keşif",
+              "question": "Son zamanlarda keşfettiğin güzel bir yer var mı?"
+            },
+            {
+              "id": "gunluk-hayat-013",
+              "topic": "Yorucu gün sonrası",
+              "question": "Kalabalık bir günün ardından yalnız kalmayı mı, biriyle konuşmayı mı seversin?"
+            },
+            {
+              "id": "gunluk-hayat-014",
+              "topic": "Favori hava",
+              "question": "En sevdiğin hava nasıl; o havada ne yaparsın?"
+            },
+            {
+              "id": "gunluk-hayat-015",
+              "topic": "Günün on dakikası",
+              "question": "Bir günün en keyifli on dakikası genellikle ne zaman?"
+            },
+            {
+              "id": "gunluk-hayat-016",
+              "topic": "Çantadaki gereksiz şey",
+              "question": "Evden çıkarken yanında taşıdığın gereksiz ama sevdiğin bir şey var mı?"
+            },
+            {
+              "id": "gunluk-hayat-017",
+              "topic": "Bu haftanın tekrarı",
+              "question": "Bu hafta yeniden yapmak istediğin keyifli bir şey ne?"
             }
           ]
         },
@@ -425,6 +847,46 @@
               "id": "aliskanliklar-009",
               "topic": "Küçük detay",
               "question": "Çoğu insanın önemsemediği ama senin dikkat ettiğin bir detay ne?"
+            },
+            {
+              "id": "aliskanliklar-010",
+              "topic": "Başlama biçimi",
+              "question": "Yeni bir şeye başlarken önce araştırır mısın, doğrudan dener misin?"
+            },
+            {
+              "id": "aliskanliklar-011",
+              "topic": "Öğrenme şekli",
+              "question": "Bir şeyi öğrenirken izleyerek mi, yaparak mı daha hızlı kavrarsın?"
+            },
+            {
+              "id": "aliskanliklar-012",
+              "topic": "Çalışma sesi",
+              "question": "Çalışırken sessizlik mi, arka plan sesi mi istersin?"
+            },
+            {
+              "id": "aliskanliklar-013",
+              "topic": "Yeni fikirlere yaklaşım",
+              "question": "Yeni bir fikre hemen mi ısınırsın, zaman mı tanırsın?"
+            },
+            {
+              "id": "aliskanliklar-014",
+              "topic": "Bozulan planlar",
+              "question": "Planların bozulduğunda yenisini mi yaparsın, akışına mı bırakırsın?"
+            },
+            {
+              "id": "aliskanliklar-015",
+              "topic": "Sevdiğini paylaşmak",
+              "question": "Bir şeyi çok sevdiğinde herkese mi anlatırsın, kendine mi saklarsın?"
+            },
+            {
+              "id": "aliskanliklar-016",
+              "topic": "Sık kullanılan kelime",
+              "question": "En sık kullandığın ama fark etmediğin kelime ne olabilir?"
+            },
+            {
+              "id": "aliskanliklar-017",
+              "topic": "Kendini ödüllendirmek",
+              "question": "Başladığın bir işi bitirdiğinde kendini nasıl ödüllendirirsin?"
             }
           ]
         },
@@ -476,6 +938,46 @@
               "id": "anilar-009",
               "topic": "Çocukluk hayali",
               "question": "Küçükken büyüyünce ne olmak isterdin?"
+            },
+            {
+              "id": "anilar-010",
+              "topic": "İlkokul kahkahası",
+              "question": "İlkokuldan aklında kalan en komik sınıf olayı ne?"
+            },
+            {
+              "id": "anilar-011",
+              "topic": "Çocukluk kokusu",
+              "question": "Çocukken çok sevdiğin bir kokuyu hatırlıyor musun?"
+            },
+            {
+              "id": "anilar-012",
+              "topic": "İlk başarı",
+              "question": "İlk kez tek başına başardığın ve gururlandığın şey neydi?"
+            },
+            {
+              "id": "anilar-013",
+              "topic": "Yeniden çekilecek kare",
+              "question": "Geçmişten bir fotoğrafı tekrar çekebilsen hangisi olurdu?"
+            },
+            {
+              "id": "anilar-014",
+              "topic": "Fikir değiştiren zevk",
+              "question": "Eskiden sevmediğin ama şimdi sevdiğin bir şey var mı?"
+            },
+            {
+              "id": "anilar-015",
+              "topic": "Yolculuk ayrıntısı",
+              "question": "Bir yolculuktan aklında kalan küçük ama güzel bir ayrıntı ne?"
+            },
+            {
+              "id": "anilar-016",
+              "topic": "Beklenmedik iyilik",
+              "question": "Biri sana hiç beklemediğin bir iyilik yapmış mıydı?"
+            },
+            {
+              "id": "anilar-017",
+              "topic": "Anının sesi",
+              "question": "Bir anıyı sadece bir sesle anlatman gerekse hangi sesi seçerdin?"
             }
           ]
         },
@@ -527,6 +1029,46 @@
               "id": "dusunceler-009",
               "topic": "Duygu ve mantık",
               "question": "Zor bir seçimde duyguların mı, mantığın mı daha baskın olur?"
+            },
+            {
+              "id": "dusunceler-010",
+              "topic": "Bilgi mi merak mı",
+              "question": "Bir insanı ilginç yapan bilgi birikimi mi, merakı mı?"
+            },
+            {
+              "id": "dusunceler-011",
+              "topic": "Fikrini değiştirmek",
+              "question": "Bir tartışmada fikrini değiştirebilmek sence güç mü, zayıflık mı?"
+            },
+            {
+              "id": "dusunceler-012",
+              "topic": "Verimli gün",
+              "question": "Bir günü verimli yapan çok iş bitirmek mi, tatmin olmak mı?"
+            },
+            {
+              "id": "dusunceler-013",
+              "topic": "Güzel soru",
+              "question": "Sence iyi bir soru, iyi bir cevaptan daha değerli olabilir mi?"
+            },
+            {
+              "id": "dusunceler-014",
+              "topic": "Ortaklık ve farklılık",
+              "question": "İnsanlar ortak yönleriyle mi, farklılıklarıyla mı yakınlaşır?"
+            },
+            {
+              "id": "dusunceler-015",
+              "topic": "Kusur ve hikâye",
+              "question": "Bir şeyi güzel yapan kusursuzluğu mu, hikâyesi mi?"
+            },
+            {
+              "id": "dusunceler-016",
+              "topic": "Mizah ve karakter",
+              "question": "Sence mizah bir insanın karakteri hakkında ne anlatır?"
+            },
+            {
+              "id": "dusunceler-017",
+              "topic": "Nadir konuşulan konu",
+              "question": "Merak ettiğin ama çevrende pek konuşulmayan bir konu var mı?"
             }
           ]
         },
@@ -578,6 +1120,188 @@
               "id": "biraz-derin-009",
               "topic": "Sözsüz anlaşmak",
               "question": "Sence iki insan bazen konuşmadan da birbirini anlayabilir mi?"
+            },
+            {
+              "id": "biraz-derin-010",
+              "topic": "Küçük değişim",
+              "question": "Seni düşündüğünden daha fazla değiştiren küçük bir olay yaşadın mı?"
+            },
+            {
+              "id": "biraz-derin-011",
+              "topic": "Görünmeyen özelliğin",
+              "question": "İnsanların sende fark etmesini istediğin ama pek görmediği özellik ne?"
+            },
+            {
+              "id": "biraz-derin-012",
+              "topic": "Yavaşlayan zaman",
+              "question": "Zamanın yavaşlamasını istediğin bir an oldu mu?"
+            },
+            {
+              "id": "biraz-derin-013",
+              "topic": "Anının değeri",
+              "question": "İyi bir anının değerini yaşarken mi, sonradan mı anlarsın?"
+            },
+            {
+              "id": "biraz-derin-014",
+              "topic": "Geçmişe teşekkür",
+              "question": "Bugünkü sen geçmişteki kendine ne için teşekkür ederdi?"
+            },
+            {
+              "id": "biraz-derin-015",
+              "topic": "Yanında rahat olmak",
+              "question": "Birinin yanında rahat hissettiğini hangi küçük işaretten anlarsın?"
+            },
+            {
+              "id": "biraz-derin-016",
+              "topic": "Yeni farkındalık",
+              "question": "Kendin hakkında son zamanlarda fark ettiğin bir şey ne?"
+            },
+            {
+              "id": "biraz-derin-017",
+              "topic": "Hayatta yer açmak",
+              "question": "Hayatında daha çok yer açmak istediğin şey ne?"
+            }
+          ]
+        },
+        {
+          "id": "gelecek",
+          "label": "Gelecek",
+          "items": [
+            {
+              "id": "gelecek-001",
+              "topic": "Bir yıl sonraki beceri",
+              "question": "Bir yıl sonra daha iyi olmak istediğin tek beceri ne?"
+            },
+            {
+              "id": "gelecek-002",
+              "topic": "Çalışma ortamın",
+              "question": "Hayalindeki çalışma ortamı nasıl bir yer?"
+            },
+            {
+              "id": "gelecek-003",
+              "topic": "Özgür proje",
+              "question": "Para kazanma zorunluluğun olmasa hangi projeyi denemek isterdin?"
+            },
+            {
+              "id": "gelecek-004",
+              "topic": "Görmek istediğin yer",
+              "question": "İleride mutlaka görmek istediğin bir şehir veya doğa manzarası ne?"
+            },
+            {
+              "id": "gelecek-005",
+              "topic": "Gelecekte bir gün",
+              "question": "Gelecekte bir gününü şimdiden planlasan nasıl başlardı?"
+            },
+            {
+              "id": "gelecek-006",
+              "topic": "Anında öğrenmek",
+              "question": "Bir beceriyi anında öğrenme hakkın olsa ne seçerdin?"
+            },
+            {
+              "id": "gelecek-007",
+              "topic": "Kalıcı alışkanlık",
+              "question": "On yıl sonra hangi alışkanlığını korumuş olmak istersin?"
+            },
+            {
+              "id": "gelecek-008",
+              "topic": "Hayal evinin köşesi",
+              "question": "Hayalindeki evin en önemli köşesi neresi olurdu?"
+            },
+            {
+              "id": "gelecek-009",
+              "topic": "Kendi etkinliğin",
+              "question": "Bir gün kendi etkinliğini düzenlesen insanları ne için toplardın?"
+            },
+            {
+              "id": "gelecek-010",
+              "topic": "Öğrenilecek konu",
+              "question": "Öğrenmeyi merak ettiğin ama henüz başlamadığın konu ne?"
+            },
+            {
+              "id": "gelecek-011",
+              "topic": "Gelecek tavsiyesi",
+              "question": "İleride biri senden ne konuda tavsiye alsın isterdin?"
+            },
+            {
+              "id": "gelecek-012",
+              "topic": "Küçük icat",
+              "question": "Bir şeyi icat edebilsen hangi küçük günlük sorunu çözerdin?"
+            },
+            {
+              "id": "gelecek-013",
+              "topic": "Bir aylık yenilik",
+              "question": "Önündeki bir ayda yapmak istediğin küçük bir yenilik var mı?"
+            }
+          ]
+        },
+        {
+          "id": "baglar",
+          "label": "Bağlar",
+          "items": [
+            {
+              "id": "baglar-001",
+              "topic": "Rahat arkadaşlık",
+              "question": "Bir arkadaşlıkta seni en çok rahatlatan davranış ne?"
+            },
+            {
+              "id": "baglar-002",
+              "topic": "Ortak şaka",
+              "question": "Bir insanla ortak bir şaka geliştirmek sence neden güzeldir?"
+            },
+            {
+              "id": "baglar-003",
+              "topic": "Değer göstermek",
+              "question": "Birine değer verdiğini daha çok sözle mi, davranışla mı gösterirsin?"
+            },
+            {
+              "id": "baglar-004",
+              "topic": "Sessizlik ve sohbet",
+              "question": "Birlikte sessiz kalabilmek mi, saatlerce konuşabilmek mi sana daha yakın?"
+            },
+            {
+              "id": "baglar-005",
+              "topic": "Dinlenmek",
+              "question": "Birinin seni gerçekten dinlediğini hangi ayrıntıdan anlarsın?"
+            },
+            {
+              "id": "baglar-006",
+              "topic": "Benzer zevkler",
+              "question": "Sence iyi arkadaşlar mutlaka benzer zevklere sahip olmalı mı?"
+            },
+            {
+              "id": "baglar-007",
+              "topic": "Küçük anlar",
+              "question": "Birlikte yaşanan küçük bir anı neden yıllarca hatırlanabilir?"
+            },
+            {
+              "id": "baglar-008",
+              "topic": "Kişisel sürpriz",
+              "question": "Bir arkadaşına sürpriz hazırlasan büyük mü, küçük ama kişisel mi olsun isterdin?"
+            },
+            {
+              "id": "baglar-009",
+              "topic": "İlk rahatlık",
+              "question": "Bir insanın yanında kendini rahat hissettiğin ilk anı nasıl anlarsın?"
+            },
+            {
+              "id": "baglar-010",
+              "topic": "Yeniden konuşmak",
+              "question": "Uzun süredir görüşmediğin biriyle sohbete nasıl başlarsın?"
+            },
+            {
+              "id": "baglar-011",
+              "topic": "Samimiyetin gelişimi",
+              "question": "Sence samimiyet zamanla mı, paylaşılan deneyimlerle mi daha çok büyür?"
+            },
+            {
+              "id": "baglar-012",
+              "topic": "Sevilen özellik",
+              "question": "Arkadaşlarının sende en çok hangi özelliğini sevmesini isterdin?"
+            },
+            {
+              "id": "baglar-013",
+              "topic": "Daha iyi tanımak",
+              "question": "Birini daha iyi tanımak için beraber ne yapmak isterdin?"
             }
           ]
         }

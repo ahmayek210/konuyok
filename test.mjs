@@ -5,14 +5,18 @@ import { selectItem, targetRotation } from './src/logic.js';
 const data = JSON.parse(await readFile(new URL('./public/questions.json', import.meta.url), 'utf8'));
 assert.equal(data.schemaVersion, 1);
 assert.equal(data.modes.length, 2);
+assert.equal(data.secretMode?.id, 'gizli-kisisel');
+assert.equal(data.secretMode.categories.length, 5);
+assert.equal(data.modes[1].categories.flatMap(c => c.items).filter(i => ['dusunceler-018','anilar-018','baglar-014','biraz-derin-018'].includes(i.id)).length, 4);
+const allModes = [...data.modes, data.secretMode];
 
 const ids = new Set();
 const questions = new Set();
 let count = 0;
-for (const [modeIndex, mode] of data.modes.entries()) {
-  assert.equal(mode.categories.length, [8, 7][modeIndex]);
+for (const [modeIndex, mode] of allModes.entries()) {
+  assert.equal(mode.categories.length, [8, 7, 5][modeIndex]);
   const all = mode.categories.flatMap(category => category.items);
-  assert.equal(all.length, [129, 111][modeIndex]);
+  assert.equal(all.length, [129, 115, 60][modeIndex]);
   const categoryIds = new Set();
   for (const category of mode.categories) {
     assert.ok(category.id && category.label && category.items.length > 0);
@@ -22,7 +26,7 @@ for (const [modeIndex, mode] of data.modes.entries()) {
       assert.ok(item.id && item.topic && item.question);
       assert.ok(!ids.has(item.id));
       ids.add(item.id);
-      const normalized = item.question.toLocaleLowerCase('tr').replace(/\\s+/g, ' ').trim();
+      const normalized = item.question.toLocaleLowerCase('tr').replace(/\s+/g, ' ').trim();
       assert.ok(!questions.has(normalized), 'Tekrarlanan soru: ' + item.question);
       questions.add(normalized);
       count++;
@@ -46,7 +50,7 @@ for (const [modeIndex, mode] of data.modes.entries()) {
   assert.ok(reset.reset);
   assert.notEqual(reset.item.id, last);
 }
-assert.equal(count, 240);
-assert.equal(ids.size, 240);
-assert.equal(questions.size, 240);
-console.log('Doğrulama başarılı: 240 benzersiz soru, 15 kategori, seçim, eşleşme ve döngü sıfırlama.');
+assert.equal(count, 304);
+assert.equal(ids.size, 304);
+assert.equal(questions.size, 304);
+console.log('Doğrulama başarılı: 304 benzersiz soru, 20 kategori, seçim, eşleşme ve döngü sıfırlama.');

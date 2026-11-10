@@ -978,6 +978,11 @@
               "id": "anilar-017",
               "topic": "Anının sesi",
               "question": "Bir anıyı sadece bir sesle anlatman gerekse hangi sesi seçerdin?"
+            },
+            {
+              "id": "anilar-018",
+              "topic": "Gülümseten mesaj",
+              "question": "Telefonuna gelen bir mesaj seni beklemediğin kadar heyecanlandırmış mıydı?"
             }
           ]
         },
@@ -1069,6 +1074,11 @@
               "id": "dusunceler-017",
               "topic": "Nadir konuşulan konu",
               "question": "Merak ettiğin ama çevrende pek konuşulmayan bir konu var mı?"
+            },
+            {
+              "id": "dusunceler-018",
+              "topic": "İlk kıvılcım",
+              "question": "Sence bir arkadaşlığın zamanla hoşlanmaya dönüşmesi nasıl anlaşılır?"
             }
           ]
         },
@@ -1160,6 +1170,11 @@
               "id": "biraz-derin-017",
               "topic": "Hayatta yer açmak",
               "question": "Hayatında daha çok yer açmak istediğin şey ne?"
+            },
+            {
+              "id": "biraz-derin-018",
+              "topic": "Söylenmeyen his",
+              "question": "Birine karşı hissettiklerini anlatmakta çekindiğin bir an oldu mu?"
             }
           ]
         },
@@ -1302,10 +1317,351 @@
               "id": "baglar-013",
               "topic": "Daha iyi tanımak",
               "question": "Birini daha iyi tanımak için beraber ne yapmak isterdin?"
+            },
+            {
+              "id": "baglar-014",
+              "topic": "Özel hissettiren şey",
+              "question": "Birisi sana hangi küçük davranışıyla kendini özel hissettirebilir?"
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "secretMode": {
+    "id": "gizli-kisisel",
+    "label": "Kişisel",
+    "categories": [
+      {
+        "id": "hoslanma",
+        "label": "Hoşlanma",
+        "items": [
+          {
+            "id": "gizli-hoslanma-001",
+            "topic": "Başlangıç",
+            "question": "Birinden hoşlanmaya başladığını ilk hangi küçük değişiklikten anlarsın?"
+          },
+          {
+            "id": "gizli-hoslanma-002",
+            "topic": "Kısa bakış",
+            "question": "Biriyle göz göze gelince bakışını kaçırır mısın, gülümser misin?"
+          },
+          {
+            "id": "gizli-hoslanma-003",
+            "topic": "Beklenen bildirim",
+            "question": "Birinden mesaj beklerken telefonu gereğinden fazla kontrol ettiğin oldu mu?"
+          },
+          {
+            "id": "gizli-hoslanma-004",
+            "topic": "İlk etki",
+            "question": "Bir insanda seni ilk etkileyen şey görünüşü mü, davranışı mı?"
+          },
+          {
+            "id": "gizli-hoslanma-005",
+            "topic": "Kendine itiraf",
+            "question": "Hoşlandığını önce kendine kabul etmek mi, karşı tarafa söylemek mi daha zor?"
+          },
+          {
+            "id": "gizli-hoslanma-006",
+            "topic": "Tesadüf mü plan mı",
+            "question": "Hoşlandığın biriyle karşılaşmak için yolunu değiştirdiğin oldu mu?"
+          },
+          {
+            "id": "gizli-hoslanma-007",
+            "topic": "Belli etmek",
+            "question": "Sence hoşlanınca duyguların yüzünden belli olur mu?"
+          },
+          {
+            "id": "gizli-hoslanma-008",
+            "topic": "Uzun sohbet",
+            "question": "Saatlerce konuştuğun birinin birden hayatında özel bir yere oturduğu oldu mu?"
+          },
+          {
+            "id": "gizli-hoslanma-009",
+            "topic": "Küçük detay",
+            "question": "Birinden hoşlanınca onun hangi küçük ayrıntılarını hatırlarsın?"
+          },
+          {
+            "id": "gizli-hoslanma-010",
+            "topic": "Karmaşık sinyal",
+            "question": "Birinin senden hoşlanıp hoşlanmadığını anlamakta en çok ne kafanı karıştırır?"
+          },
+          {
+            "id": "gizli-hoslanma-011",
+            "topic": "Aklına düşmek",
+            "question": "Durup dururken aklına gelen bir insanı özlediğini ne zaman anlarsın?"
+          },
+          {
+            "id": "gizli-hoslanma-012",
+            "topic": "Beklenmedik his",
+            "question": "Hiç beklemediğin birine karşı hislerinin değiştiği oldu mu?"
+          }
+        ]
+      },
+      {
+        "id": "ilk-adim",
+        "label": "İlk Adım",
+        "items": [
+          {
+            "id": "gizli-ilk-adim-001",
+            "topic": "Özledim demek",
+            "question": "Birini özlediğinde 'özledim' diye yazabilir misin, yoksa bahane mi bulursun?"
+          },
+          {
+            "id": "gizli-ilk-adim-002",
+            "topic": "Davet etmek",
+            "question": "Birini baş başa bir şeyler yapmaya davet etmek senin için kolay mı?"
+          },
+          {
+            "id": "gizli-ilk-adim-003",
+            "topic": "Açık konuşmak",
+            "question": "Karşındaki senden hoşlanıyor olabileceğini söylese ne cevap verirdin?"
+          },
+          {
+            "id": "gizli-ilk-adim-004",
+            "topic": "Güzel söz",
+            "question": "Hoşlandığın birinden duyunca gününü güzelleştirecek bir cümle ne?"
+          },
+          {
+            "id": "gizli-ilk-adim-005",
+            "topic": "İlk adım",
+            "question": "İki insan birbirinden hoşlanıyorsa ilk adımı kim atmalı sence?"
+          },
+          {
+            "id": "gizli-ilk-adim-006",
+            "topic": "Söylemenin zamanı",
+            "question": "Birine karşı hislerin varsa doğru zamanı nasıl anlarsın?"
+          },
+          {
+            "id": "gizli-ilk-adim-007",
+            "topic": "İma mı doğrudan mı",
+            "question": "Duygularını küçük imalarla mı, açıkça söyleyerek mi gösterirsin?"
+          },
+          {
+            "id": "gizli-ilk-adim-008",
+            "topic": "Buluşma fikri",
+            "question": "Biri seni hoş bir buluşmaya davet etse nereye gitmek isterdin?"
+          },
+          {
+            "id": "gizli-ilk-adim-009",
+            "topic": "Cesaret ölçeği",
+            "question": "Birine içinden geçenleri yazmak mı, yüz yüze söylemek mi daha cesurca?"
+          },
+          {
+            "id": "gizli-ilk-adim-010",
+            "topic": "İlk tepki",
+            "question": "Sana 'Seninle konuşmak için bahane arıyorum' deseler ne hissedersin?"
+          },
+          {
+            "id": "gizli-ilk-adim-011",
+            "topic": "İlk adımı kolaylaştırmak",
+            "question": "Karşındaki hangi davranışı yapsa duygularını anlatmak kolaylaşır?"
+          },
+          {
+            "id": "gizli-ilk-adim-012",
+            "topic": "Çekingenlik",
+            "question": "Hoşlandığın biri yanında olunca normalden daha sessiz mi olursun, konuşkan mı?"
+          }
+        ]
+      },
+      {
+        "id": "yakinlik",
+        "label": "Yakınlık",
+        "items": [
+          {
+            "id": "gizli-yakinlik-001",
+            "topic": "Rahat hissetmek",
+            "question": "Birinin yanında en saçma hâlinle bile rahat hissedebilmek senin için ne ifade eder?"
+          },
+          {
+            "id": "gizli-yakinlik-002",
+            "topic": "Uzun sessizlik",
+            "question": "Hoşlandığın biriyle uzun bir sessizlik paylaşmak sence garip mi, güzel mi?"
+          },
+          {
+            "id": "gizli-yakinlik-003",
+            "topic": "Küçük jest",
+            "question": "Birinin sana yaklaşırken gösterdiği hangi küçük, düşünceli jest hoşuna gider?"
+          },
+          {
+            "id": "gizli-yakinlik-004",
+            "topic": "Göz teması",
+            "question": "Uzun göz teması mı, beklenmedik bir gülümseme mi seni daha çok heyecanlandırır?"
+          },
+          {
+            "id": "gizli-yakinlik-005",
+            "topic": "Birlikte yürümek",
+            "question": "İki kişi uzun bir yürüyüş yaparken hangi konuyu konuşursa yakınlaşır?"
+          },
+          {
+            "id": "gizli-yakinlik-006",
+            "topic": "Özlenmek",
+            "question": "Birinin seni özlediğini nasıl ifade etmesini isterdin?"
+          },
+          {
+            "id": "gizli-yakinlik-007",
+            "topic": "Gün sonu",
+            "question": "İyi geçen bir günün sonunda özellikle kiminle konuşmak istersin?"
+          },
+          {
+            "id": "gizli-yakinlik-008",
+            "topic": "Özel an",
+            "question": "Bir anı özel yapan mekân mı, yanında hissettiklerin mi?"
+          },
+          {
+            "id": "gizli-yakinlik-009",
+            "topic": "Hatırlanan ayrıntılar",
+            "question": "Seninle ilgili küçücük bir ayrıntıyı hatırlayan biri sende nasıl bir his bırakır?"
+          },
+          {
+            "id": "gizli-yakinlik-010",
+            "topic": "Güvende hissetmek",
+            "question": "Birinin yanında duygularını saklamak zorunda olmadığını nasıl anlarsın?"
+          },
+          {
+            "id": "gizli-yakinlik-011",
+            "topic": "Yavaş yakınlaşmak",
+            "question": "İki insanın yavaş yavaş yakınlaşması mı, bir anda güçlü bağ kurması mı daha güzel?"
+          },
+          {
+            "id": "gizli-yakinlik-012",
+            "topic": "Beraber plan",
+            "question": "Birinin gelecek planlarında sana da yer vermesi sana ne hissettirir?"
+          }
+        ]
+      },
+      {
+        "id": "itiraflar",
+        "label": "İtiraflar",
+        "items": [
+          {
+            "id": "gizli-itiraflar-001",
+            "topic": "Saklanan cümle",
+            "question": "Birine söylemek isteyip de cesaret edemediğin güzel bir cümle oldu mu?"
+          },
+          {
+            "id": "gizli-itiraflar-002",
+            "topic": "Küçük kıskançlık",
+            "question": "Hoşlandığın biri başka biriyle yakın olduğunda kıskanır mısın, bu duyguyla nasıl baş edersin?"
+          },
+          {
+            "id": "gizli-itiraflar-003",
+            "topic": "Kalbinin hızlanması",
+            "question": "Birinin yanında kalbinin hızlandığını fark ettiğin bir an yaşadın mı?"
+          },
+          {
+            "id": "gizli-itiraflar-004",
+            "topic": "Gizlenen gülüş",
+            "question": "Bir mesajı okuyup kendi kendine gülümsediğin oldu mu?"
+          },
+          {
+            "id": "gizli-itiraflar-005",
+            "topic": "Söylenmeyen teşekkür",
+            "question": "Birine hayatında olduğu için teşekkür etmek istedin ama söyleyemedin mi?"
+          },
+          {
+            "id": "gizli-itiraflar-006",
+            "topic": "Arkadaşlık mı fazlası mı",
+            "question": "Arkadaşlıkla hoşlanma arasındaki farkı kendi içinde nasıl ayırt edersin?"
+          },
+          {
+            "id": "gizli-itiraflar-007",
+            "topic": "Fark edildi mi",
+            "question": "Birine karşı hislerini sakladığını düşünüp aslında belli ettiğin oldu mu?"
+          },
+          {
+            "id": "gizli-itiraflar-008",
+            "topic": "İsim duyunca",
+            "question": "Birinin adını duyunca istemsizce dikkat kesildiğin oldu mu?"
+          },
+          {
+            "id": "gizli-itiraflar-009",
+            "topic": "Gecenin sorusu",
+            "question": "Gece herkes uyuduğunda en çok kimi veya neyi düşünürsün?"
+          },
+          {
+            "id": "gizli-itiraflar-010",
+            "topic": "Aklında kalan cümle",
+            "question": "Biri sana ne dese o cümleyi uzun süre unutamazsın?"
+          },
+          {
+            "id": "gizli-itiraflar-011",
+            "topic": "Birinden bahsetmek",
+            "question": "Birinden hoşlanınca arkadaşlarına bahseder misin, kendine mi saklarsın?"
+          },
+          {
+            "id": "gizli-itiraflar-012",
+            "topic": "Hiç konuşmadan",
+            "question": "Birine bakıp söylemek istediklerini içinde tuttuğun bir an oldu mu?"
+          }
+        ]
+      },
+      {
+        "id": "bir-tik-cesur",
+        "label": "Bir Tık Cesur",
+        "items": [
+          {
+            "id": "gizli-bir-tik-cesur-001",
+            "topic": "Doğrudan soru",
+            "question": "Sana 'Benden hoşlanıyor musun?' diye sorulsa dürüstçe cevap verebilir misin?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-002",
+            "topic": "Sohbetin anlamı",
+            "question": "Birinin seninle konuşmak için uykusundan vazgeçmesi sende ne düşündürür?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-003",
+            "topic": "Yan yana olmak",
+            "question": "Hoşlandığın biriyle yan yana otururken heyecanlandığın olur mu?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-004",
+            "topic": "Flört sinyali",
+            "question": "Karşındaki kişinin flört ettiğini anlamanı sağlayan en belirgin işaret ne?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-005",
+            "topic": "Kalpten cevap",
+            "question": "Biri sana 'Benim için özelsin' dese nasıl karşılık verirdin?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-006",
+            "topic": "Zor soru",
+            "question": "Karşındaki sana tek bir dürüst soru sorabilse hangi sorudan çekinirdin?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-007",
+            "topic": "Anı uzatmak",
+            "question": "Güzel bir buluşma biterken sohbeti biraz daha uzatmak için ne yaparsın?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-008",
+            "topic": "Çarpıcı iltifat",
+            "question": "Aldığın hangi iltifat seni beklemediğin kadar etkilemişti?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-009",
+            "topic": "Meydan okuma",
+            "question": "Hoşlandığın kişiye tek bir samimi soru sorma cesaretin olsa ne sorardın?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-010",
+            "topic": "Aramızdaki bağ",
+            "question": "Sence iki insan arasında 'bir şeyler var' dedirten en belirgin şey ne?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-011",
+            "topic": "Gizli his",
+            "question": "Birinin senden hoşlanmasını mı, senin ondan hoşlanmanı mı daha erken fark edersin?"
+          },
+          {
+            "id": "gizli-bir-tik-cesur-012",
+            "topic": "Riske değer",
+            "question": "Arkadaşlığınızın değişmesinden çekinsen bile duygularını söylemek sence ne zaman doğru olur?"
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -1,5 +1,5 @@
 import './style.css';
-import { selectItem, targetRotation, updateHistory, personalTap } from './logic.js';
+import { selectItem, targetRotation, updateHistory, personalTap, intensityAvailability } from './logic.js';
 import { guesses, stories, nextGuess, nextStory } from './games.js';
 const $ = id => document.getElementById(id);
 const svgNS = 'http://www.w3.org/2000/svg';
@@ -32,7 +32,17 @@ function orientLabels(duration) {
   });
 }
 function setMode(next) {
-  mode = next; clearResult(); $('notice').textContent = secret() ? 'İstediğin soruyu pas geçebilirsin.' : '';
+  mode = next; clearResult();
+  const filter = $('intensity'), availability = intensityAvailability(mode, filter.value);
+  for (const option of filter.options) {
+    if (!option.value) continue;
+    option.dataset.label ||= option.textContent;
+    option.disabled = !availability.available.has(Number(option.value));
+    option.textContent = option.dataset.label + (option.disabled ? ' (bu modda yok)' : '');
+  }
+  filter.value = availability.selected;
+  $('notice').textContent = availability.changed ? 'Seçtiğin yoğunluk bu modda yok; “Hepsi” seçildi.' : '';
+
   document.body.classList.toggle('secret-mode', secret());
   $('tabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === (secret() ? 'kisisel' : mode.id)))); draw();
 }
@@ -56,7 +66,7 @@ function choose(animate) {
     $('topic').textContent = choice.item.topic; $('question').textContent = choice.item.question;
     $('followups').replaceChildren();
     if (choice.item.followUps?.length) { const details = document.createElement('details'), summary = document.createElement('summary'); summary.textContent = 'Sohbeti derinleştir'; details.append(summary); choice.item.followUps.forEach(text => { const p = document.createElement('p'); p.textContent = text; details.append(p); }); $('followups').append(details); }
-    $('result').hidden = false; $('notice').textContent = choice.reset ? 'Bu seçimdeki sorular baştan karıştırıldı.' : (secret() ? 'İstediğin soruyu pas geçebilirsin.' : '');
+    $('result').hidden = false; $('notice').textContent = choice.reset ? 'Bu seçimdeki sorular baştan karıştırıldı.' : '';
     $('announcement').textContent = `${choice.category.label}. ${choice.item.question}`; setBusy(false); $('question').focus();
   };
   const index = mode.categories.indexOf(choice.category);
@@ -105,4 +115,4 @@ async function load() {
   try { const response=await fetch(`${import.meta.env.BASE_URL}questions.json?v=${__QUESTIONS_BUILD_VERSION__}`,{cache:'no-store'}); if(!response.ok) throw Error(); const json=await response.json(); if(json.schemaVersion!==1 || !json.modes?.length || !json.secretMode?.categories?.length || json.modes.some(m=>!m.categories?.length)) throw Error(); data=json; $('tabs').replaceChildren(); data.modes.forEach(m=>{const b=document.createElement('button');b.textContent=m.label;b.dataset.id=m.id;b.onclick=()=>handleTab(m);$('tabs').append(b);}); $('app-content').hidden=false; setMode(data.modes[0]); }
   catch { $('app-content').hidden=true; $('error').hidden=false; } finally { $('loading').hidden=true; }
 }
-$('spin').onclick=()=>choose(true); $('another').onclick=()=>choose(false); $('skip').onclick=()=>choose(false); $('copy').onclick=copy; $('retry').onclick=load; $('intensity').onchange=()=>{clearResult();$('notice').textContent='';}; document.querySelectorAll('.experience button').forEach(b=>b.onclick=()=>showView(b.dataset.view)); load();
+$('spin').onclick=()=>choose(true); $('another').onclick=()=>choose(false); $('copy').onclick=copy; $('retry').onclick=load; $('intensity').onchange=()=>{clearResult();$('notice').textContent='';}; document.querySelectorAll('.experience button').forEach(b=>b.onclick=()=>showView(b.dataset.view)); load();

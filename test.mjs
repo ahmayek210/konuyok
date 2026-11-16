@@ -73,3 +73,20 @@ for (const mode of [...data.modes, data.secretMode]) {
 const oldHistory = {used:['a1','b1'],last:'b1'};
 assert.deepEqual(updateHistory(oldHistory,{item:{id:'a2'},resetIds:[]}),{used:['a1','b1','a2'],last:'a2'});
 console.log('Şema, eski geçmiş ve kategori dağılımı doğrulandı:', categoryCounts);
+import { intensityAvailability } from './src/logic.js';
+const available = intensityAvailability(sample, '2');
+assert.deepEqual([...available.available].sort(), [1,2]);
+assert.equal(available.selected, '2'); assert.equal(available.changed, false);
+const unavailable = intensityAvailability(sample, '5');
+assert.equal(unavailable.selected, ''); assert.equal(unavailable.changed, true);
+assert.equal(intensityAvailability(sample, '').changed, false);
+assert.deepEqual([...intensityAvailability({categories:[{items:[{id:'old'}]}]}).available], [2]);
+assert.equal(intensityAvailability({categories:[]}, '1').changed, true);
+for (const mode of [...data.modes, data.secretMode]) {
+  const levels = intensityAvailability(mode).available;
+  for (const item of mode.categories.flatMap(c => c.items)) assert.ok(levels.has(item.intensity ?? 2));
+}
+const followUps = [...data.modes, data.secretMode].flatMap(m => m.categories.flatMap(c => c.items.flatMap(i => i.followUps || [])));
+assert.ok(followUps.length >= 20 && followUps.length <= 30);
+assert.equal(new Set(followUps.map(s => s.toLocaleLowerCase('tr').trim())).size, followUps.length);
+console.log(`Yoğunluk seçenekleri ve ${followUps.length} benzersiz devam sorusu doğrulandı.`);

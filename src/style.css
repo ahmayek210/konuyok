@@ -3,3 +3,5 @@
 .result h3:focus-visible,.game-panel h3:focus-visible{outline:3px solid #80304f;outline-offset:4px;border-radius:3px}
 
 .wheel-shell{position:absolute;inset:0;overflow:hidden;border-radius:50%}
+
+.skip-hint{font-size:13px;color:#765662;margin:18px 0 0;line-height:1.5}

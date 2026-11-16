@@ -31,3 +31,9 @@ export function personalTap(state, target, secretActive) {
   const count = state + 1;
   return count >= 7 ? { count: 0, action: 'secret' } : { count, action: 'normal' };
 }
+
+export function intensityAvailability(mode, selected = '') {
+  const available = new Set((mode?.categories || []).flatMap(category => (category.items || []).map(item => item.intensity ?? 2)));
+  const changed = selected !== '' && !available.has(Number(selected));
+  return { available, selected: changed ? '' : selected, changed };
+}

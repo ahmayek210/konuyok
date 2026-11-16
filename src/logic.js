@@ -25,3 +25,9 @@ export function targetRotation(current, index, count, turns = 5) {
   const desired = (360 - center) % 360;
   return current + turns * 360 + ((desired - (current % 360) + 360) % 360);
 }
+export function personalTap(state, target, secretActive) {
+  if (target !== 'kisisel') return { count: 0, action: 'normal' };
+  if (secretActive) return { count: 0, action: 'normal' };
+  const count = state + 1;
+  return count >= 7 ? { count: 0, action: 'secret' } : { count, action: 'normal' };
+}

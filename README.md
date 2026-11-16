@@ -1,24 +1,22 @@
-# KonuYok
+# KonuYok 2.0
 
-Mobil öncelikli sohbet konusu çarkı. Sorular `public/questions.json` dosyasından yüklenir; kullanılan sorular cihazda modlara ayrı kaydedilir.
+Mobil öncelikli, statik bir sohbet oyunu. Çark, Tahmin Et ve Birlikte Uyduralım deneyimleri hesap veya sunucu gerektirmez.
 
-## Yerelde çalıştırma
+## Çalıştırma ve doğrulama
 
 Node.js 20.19+ veya 22.12+ gerekir.
 
 ```sh
-npm install
+npm ci
 npm run dev
+npm test
+npm run build
 ```
 
-Terminalde gösterilen adresi açın. Kontrol ve üretim derlemesi için `npm test` ve `npm run build` çalıştırın. Siteyi dosyaya çift tıklayarak değil, HTTP sunucusu üzerinden açın.
+Siteyi dosyaya çift tıklayarak değil, HTTP sunucusu üzerinden açın. Vite `base: './'` kullandığından GitHub Pages depo alt yolunda çalışır. `main` dalındaki GitHub Actions iş akışı test ve derlemenin ardından Pages'e yayın yapar.
 
-## GitHub Pages
+## Soru seçimi
 
-1. Bu klasörün içeriğini `package-lock.json` dahil bir GitHub deposunun `main` dalına gönderin.
-2. Depoda **Settings → Pages → Build and deployment → Source** seçeneğini **GitHub Actions** olarak ayarlayın.
-3. `main` dalına her gönderimde `.github/workflows/deploy.yml` test ve derlemeyi çalıştırır, ardından Pages üzerinde yayınlar. İlk çalışmayı **Actions** sekmesinden izleyin; adres Pages ayarlarında görünür.
+Çark, seçili yoğunlukta kullanılmamış sorusu olan kategorileri eşit olasılıkla seçer; kategori içinde `weight` kullanılır. Bir filtrede sorular bitince yalnızca o filtredeki soru geçmişi sıfırlanır. Mevcut `konuyok-<mod>` localStorage anahtarları ve soru kimlikleri korunur. Sorular eski şemayla da çalışır: eksik yoğunluk 2, eksik ağırlık 1 kabul edilir. İlk yoğunluk sınıflandırması kategoriye göre yapılmıştır ve içerik editörü tarafından soru bazında geliştirilebilir. Tahmin ve hikâye yanıtları saklanmaz.
 
-Vite `base: './'` kullandığından proje depo alt yolunda da çalışır.
-
-Soru JSON'u her derlemede farklı bir URL sürümüyle (`?v=...`) ve tarayıcı önbelleği kullanılmadan istenir. Bu, dağıtım sonrası eski soru dosyasının yeni arayüzle karışmasını önler.
+Soru JSON'u her derlemede farklı bir URL sürümüyle ve tarayıcı önbelleği kullanılmadan istenir.

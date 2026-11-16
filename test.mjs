@@ -34,3 +34,20 @@ const filteredReset = selectItem(sample, ['a1','a2','a3','b1'], () => 0, 'a3', 1
 assert.ok(filteredReset.reset); assert.deepEqual(updateHistory({used:['a1','a2','a3','b1']}, filteredReset).used, ['b1', 'a1']);
 assert.equal(selectItem({categories:[]}).empty, true);
 console.log(`Doğrulama başarılı: ${ids.size} benzersiz soru; seçim, geçmiş ve çark eşleşmesi.`);
+import { personalTap } from './src/logic.js';
+import { guesses, stories, nextGuess, nextStory } from './src/games.js';
+let taps = 0;
+for (let i=1;i<=7;i++) { const result=personalTap(taps,'kisisel',false); taps=result.count; assert.equal(result.action, i===7?'secret':'normal'); }
+assert.equal(personalTap(6,'eglence',false).count,0);
+assert.deepEqual(personalTap(4,'kisisel',true), {count:0,action:'normal'});
+let game={index:0,player:'A',stage:'predict'};
+assert.equal(nextGuess(game,'compare').stage,'predict');
+game=nextGuess(game,'reveal'); assert.equal(game.stage,'answer');
+game=nextGuess(game,'compare'); assert.equal(game.stage,'compare');
+game=nextGuess(game,'next'); assert.deepEqual(game,{index:1,player:'B',stage:'predict'});
+let tale={index:0,step:0}; for(let i=0;i<3;i++) tale=nextStory(tale); assert.equal(tale.step,3);
+assert.ok(guesses.length>=20 && stories.length>=10 && stories.every(s=>s.length===4));
+const weighted={categories:[{id:'one',items:[{id:'x',weight:1},{id:'y',weight:3}]}]};
+let values=[0,.2]; assert.equal(selectItem(weighted,[],()=>values.shift()).item.id,'x');
+values=[0,.3]; assert.equal(selectItem(weighted,[],()=>values.shift()).item.id,'y');
+console.log('Gizli mod, ağırlıklar ve iki oyun akışı doğrulandı.');

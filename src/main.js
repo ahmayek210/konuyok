@@ -1,5 +1,5 @@
 import './style.css';
-import { selectItem, targetRotation } from './logic.js';
+import { selectItem, targetRotation, updateHistory } from './logic.js';
 const $ = id => document.getElementById(id);
 const svgNS = 'http://www.w3.org/2000/svg';
 let data, mode, rotation = 0, busy = false, selected = null;
@@ -64,12 +64,13 @@ function spin() {
   personalTapCount = 0;
   setBusy(true); $('result').hidden = true; $('copy-status').textContent = ''; $('notice').textContent = '';
   const history = readHistory(mode.id); const choice = selectItem(mode, history.used, Math.random, history.last);
+  if (choice.empty) { notice.textContent = 'Bu seçim için soru bulunamadı.'; setBusy(false); return; }
   const idx = mode.categories.findIndex(c => c.id === choice.category.id);
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   rotation = targetRotation(rotation, idx, mode.categories.length, 4 + Math.floor(Math.random() * 3));
   $('wheel').style.transition = reduce ? 'transform 0.01s linear' : 'transform 3.7s cubic-bezier(.16,.7,.16,1)'; $('wheel').style.transform = `rotate(${rotation}deg)`;
   setTimeout(() => {
-    history.used = choice.reset ? [choice.item.id] : [...history.used, choice.item.id]; history.last = choice.item.id; saveHistory(mode.id, history); selected = choice;
+    Object.assign(history, updateHistory(history, choice)); saveHistory(mode.id, history); selected = choice;
     $('category').textContent = choice.category.label; $('topic').textContent = choice.item.topic; $('question').textContent = choice.item.question; $('result').hidden = false;
     $('notice').textContent = choice.reset ? 'Sorular baştan karıştırıldı.' : (isSecretMode() ? 'İstersen soruyu pas geçebilirsin.' : ''); $('announcement').textContent = `Kategori: ${choice.category.label}. Konu: ${choice.item.topic}. Soru: ${choice.item.question}`; setBusy(false);
     const rect = $('result').getBoundingClientRect(); if (rect.bottom > innerHeight && !reduce) $('result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -85,3 +86,4 @@ async function load() {
   $('error').hidden = true; try { const response = await fetch(`${import.meta.env.BASE_URL}questions.json?v=${__QUESTIONS_BUILD_VERSION__}`, { cache: 'no-store' }); if (!response.ok) throw Error(); const json = await response.json(); if (json.schemaVersion !== 1 || !Array.isArray(json.modes) || !json.modes.length || json.modes.some(m => !m.categories?.length || m.categories.some(c => !c.items?.length)) || !json.secretMode?.categories?.length || json.secretMode.categories.some(c => !c.items?.length) || json.modes.some(m => m.id === json.secretMode.id)) throw Error(); data = json; personalTapCount = 0; $('tabs').replaceChildren(); data.modes.forEach(m => { const b = document.createElement('button'); b.textContent = m.label; b.dataset.id = m.id; b.addEventListener('click', () => handleTabClick(m)); $('tabs').append(b); }); $('game').hidden = false; setMode(data.modes[0]); } catch { $('game').hidden = true; $('error').hidden = false; }
 }
 $('spin').addEventListener('click', spin); $('again').addEventListener('click', spin); $('copy').addEventListener('click', copy); $('retry').addEventListener('click', load); load();
+

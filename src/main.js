@@ -3,7 +3,7 @@ import { selectItem, targetRotation, updateHistory, personalTap } from './logic.
 import { guesses, stories, nextGuess, nextStory } from './games.js';
 const $ = id => document.getElementById(id);
 const svgNS = 'http://www.w3.org/2000/svg';
-const colors = ['#f3d4bd','#dc9c91','#a85069','#f8e5cc','#ca7c82','#873f5c','#efc0ae','#b66175'];
+const colors = ['#f3d4bd','#dc9c91','#a85069','#f8e5cc','#ca7c82','#873f5c','#efc0ae','#93445b'];
 let data, mode, rotation = 0, busy = false, selected = null, personalTapCount = 0, view = 'wheel';
 let guess = {index:0, player:'A', stage:'predict'}, prediction = '', answer = '', story = {index:0, step:0};
 const memory = {};
@@ -21,9 +21,15 @@ function draw() {
     path.setAttribute('d', `M 0 0 L ${150*Math.cos(start)} ${150*Math.sin(start)} A 150 150 0 ${step > Math.PI ? 1 : 0} 1 ${150*Math.cos(end)} ${150*Math.sin(end)} Z`);
     path.setAttribute('fill', colors[i % colors.length]); path.setAttribute('stroke', '#fff8f2'); path.setAttribute('stroke-width', '2'); wheel.append(path);
     const angle = (i + .5) * step - Math.PI / 2, label = document.createElementNS(svgNS, 'text');
-    label.setAttribute('x', 101 * Math.cos(angle)); label.setAttribute('y', 101 * Math.sin(angle)); label.setAttribute('text-anchor', 'middle'); label.setAttribute('dominant-baseline', 'middle'); label.setAttribute('fill', [2,5,7].includes(i % 8) ? '#fff' : '#4d1c2c'); label.setAttribute('font-size', category.label.length > 12 ? '10' : '12'); label.setAttribute('font-weight', '700'); label.textContent = category.label; wheel.append(label);
+    label.setAttribute('x', 101 * Math.cos(angle)); label.setAttribute('y', 101 * Math.sin(angle)); label.setAttribute('text-anchor', 'middle'); label.setAttribute('dominant-baseline', 'middle'); label.setAttribute('fill', [2,5,7].includes(i % 8) ? '#fff' : '#4d1c2c'); label.setAttribute('font-size', category.label.length > 12 ? '10' : '12'); label.setAttribute('font-weight', '700'); label.style.transformBox = 'fill-box'; label.style.transformOrigin = 'center'; label.textContent = category.label; wheel.append(label);
   });
   const rim = document.createElementNS(svgNS, 'circle'); rim.setAttribute('r','150'); rim.setAttribute('fill','none'); rim.setAttribute('stroke','#6d3045'); rim.setAttribute('stroke-width','3'); wheel.append(rim);
+}
+function orientLabels(duration) {
+  $('wheel').querySelectorAll('text').forEach(label => {
+    label.style.transition = `transform ${duration}ms cubic-bezier(.16,.7,.16,1)`;
+    label.style.transform = `rotate(${-rotation}deg)`;
+  });
 }
 function setMode(next) {
   mode = next; clearResult(); $('notice').textContent = secret() ? 'İstediğin soruyu pas geçebilirsin.' : '';
@@ -51,22 +57,29 @@ function choose(animate) {
     $('followups').replaceChildren();
     if (choice.item.followUps?.length) { const details = document.createElement('details'), summary = document.createElement('summary'); summary.textContent = 'Sohbeti derinleştir'; details.append(summary); choice.item.followUps.forEach(text => { const p = document.createElement('p'); p.textContent = text; details.append(p); }); $('followups').append(details); }
     $('result').hidden = false; $('notice').textContent = choice.reset ? 'Bu seçimdeki sorular baştan karıştırıldı.' : (secret() ? 'İstediğin soruyu pas geçebilirsin.' : '');
-    $('announcement').textContent = `${choice.category.label}. ${choice.item.question}`; setBusy(false);
+    $('announcement').textContent = `${choice.category.label}. ${choice.item.question}`; setBusy(false); $('question').focus();
   };
   const index = mode.categories.indexOf(choice.category);
-  if (!animate) { rotation = targetRotation(rotation, index, mode.categories.length, 0); $('wheel').style.transition = 'none'; $('wheel').style.transform = `rotate(${rotation}deg)`; finish(); return; }
+  if (!animate) { rotation = targetRotation(rotation, index, mode.categories.length, 0); $('wheel').style.transition = 'none'; $('wheel').style.transform = `rotate(${rotation}deg)`; orientLabels(0); finish(); return; }
   rotation = targetRotation(rotation, index, mode.categories.length, 3 + Math.floor(Math.random() * 2));
   const duration = reduceMotion() ? 0 : 2200;
-  $('wheel').style.transition = `transform ${duration}ms cubic-bezier(.16,.7,.16,1)`; $('wheel').style.transform = `rotate(${rotation}deg)`;
+  $('wheel').style.transition = `transform ${duration}ms cubic-bezier(.16,.7,.16,1)`; $('wheel').style.transform = `rotate(${rotation}deg)`; orientLabels(duration);
   setTimeout(finish, duration);
 }
 async function copy() {
   if (!selected) return;
-  try { await navigator.clipboard.writeText(`Konu: ${selected.item.topic}\nSoru: ${selected.item.question}`); $('copy-status').textContent = 'Kopyalandı!'; }
-  catch { $('copy-status').textContent = 'Kopyalanamadı; soruyu seçip kopyalayabilirsin.'; }
+  const text = `Konu: ${selected.item.topic}\nSoru: ${selected.item.question}`;
+  let copied = false;
+  try { if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(text); copied = true; } } catch {}
+  if (!copied) {
+    const area = document.createElement('textarea'); area.value = text; area.setAttribute('readonly', '');
+    area.style.position = 'fixed'; area.style.opacity = '0'; document.body.append(area); area.select();
+    try { copied = document.execCommand('copy'); } catch {} area.remove(); $('copy').focus();
+  }
+  $('copy-status').textContent = copied ? 'Kopyalandı!' : 'Kopyalanamadı; soruyu seçip kopyalayabilirsin.';
 }
 function showView(next) {
-  if (busy) return;
+  if (busy || next === view) return;
   view = next; personalTapCount = 0; clearResult(); $('notice').textContent = ''; prediction = ''; answer = ''; guess = {index:guess.index, player:'A', stage:'predict'}; story = {index:story.index,step:0};
   ['wheel','guess','story'].forEach(name => { $(name + '-view').hidden = name !== view; document.querySelector(`[data-view="${name}"]`).setAttribute('aria-pressed', String(name === view)); });
   if (view === 'guess') renderGuess(); if (view === 'story') renderStory();
@@ -74,17 +87,18 @@ function showView(next) {
 function renderGuess() {
   const card = $('guess-card'); card.replaceChildren();
   const badge = document.createElement('p'); badge.className = 'eyebrow'; badge.textContent = guess.stage === 'compare' ? 'YAN YANA' : guess.stage === 'predict' ? `OYUNCU ${guess.player} · TAHMİN ET` : `OYUNCU ${guess.player === 'A' ? 'B' : 'A'} · SIRA SENDE`;
-  const title = document.createElement('h3'); title.textContent = guesses[guess.index]; card.append(badge,title);
+  const title = document.createElement('h3'); title.textContent = guesses[guess.index]; title.tabIndex = -1; card.append(badge,title);
   if (guess.stage === 'compare') {
     for (const [label, value] of [['Tahmin',prediction],['Gerçek cevap',answer]]) { const box = document.createElement('div'); box.className = 'answer-box'; const strong = document.createElement('strong'); strong.textContent = label; const p = document.createElement('p'); p.textContent = value || 'Paylaşılmadı'; box.append(strong,p); card.append(box); }
-    const button = document.createElement('button'); button.className='primary wide'; button.textContent='Rolleri değiştir ve devam et'; button.onclick=()=>{guess=nextGuess(guess,'next');prediction='';answer='';renderGuess();}; card.append(button); return;
+    const button = document.createElement('button'); button.className='primary wide'; button.textContent='Rolleri değiştir ve devam et'; button.onclick=()=>{guess=nextGuess(guess,'next');prediction='';answer='';renderGuess(); $('guess-card').querySelector('h3').focus();}; card.append(button); return;
   }
-  const hint = document.createElement('p'); hint.textContent = guess.stage === 'predict' ? 'Tahminini yaz, ardından cihazı diğer oyuncuya ver. Diğer oyuncu görmeden ilerle!' : 'Tahmine bakmadan kendi cevabını yaz.'; card.append(hint);
-  const label = document.createElement('label'); label.textContent = guess.stage === 'predict' ? 'Tahminin' : 'Cevabın'; const input = document.createElement('textarea'); input.rows=3; input.maxLength=500; label.append(input); card.append(label);
-  const button = document.createElement('button'); button.className='primary wide'; button.textContent = guess.stage === 'predict' ? 'Gizle ve cihazı ver' : 'Cevapları karşılaştır'; button.onclick=()=>{ if(guess.stage === 'predict'){prediction=input.value;guess=nextGuess(guess,'reveal');} else {answer=input.value;guess=nextGuess(guess,'compare');} renderGuess(); }; card.append(button);
+  const hint = document.createElement('p'); hint.textContent = guess.stage === 'predict' ? 'Tahminini yaz, ardından cihazı diğer oyuncuya ver. İstersen boş bırakabilirsin.' : 'Tahmine bakmadan kendi cevabını yaz; istersen boş bırakabilirsin.'; card.append(hint);
+  const label = document.createElement('label'); label.textContent = guess.stage === 'predict' ? 'Tahminin' : 'Cevabın'; const input = document.createElement('textarea'); input.rows=3; input.maxLength=500; input.value = guess.stage === 'predict' ? prediction : answer; label.append(input); card.append(label);
+  const button = document.createElement('button'); button.className='primary wide'; button.textContent = guess.stage === 'predict' ? 'Gizle ve cihazı ver' : 'Cevapları karşılaştır'; button.onclick=()=>{ if(guess.stage === 'predict'){prediction=input.value;guess=nextGuess(guess,'reveal');} else {answer=input.value;guess=nextGuess(guess,'compare');} renderGuess(); $('guess-card').querySelector('h3').focus(); }; card.append(button);
+  if (guess.stage === 'answer') { const back = document.createElement('button'); back.className='secondary wide'; back.textContent='Tahmine dön'; back.onclick=()=>{answer=input.value; guess={...guess,stage:'predict'}; renderGuess(); $('guess-card').querySelector('h3').focus();}; card.append(back); }
 }
 function renderStory() {
-  const card=$('story-card'); card.replaceChildren(); const badge=document.createElement('p'); badge.className='eyebrow'; badge.textContent=story.step < 3 ? `ADIM ${story.step+1} / 3 · ${story.step % 2 === 0 ? 'A' : 'B'} BAŞLASIN` : 'HİKÂYE TAMAM'; const title=document.createElement('h3'); title.textContent=stories[story.index][0]; const prompt=document.createElement('p'); prompt.className='story-prompt'; prompt.textContent=story.step < 3 ? stories[story.index][story.step+1] : 'Birlikte kurduğunuz dünyaya bir isim verin ve hikâyenizi anlatın.'; const hint=document.createElement('p'); hint.textContent='Sırayla sözlü katkıda bulunun; cevaplar kaydedilmez.'; const button=document.createElement('button'); button.className='primary wide'; button.textContent=story.step < 3 ? 'Sonraki adım' : 'Yeni bir dünya kur'; button.onclick=()=>{story=story.step < 3 ? nextStory(story) : {index:(story.index+1)%stories.length,step:0};renderStory();}; card.append(badge,title,prompt,hint,button);
+  const card=$('story-card'); card.replaceChildren(); const badge=document.createElement('p'); badge.className='eyebrow'; badge.textContent=story.step < 3 ? `ADIM ${story.step+1} / 3 · ${story.step % 2 === 0 ? 'A' : 'B'} BAŞLASIN` : 'HİKÂYE TAMAM'; const title=document.createElement('h3'); title.textContent=stories[story.index][0]; title.tabIndex=-1; const prompt=document.createElement('p'); prompt.className='story-prompt'; prompt.textContent=story.step < 3 ? stories[story.index][story.step+1] : 'Birlikte kurduğunuz dünyaya bir isim verin ve hikâyenizi anlatın.'; const hint=document.createElement('p'); hint.textContent='Sırayla sözlü katkıda bulunun; cevaplar kaydedilmez.'; const button=document.createElement('button'); button.className='primary wide'; button.textContent=story.step < 3 ? 'Sonraki adım' : 'Yeni bir dünya kur'; button.onclick=()=>{story=story.step < 3 ? nextStory(story) : {index:(story.index+1)%stories.length,step:0};renderStory(); $('story-card').querySelector('h3').focus();}; card.append(badge,title,prompt,hint,button); if (story.step > 0 && story.step < 3) { const back=document.createElement('button'); back.className='secondary wide'; back.textContent='Önceki adım'; back.onclick=()=>{story={...story,step:story.step-1}; renderStory(); $('story-card').querySelector('h3').focus();}; card.append(back); }
 }
 async function load() {
   $('error').hidden=true; $('loading').hidden=false;

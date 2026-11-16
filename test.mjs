@@ -51,3 +51,25 @@ const weighted={categories:[{id:'one',items:[{id:'x',weight:1},{id:'y',weight:3}
 let values=[0,.2]; assert.equal(selectItem(weighted,[],()=>values.shift()).item.id,'x');
 values=[0,.3]; assert.equal(selectItem(weighted,[],()=>values.shift()).item.id,'y');
 console.log('Gizli mod, ağırlıklar ve iki oyun akışı doğrulandı.');
+// Category probability must not depend on the number of questions in a slice.
+let seed = 1234567;
+const random = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+let categoryCounts = {a:0,b:0};
+for (let i=0; i<10000; i++) categoryCounts[selectItem(sample, [], random).category.id]++;
+assert.ok(Math.abs(categoryCounts.a - categoryCounts.b) < 400, JSON.stringify(categoryCounts));
+for (const mode of [...data.modes, data.secretMode]) {
+  const categoryIds = new Set();
+  for (const category of mode.categories) {
+    assert.ok(category.id && category.label && !categoryIds.has(category.id)); categoryIds.add(category.id);
+    for (const item of category.items) {
+      assert.ok(Number.isInteger(item.intensity) && item.intensity >= 1 && item.intensity <= 5, item.id);
+      assert.ok(Number.isFinite(item.weight) && item.weight > 0, item.id);
+      if (item.followUps) assert.ok(Array.isArray(item.followUps) && item.followUps.every(text => typeof text === 'string' && text.trim()));
+      const chosen = selectItem({categories:[{...category,items:[item]}]}, [], () => 0, null, item.intensity);
+      assert.equal(chosen.item.id, item.id);
+    }
+  }
+}
+const oldHistory = {used:['a1','b1'],last:'b1'};
+assert.deepEqual(updateHistory(oldHistory,{item:{id:'a2'},resetIds:[]}),{used:['a1','b1','a2'],last:'a2'});
+console.log('Şema, eski geçmiş ve kategori dağılımı doğrulandı:', categoryCounts);

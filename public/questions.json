@@ -65,7 +65,7 @@
               "id": "sacma-006",
               "topic": "Uzaylı selamı",
               "question": "Bir uzaylıya insanları sadece tek bir hareketle anlatman gerekse ne yapardın?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -81,7 +81,7 @@
               "id": "sacma-008",
               "topic": "Saçma yasa",
               "question": "Dünyaya bir tane komik ve gereksiz yasa koyabilsen ne olurdu?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -137,7 +137,7 @@
               "id": "sacma-015",
               "topic": "Hayvanlar meclisi",
               "question": "Hayvanlar seni belediye başkanı seçse ilk vaadin ne olurdu?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -145,7 +145,7 @@
               "id": "sacma-016",
               "topic": "Duygusal telefon",
               "question": "Telefonun duygularını sesli okusa en komik an hangisi olurdu?",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -175,7 +175,7 @@
               "id": "ikilem-001",
               "topic": "Geçmiş mi gelecek mi",
               "question": "Bir kez geçmişe dönmek mi, bir kez geleceği görmek mi?",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -189,8 +189,8 @@
             },
             {
               "id": "ikilem-003",
-              "topic": "Film mi oyun mu",
-              "question": "En sevdiğin filmi ilk kez yeniden izlemek mi, en sevdiğin oyunu ilk kez yeniden oynamak mı?",
+              "topic": "İlk kez yeniden",
+              "question": "Sevdiğin bir filmi mi, sevdiğin bir kitabı veya oyunu mu ilk kez yeniden deneyimlemek isterdin?",
               "intensity": 1,
               "weight": 1,
               "type": "question"
@@ -199,7 +199,7 @@
               "id": "ikilem-004",
               "topic": "Düşünce mi görünmezlik mi",
               "question": "İnsanların düşüncelerini duymak mı, istediğinde görünmez olmak mı?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -215,7 +215,7 @@
               "id": "ikilem-006",
               "topic": "Kitap mı müzik mi",
               "question": "Bir yıl boyunca kitap okuyamamak mı, müzik dinleyememek mi?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -231,7 +231,7 @@
               "id": "ikilem-008",
               "topic": "Bilinmek mi tanımak mı",
               "question": "Herkesin seni tanıması mı, senin dünyadaki herkesi tanıman mı?",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -247,7 +247,7 @@
               "id": "ikilem-010",
               "topic": "Tek dil mi tüm diller mi",
               "question": "Bütün dilleri konuşabilmek mi, bütün müzik aletlerini çalabilmek mi?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -255,7 +255,7 @@
               "id": "ikilem-011",
               "topic": "Rastgele gezi",
               "question": "Her ay rastgele bir ülkeye seyahat etmek mi, tek bir ülkede sınırsız tatil mi?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -271,7 +271,7 @@
               "id": "ikilem-013",
               "topic": "Rüya seçimi",
               "question": "Her rüyanı hatırlamak mı, istediğin rüyayı seçmek mi?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -303,7 +303,7 @@
               "id": "ikilem-017",
               "topic": "On saniye mi bir gün mü",
               "question": "İstediğinde zamanı on saniye durdurmak mı, bir kez bir gün geriye almak mı?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -333,7 +333,7 @@
               "id": "hayal-002",
               "topic": "Hayalî kafe",
               "question": "Bir kafe açsan nasıl görünürdü ve menüde en ilginç ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -357,7 +357,7 @@
               "id": "hayal-005",
               "topic": "Dünyayı tasarlamak",
               "question": "Dünyanın tek bir özelliğini değiştirme hakkın olsa neyi değiştirirdin?",
-              "intensity": 2,
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
@@ -397,7 +397,7 @@
               "id": "hayal-010",
               "topic": "Duyguların renkleri",
               "question": "Duyguların gerçekten renkleri olsa bugün çevrende hangi renkler görünürdü?",
-              "intensity": 2,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -413,7 +413,7 @@
               "id": "hayal-012",
               "topic": "Bulutların üstünde",
               "question": "Bulutların üzerinde bir evin olsa nasıl döşerdin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -421,7 +421,7 @@
               "id": "hayal-013",
               "topic": "Yeni duygu",
               "question": "İnsanlar yeni bir duygu keşfetse adını ne koyardın?",
-              "intensity": 2,
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
@@ -429,7 +429,7 @@
               "id": "hayal-014",
               "topic": "Hayal parkı",
               "question": "Bir park tasarlasan girişinde ziyaretçileri ne karşılardı?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -453,7 +453,7 @@
               "id": "hayal-017",
               "topic": "Şarkı söyleyen binalar",
               "question": "Bir şehirde tüm binalar müzik çalsa en güzel mekân neresi olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -461,7 +461,7 @@
               "id": "hayal-018",
               "topic": "Yeni takımyıldız",
               "question": "Kendi takımyıldızını keşfetsen ona ne isim verirdin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             }
@@ -609,7 +609,7 @@
               "id": "mini-oyun-001",
               "topic": "Üç kelimelik dünya",
               "question": "Şu anki ruh hâlini yalnızca üç kelimeyle anlatabilir misin?",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -617,7 +617,7 @@
               "id": "mini-oyun-002",
               "topic": "Uydurma haber",
               "question": "Bugünkü hayatına komik bir haber başlığı yazsan ne olurdu?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -625,7 +625,7 @@
               "id": "mini-oyun-003",
               "topic": "Tahmin oyunu",
               "question": "En sevdiğin üç şeyi ipucu vererek anlat; karşı taraf tahmin etsin.",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -697,7 +697,7 @@
               "id": "mini-oyun-012",
               "topic": "Beş kelimelik hikâye",
               "question": "Sırayla yalnızca beşer kelime ekleyerek birlikte bir hikâye kurun.",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -729,7 +729,7 @@
               "id": "mini-oyun-016",
               "topic": "İki sıfat bir hayvan",
               "question": "Birbirinizi iki sıfat ve bir hayvanla tarif edin; nedenini de söyleyin.",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -751,7 +751,7 @@
               "id": "beklenmedik-001",
               "topic": "Yanlış evren",
               "question": "Yarın uyansan herkes tersine yürüyorsa ilk ne yaparsın?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -799,7 +799,7 @@
               "id": "beklenmedik-007",
               "topic": "Gizli geçit",
               "question": "Okulda veya evde gizli bir geçit bulsan nereye çıkmasını isterdin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -807,7 +807,7 @@
               "id": "beklenmedik-008",
               "topic": "Gelecekten not",
               "question": "Gelecekteki sen bugünkü sana tek cümle gönderebilse ne yazsın isterdin?",
-              "intensity": 2,
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
@@ -815,7 +815,7 @@
               "id": "beklenmedik-009",
               "topic": "Ayna tavsiyesi",
               "question": "Aynadaki yansıman sana tavsiye verse ne derdi?",
-              "intensity": 2,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -823,7 +823,7 @@
               "id": "beklenmedik-010",
               "topic": "Emojisiz gün",
               "question": "Yarın telefonundaki bütün emojiler kaybolsa yerine ne kullanırdın?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -839,7 +839,7 @@
               "id": "beklenmedik-012",
               "topic": "Şarkılı yağmur",
               "question": "Yağmur damlaları yere düşmeden önce şarkı söylese hangi şarkıyı duymak isterdin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -855,7 +855,7 @@
               "id": "beklenmedik-014",
               "topic": "Hayat güncellemesi",
               "question": "Hayatın bir video oyunu gibi güncelleme alsa ilk düzeltme ne olurdu?",
-              "intensity": 2,
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
@@ -863,7 +863,7 @@
               "id": "beklenmedik-015",
               "topic": "Yer çekimsiz saat",
               "question": "Bir saatliğine yer çekimsiz bir odada olsan ne denerdin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -871,7 +871,7 @@
               "id": "beklenmedik-016",
               "topic": "Sahibe benzeyen hayvan",
               "question": "Bir günlüğüne evcil hayvanlar sahiplerine benzese en komik eşleşme ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             }
@@ -893,7 +893,7 @@
               "id": "birlikte-002",
               "topic": "Podcast fikri",
               "question": "Beraber bir podcast açsak adı ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -901,7 +901,7 @@
               "id": "birlikte-003",
               "topic": "Çizgi film karakterimiz",
               "question": "Birlikte bir çizgi film karakteri tasarlasak en komik özelliği ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -909,7 +909,7 @@
               "id": "birlikte-004",
               "topic": "Bir günlük restoran",
               "question": "Bir günlüğüne restoran işletseydik menüdeki imza yemek ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -925,7 +925,7 @@
               "id": "birlikte-006",
               "topic": "Takım adı",
               "question": "İki kişilik bir takımın adı ve sloganı ne olsun?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -941,7 +941,7 @@
               "id": "birlikte-008",
               "topic": "Üç duraklı gezi",
               "question": "Bir şehir gezisinde sadece üç yere gidebilsek hangi tür yerleri seçerdik?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -949,7 +949,7 @@
               "id": "birlikte-009",
               "topic": "Komik kötü karakterler",
               "question": "İkimiz bir filmin kötü karakterleri olsak saçma planımız ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -957,7 +957,7 @@
               "id": "birlikte-010",
               "topic": "Zaman kapsülü",
               "question": "Birlikte bir kapsül hazırlayıp on yıl sonra açsak içine ne koyardık?",
-              "intensity": 2,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -965,7 +965,7 @@
               "id": "birlikte-011",
               "topic": "Sırayla çizim",
               "question": "Bir resme sırayla tek çizgi eklesek sonunda ne çizmek isterdin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -973,7 +973,7 @@
               "id": "birlikte-012",
               "topic": "Barınak adı",
               "question": "Bir hayvan barınağına isim koyacak olsak ne seçerdik?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -981,7 +981,7 @@
               "id": "birlikte-013",
               "topic": "Yeni kelime",
               "question": "Birlikte rastgele bir kelimeye yeni anlam uydursak hangi kelimeyle başlardık?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             }
@@ -1011,7 +1011,7 @@
               "id": "sanat-muzik-003",
               "topic": "Albüm kapağı",
               "question": "Bir albüm kapağı tasarlasan üstünde ne olurdu?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1083,7 +1083,7 @@
               "id": "sanat-muzik-012",
               "topic": "Üç kelimelik başlık",
               "question": "Bir çizime üç kelimelik başlık koyman gerekse ne yazardın?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1091,7 +1091,7 @@
               "id": "sanat-muzik-013",
               "topic": "Sıradan anın filmi",
               "question": "Hayatındaki sıradan bir anı sinema sahnesi yapsan hangi an olurdu?",
-              "intensity": 2,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             }
@@ -1112,7 +1112,7 @@
               "id": "gunluk-hayat-001",
               "topic": "Küçük mutluluk",
               "question": "Gün içinde seni sebepsizce mutlu eden küçük bir şey ne?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1128,7 +1128,7 @@
               "id": "gunluk-hayat-003",
               "topic": "En sevilen saat",
               "question": "Günün hangi saatinde kendini en çok kendin gibi hissediyorsun?",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1136,7 +1136,7 @@
               "id": "gunluk-hayat-004",
               "topic": "Kafadaki konu",
               "question": "Son zamanlarda aklını en çok meşgul eden güzel bir düşünce ne?",
-              "intensity": 1,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1144,7 +1144,7 @@
               "id": "gunluk-hayat-005",
               "topic": "Rahatlama yöntemi",
               "question": "Yorucu bir günün ardından seni en hızlı ne rahatlatır?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1152,7 +1152,7 @@
               "id": "gunluk-hayat-006",
               "topic": "Favori köşe",
               "question": "Evde veya dışarıda en huzurlu hissettiğin yer neresi?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1160,7 +1160,7 @@
               "id": "gunluk-hayat-007",
               "topic": "Günlük ritüel",
               "question": "Her gün yapmayı sevdiğin küçük bir alışkanlık var mı?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1168,7 +1168,7 @@
               "id": "gunluk-hayat-008",
               "topic": "Beklenen an",
               "question": "Gün içinde en çok hangi anı beklersin?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1176,7 +1176,7 @@
               "id": "gunluk-hayat-009",
               "topic": "Bugünün güzelliği",
               "question": "Bugün iyi ki oldu dediğin küçücük bir şey var mı?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1184,7 +1184,7 @@
               "id": "gunluk-hayat-010",
               "topic": "Sabah motivasyonu",
               "question": "Sabah seni yataktan kaldıran küçük bir motivasyon ne?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1192,7 +1192,7 @@
               "id": "gunluk-hayat-011",
               "topic": "Günü özel yapan",
               "question": "Bir günü özel hissettiren tek bir ayrıntı seçsen ne olurdu?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1208,7 +1208,7 @@
               "id": "gunluk-hayat-013",
               "topic": "Yorucu gün sonrası",
               "question": "Kalabalık bir günün ardından yalnız kalmayı mı, biriyle konuşmayı mı seversin?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1224,7 +1224,7 @@
               "id": "gunluk-hayat-015",
               "topic": "Günün on dakikası",
               "question": "Bir günün en keyifli on dakikası genellikle ne zaman?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1232,7 +1232,7 @@
               "id": "gunluk-hayat-016",
               "topic": "Çantadaki gereksiz şey",
               "question": "Evden çıkarken yanında taşıdığın gereksiz ama sevdiğin bir şey var mı?",
-              "intensity": 1,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1254,7 +1254,7 @@
               "id": "aliskanliklar-001",
               "topic": "Garip huy",
               "question": "Sadece seni yakından tanıyanların bildiği garip bir huyun var mı?",
-              "intensity": 2,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1286,7 +1286,7 @@
               "id": "aliskanliklar-005",
               "topic": "Erteleme konusu",
               "question": "En çok ne tür işleri erteliyorsun?",
-              "intensity": 2,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1302,7 +1302,7 @@
               "id": "aliskanliklar-007",
               "topic": "Müzik alışkanlığı",
               "question": "Müzik dinlerken en çok sözlere mi, melodiye mi dikkat edersin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1342,7 +1342,7 @@
               "id": "aliskanliklar-012",
               "topic": "Çalışma sesi",
               "question": "Çalışırken sessizlik mi, arka plan sesi mi istersin?",
-              "intensity": 2,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1396,7 +1396,7 @@
               "id": "anilar-001",
               "topic": "Unutulmaz kahkaha",
               "question": "Son zamanlarda en çok güldüğün an neydi?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1404,7 +1404,7 @@
               "id": "anilar-002",
               "topic": "Çocukluk oyunu",
               "question": "Çocukken oynamayı en sevdiğin oyun neydi?",
-              "intensity": 3,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1428,7 +1428,7 @@
               "id": "anilar-005",
               "topic": "Eski şarkı",
               "question": "Sana belirli bir anıyı hatırlatan şarkı var mı?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1460,7 +1460,7 @@
               "id": "anilar-009",
               "topic": "Çocukluk hayali",
               "question": "Küçükken büyüyünce ne olmak isterdin?",
-              "intensity": 3,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1468,7 +1468,7 @@
               "id": "anilar-010",
               "topic": "İlkokul kahkahası",
               "question": "İlkokuldan aklında kalan en komik sınıf olayı ne?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1476,7 +1476,7 @@
               "id": "anilar-011",
               "topic": "Çocukluk kokusu",
               "question": "Çocukken çok sevdiğin bir kokuyu hatırlıyor musun?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1492,7 +1492,7 @@
               "id": "anilar-013",
               "topic": "Yeniden çekilecek kare",
               "question": "Geçmişten bir fotoğrafı tekrar çekebilsen hangisi olurdu?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1500,7 +1500,7 @@
               "id": "anilar-014",
               "topic": "Fikir değiştiren zevk",
               "question": "Eskiden sevmediğin ama şimdi sevdiğin bir şey var mı?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1508,7 +1508,7 @@
               "id": "anilar-015",
               "topic": "Yolculuk ayrıntısı",
               "question": "Bir yolculuktan aklında kalan küçük ama güzel bir ayrıntı ne?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1532,7 +1532,7 @@
               "id": "anilar-018",
               "topic": "Gülümseten mesaj",
               "question": "Hiç beklemediğin bir mesaj gününü güzelleştirdi mi?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             }
@@ -1546,7 +1546,7 @@
               "id": "dusunceler-001",
               "topic": "İyi sohbet",
               "question": "Sence bir sohbeti gerçekten güzel yapan şey ne?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1562,7 +1562,7 @@
               "id": "dusunceler-003",
               "topic": "İnsanları tanımak",
               "question": "Bir insanı tanımak için onun hakkında ilk neyi öğrenmek isterdin?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1586,7 +1586,7 @@
               "id": "dusunceler-006",
               "topic": "Anlaşılmak",
               "question": "Birinin seni gerçekten anladığını nasıl fark edersin?",
-              "intensity": 3,
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
@@ -1618,7 +1618,7 @@
               "id": "dusunceler-010",
               "topic": "Bilgi mi merak mı",
               "question": "Bir insanı ilginç yapan bilgi birikimi mi, merakı mı?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1666,7 +1666,7 @@
               "id": "dusunceler-016",
               "topic": "Mizah ve karakter",
               "question": "Sence mizah bir insanın karakteri hakkında ne anlatır?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1704,7 +1704,7 @@
               "id": "biraz-derin-002",
               "topic": "Küçük cesaret",
               "question": "Yapmak isteyip de biraz cesaret gerektirdiğini düşündüğün bir şey var mı?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1712,7 +1712,7 @@
               "id": "biraz-derin-003",
               "topic": "Geleceğe soru",
               "question": "Beş yıl sonraki kendine bir soru sorabilsen ne sorardın?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1720,7 +1720,7 @@
               "id": "biraz-derin-004",
               "topic": "Değer verilen şey",
               "question": "Bir insanda en çok hangi davranışa değer verirsin?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1728,7 +1728,7 @@
               "id": "biraz-derin-005",
               "topic": "Unutulmayan anlar",
               "question": "Sence bir anıyı unutulmaz yapan olay mı, yanında olan insan mı?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1736,14 +1736,14 @@
               "id": "biraz-derin-006",
               "topic": "Başarı hissi",
               "question": "Hangi küçük başarın seni beklediğinden fazla mutlu etmişti?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
               "id": "biraz-derin-007",
-              "topic": "İlk izlenim",
-              "question": "Benimle ilgili ilk düşüncenle şimdiki düşüncen arasında ne değişti?",
+              "topic": "Değişen izlenim",
+              "question": "Birini tanıdıkça onun hakkındaki fikrinin değiştiği bir anı paylaşmak ister misin?",
               "intensity": 4,
               "weight": 1,
               "type": "question"
@@ -1752,7 +1752,7 @@
               "id": "biraz-derin-008",
               "topic": "İyi ki tanımışım",
               "question": "Birini iyi ki tanımışım dedirten şey sence ne?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1760,7 +1760,7 @@
               "id": "biraz-derin-009",
               "topic": "Sözsüz anlaşmak",
               "question": "Sence iki insan bazen konuşmadan da birbirini anlayabilir mi?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1784,7 +1784,7 @@
               "id": "biraz-derin-012",
               "topic": "Yavaşlayan zaman",
               "question": "Zamanın yavaşlamasını istediğin bir an oldu mu?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1792,7 +1792,7 @@
               "id": "biraz-derin-013",
               "topic": "Anının değeri",
               "question": "İyi bir anının değerini yaşarken mi, sonradan mı anlarsın?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1808,7 +1808,7 @@
               "id": "biraz-derin-015",
               "topic": "Yanında rahat olmak",
               "question": "Birinin yanında rahat hissettiğini hangi küçük işaretten anlarsın?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1824,7 +1824,7 @@
               "id": "biraz-derin-017",
               "topic": "Hayatta yer açmak",
               "question": "Hayatında daha çok yer açmak istediğin şey ne?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
@@ -1832,7 +1832,7 @@
               "id": "biraz-derin-018",
               "topic": "Söylenmeyen düşünce",
               "question": "Bir düşünceni anlatmak isteyip doğru kelimeleri bulamadığın oldu mu?",
-              "intensity": 4,
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             }
@@ -1846,7 +1846,7 @@
               "id": "gelecek-001",
               "topic": "Bir yıl sonraki beceri",
               "question": "Bir yıl sonra daha iyi olmak istediğin tek beceri ne?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1854,7 +1854,7 @@
               "id": "gelecek-002",
               "topic": "Çalışma ortamın",
               "question": "Hayalindeki çalışma ortamı nasıl bir yer?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1870,7 +1870,7 @@
               "id": "gelecek-004",
               "topic": "Görmek istediğin yer",
               "question": "İleride mutlaka görmek istediğin bir şehir veya doğa manzarası ne?",
-              "intensity": 3,
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
@@ -1878,7 +1878,7 @@
               "id": "gelecek-005",
               "topic": "Gelecekte bir gün",
               "question": "Gelecekte bir gününü şimdiden planlasan nasıl başlardı?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1886,7 +1886,7 @@
               "id": "gelecek-006",
               "topic": "Anında öğrenmek",
               "question": "Bir beceriyi anında öğrenme hakkın olsa ne seçerdin?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1902,7 +1902,7 @@
               "id": "gelecek-008",
               "topic": "Hayal evinin köşesi",
               "question": "Hayalindeki evin en önemli köşesi neresi olurdu?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1910,7 +1910,7 @@
               "id": "gelecek-009",
               "topic": "Kendi etkinliğin",
               "question": "Bir gün kendi etkinliğini düzenlesen insanları ne için toplardın?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1918,7 +1918,7 @@
               "id": "gelecek-010",
               "topic": "Öğrenilecek konu",
               "question": "Öğrenmeyi merak ettiğin ama henüz başlamadığın konu ne?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1934,7 +1934,7 @@
               "id": "gelecek-012",
               "topic": "Küçük icat",
               "question": "Bir şeyi icat edebilsen hangi küçük günlük sorunu çözerdin?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1942,7 +1942,7 @@
               "id": "gelecek-013",
               "topic": "Bir aylık yenilik",
               "question": "Önündeki bir ayda yapmak istediğin küçük bir yenilik var mı?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             }
@@ -1964,7 +1964,7 @@
               "id": "baglar-002",
               "topic": "Ortak şaka",
               "question": "Bir insanla ortak bir şaka geliştirmek sence neden güzeldir?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1980,7 +1980,7 @@
               "id": "baglar-004",
               "topic": "Sessizlik ve sohbet",
               "question": "Birlikte sessiz kalabilmek mi, saatlerce konuşabilmek mi sana daha yakın?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -1996,7 +1996,7 @@
               "id": "baglar-006",
               "topic": "Benzer zevkler",
               "question": "Sence iyi arkadaşlar mutlaka benzer zevklere sahip olmalı mı?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -2012,14 +2012,14 @@
               "id": "baglar-008",
               "topic": "Kişisel sürpriz",
               "question": "Bir arkadaşına sürpriz hazırlasan büyük mü, küçük ama kişisel mi olsun isterdin?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
               "id": "baglar-009",
-              "topic": "İlk rahatlık",
-              "question": "Bir insanın yanında kendini rahat hissettiğin ilk anı nasıl anlarsın?",
+              "topic": "Rahatlığın işareti",
+              "question": "Bir arkadaşınla kendini rahat hissettiğinde birlikte en çok ne yapmayı seversin?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
@@ -2028,7 +2028,7 @@
               "id": "baglar-010",
               "topic": "Yeniden konuşmak",
               "question": "Uzun süredir görüşmediğin biriyle sohbete nasıl başlarsın?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -2052,7 +2052,7 @@
               "id": "baglar-013",
               "topic": "Daha iyi tanımak",
               "question": "Birini daha iyi tanımak için beraber ne yapmak isterdin?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
@@ -2060,7 +2060,7 @@
               "id": "baglar-014",
               "topic": "Küçük incelik",
               "question": "Birinin yaptığı hangi küçük incelik seni mutlu eder?",
-              "intensity": 3,
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             }
@@ -2089,7 +2089,7 @@
             "id": "gizli-hoslanma-002",
             "topic": "İlk düşünce",
             "question": "Bir insanı ilk görüşte yanlış değerlendirdiğin oldu mu?",
-            "intensity": 2,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2097,7 +2097,7 @@
             "id": "gizli-hoslanma-003",
             "topic": "Farklı insanlar",
             "question": "Sence insanları birbirine ilginç kılan benzerlikleri mi, farklılıkları mı?",
-            "intensity": 2,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2129,7 +2129,7 @@
             "id": "gizli-hoslanma-007",
             "topic": "Dikkat çeken yön",
             "question": "Birinde seni en çok etkileyen ama pek konuşulmayan özellik ne?",
-            "intensity": 2,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2137,15 +2137,15 @@
             "id": "gizli-hoslanma-008",
             "topic": "İlk yanılgı",
             "question": "İlk başta mesafeli bulduğun birinin sonradan çok samimi çıktığı oldu mu?",
-            "intensity": 2,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
           {
             "id": "gizli-hoslanma-009",
-            "topic": "Değişen fikir",
-            "question": "Birini tanıdıkça onun hakkındaki düşüncelerinin değiştiği oldu mu?",
-            "intensity": 2,
+            "topic": "Merak edilen yan",
+            "question": "Birini tanıdıkça onunla ilgili hangi yeni yönleri keşfetmek hoşuna gider?",
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2161,7 +2161,7 @@
             "id": "gizli-hoslanma-011",
             "topic": "İnsanlar ne görüyor?",
             "question": "Sence insanlar sende ilk olarak hangi özelliği fark ediyor?",
-            "intensity": 2,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2169,7 +2169,7 @@
             "id": "gizli-hoslanma-012",
             "topic": "Tanımak",
             "question": "Birini gerçekten tanıdığını ne zaman söyleyebilirsin?",
-            "intensity": 2,
+            "intensity": 4,
             "weight": 1,
             "type": "question"
           }
@@ -2181,9 +2181,9 @@
         "items": [
           {
             "id": "gizli-ilk-adim-001",
-            "topic": "Akan sohbet",
-            "question": "Sohbetin nasıl geçtiğini anlamadığın bir an yaşadın mı?",
-            "intensity": 3,
+            "topic": "Zamanı unutturan sohbet",
+            "question": "Zamanın nasıl geçtiğini fark etmediğin bir sohbet hatırlıyor musun?",
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2191,7 +2191,7 @@
             "id": "gizli-ilk-adim-002",
             "topic": "Konudan konuya",
             "question": "Bir sohbetin hiç planlamadığın bir konuya kaymasını sever misin?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2199,7 +2199,7 @@
             "id": "gizli-ilk-adim-003",
             "topic": "Merak ettiğin şey",
             "question": "Karşındaki kişiye tek bir merak sorusu sorabilsen ne sorardın?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2223,7 +2223,7 @@
             "id": "gizli-ilk-adim-006",
             "topic": "Sohbetin ritmi",
             "question": "Uzun sessizlikler mi, sürekli yeni konular mı sana daha doğal gelir?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2231,7 +2231,7 @@
             "id": "gizli-ilk-adim-007",
             "topic": "Saatlerce anlatmak",
             "question": "Herkesin sıkıcı bulabileceği ama senin saatlerce anlatabileceğin konu ne?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2239,7 +2239,7 @@
             "id": "gizli-ilk-adim-008",
             "topic": "Beklenmedik ortaklık",
             "question": "Birisiyle hiç tahmin etmediğin ortak bir ilgi alanı bulduğun oldu mu?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2255,7 +2255,7 @@
             "id": "gizli-ilk-adim-010",
             "topic": "Soru sormak",
             "question": "İnsanlara soru sormayı mı, onların sana soru sormasını mı daha çok seversin?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2263,7 +2263,7 @@
             "id": "gizli-ilk-adim-011",
             "topic": "Ortak şaka",
             "question": "Sadece iki kişinin anladığı bir şaka neden bu kadar komik olabilir?",
-            "intensity": 3,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2293,7 +2293,7 @@
             "id": "gizli-yakinlik-002",
             "topic": "Güven oluşturmak",
             "question": "Güveni en çok sözler mi, tekrar eden küçük davranışlar mı oluşturur?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2309,7 +2309,7 @@
             "id": "gizli-yakinlik-004",
             "topic": "Rahat sessizlik",
             "question": "Birisiyle hiç konuşmadan da rahat hissedebildiğin oldu mu?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2325,7 +2325,7 @@
             "id": "gizli-yakinlik-006",
             "topic": "İhtiyaç duyduğun tepki",
             "question": "Zor bir gününde cevap almak mı, sadece dinlenmek mi sana daha iyi gelir?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2333,7 +2333,7 @@
             "id": "gizli-yakinlik-007",
             "topic": "Küçük iyilik",
             "question": "Seni etkileyen küçük ve düşünceli bir davranış hatırlıyor musun?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2349,7 +2349,7 @@
             "id": "gizli-yakinlik-009",
             "topic": "Paylaşılan anı",
             "question": "Birlikte yaşadığın sıradan bir anın sonradan özel olduğunu fark ettin mi?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2357,7 +2357,7 @@
             "id": "gizli-yakinlik-010",
             "topic": "Zamanla rahatlamak",
             "question": "Bir insanla zamanla daha rahat konuşmaya başladığını nasıl anlarsın?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2365,7 +2365,7 @@
             "id": "gizli-yakinlik-011",
             "topic": "Önemsenmek",
             "question": "Birinin seni düşündüğünü hangi küçük hareketle fark edersin?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2373,7 +2373,7 @@
             "id": "gizli-yakinlik-012",
             "topic": "Güveni onarmak",
             "question": "Kırılan bir güvenin tekrar oluşabilmesi için ne gerekir?",
-            "intensity": 4,
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           }
@@ -2387,7 +2387,7 @@
             "id": "gizli-itiraflar-001",
             "topic": "Anlatması zor",
             "question": "Kendinle ilgili anlatmakta zorlandığın ama önemli bulduğun bir özellik ne?",
-            "intensity": 4,
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           },
@@ -2395,7 +2395,7 @@
             "id": "gizli-itiraflar-002",
             "topic": "Sessiz değişim",
             "question": "Fark edilmeden değişen bir düşüncen veya alışkanlığın var mı?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2419,7 +2419,7 @@
             "id": "gizli-itiraflar-005",
             "topic": "Küçük korku",
             "question": "Başkalarına komik gelebilecek ama seni gerçekten tedirgin eden bir şey var mı?",
-            "intensity": 4,
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           },
@@ -2427,7 +2427,7 @@
             "id": "gizli-itiraflar-006",
             "topic": "Gerçek istek",
             "question": "Son zamanlarda gerçekten istediğin ama ertelediğin bir şey ne?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2435,7 +2435,7 @@
             "id": "gizli-itiraflar-007",
             "topic": "Bakış açısı",
             "question": "Hangi küçük olay sana yepyeni bir bakış açısı kazandırdı?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2449,9 +2449,9 @@
           },
           {
             "id": "gizli-itiraflar-009",
-            "topic": "Sorulmamış soru",
-            "question": "Bana sormak istediğin ama konusunu açamadığın bir şey var mı?",
-            "intensity": 4,
+            "topic": "Açılabilecek konu",
+            "question": "İstersen, sohbetimizde açmak istediğin bir konu var mı?",
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           },
@@ -2459,7 +2459,7 @@
             "id": "gizli-itiraflar-010",
             "topic": "Aklında kalan söz",
             "question": "Duyduğunda günlerce düşündüğün bir cümle var mı?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2467,7 +2467,7 @@
             "id": "gizli-itiraflar-011",
             "topic": "Karar anı",
             "question": "En çok hangi konuda başkalarının fikrine ihtiyaç duyarsın?",
-            "intensity": 4,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2475,7 +2475,7 @@
             "id": "gizli-itiraflar-012",
             "topic": "Kendine dürüstlük",
             "question": "Kendine karşı daha dürüst olman gerektiğini düşündüğün bir konu var mı?",
-            "intensity": 4,
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           }
@@ -2497,7 +2497,7 @@
             "id": "gizli-bir-tik-cesur-002",
             "topic": "Beklenmedik iltifat",
             "question": "Duyduğunda biraz utandığın ama hoşuna giden bir iltifat oldu mu?",
-            "intensity": 5,
+            "intensity": 4,
             "weight": 1,
             "type": "question"
           },
@@ -2505,7 +2505,7 @@
             "id": "gizli-bir-tik-cesur-003",
             "topic": "Küçük cesaret",
             "question": "İçinden geldiği hâlde söylemeye çekindiğin güzel bir söz var mı?",
-            "intensity": 5,
+            "intensity": 4,
             "weight": 1,
             "type": "question"
           },
@@ -2513,7 +2513,7 @@
             "id": "gizli-bir-tik-cesur-004",
             "topic": "Silinen mesaj",
             "question": "Yanlış anlaşılmaktan çekinip bir mesajı silip yeniden yazdığın oldu mu?",
-            "intensity": 5,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2521,7 +2521,7 @@
             "id": "gizli-bir-tik-cesur-005",
             "topic": "Doğrudan soru",
             "question": "Sence iki insan birbirine ne kadar açık sorular sorabilmeli?",
-            "intensity": 5,
+            "intensity": 4,
             "weight": 1,
             "type": "question"
           },
@@ -2529,7 +2529,7 @@
             "id": "gizli-bir-tik-cesur-006",
             "topic": "İyi gelen insan",
             "question": "Birinin varlığının moralini düzelttiği oldu mu?",
-            "intensity": 5,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2537,7 +2537,7 @@
             "id": "gizli-bir-tik-cesur-007",
             "topic": "Boş bir gün",
             "question": "Karşındaki kişiyle tamamen boş bir gün geçirecek olsan ne yapmayı seçerdin?",
-            "intensity": 5,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2545,7 +2545,7 @@
             "id": "gizli-bir-tik-cesur-008",
             "topic": "Yapılacak bir plan",
             "question": "Uzun zamandır bir arkadaşına önermek istediğin bir etkinlik var mı?",
-            "intensity": 5,
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
@@ -2553,7 +2553,7 @@
             "id": "gizli-bir-tik-cesur-009",
             "topic": "Hatırlanan ayrıntı",
             "question": "Birinin seninle ilgili küçücük bir ayrıntıyı hatırlaması sana ne hissettirir?",
-            "intensity": 5,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2561,7 +2561,7 @@
             "id": "gizli-bir-tik-cesur-010",
             "topic": "Tatlı heyecan",
             "question": "Birinden gelen bildirim seni beklemediğin kadar mutlu etmiş miydi?",
-            "intensity": 5,
+            "intensity": 3,
             "weight": 1,
             "type": "question"
           },
@@ -2569,7 +2569,7 @@
             "id": "gizli-bir-tik-cesur-011",
             "topic": "İnce bir işaret",
             "question": "Sence sıradan arkadaşlıktan biraz farklı bir yakınlık nasıl fark edilir?",
-            "intensity": 5,
+            "intensity": 4,
             "weight": 1,
             "type": "question"
           },
@@ -2577,7 +2577,7 @@
             "id": "gizli-bir-tik-cesur-012",
             "topic": "İçten bir cümle",
             "question": "Şu an karşındaki kişiye samimi bir cümle kursan ne derdin?",
-            "intensity": 5,
+            "intensity": 4,
             "weight": 1,
             "type": "question"
           }

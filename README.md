@@ -17,6 +17,6 @@ Siteyi dosyaya çift tıklayarak değil, HTTP sunucusu üzerinden açın. Vite `
 
 ## Soru seçimi
 
-Çark, seçili yoğunlukta kullanılmamış sorusu olan kategorileri eşit olasılıkla seçer; kategori içinde `weight` kullanılır. Bir filtrede sorular bitince yalnızca o filtredeki soru geçmişi sıfırlanır. Mevcut `konuyok-<mod>` localStorage anahtarları ve soru kimlikleri korunur. Sorular eski şemayla da çalışır: eksik yoğunluk 2, eksik ağırlık 1 kabul edilir. İlk yoğunluk sınıflandırması kategoriye göre yapılmıştır ve içerik editörü tarafından soru bazında geliştirilebilir. Tahmin ve hikâye yanıtları saklanmaz.
+Çark, seçili yoğunlukta kullanılmamış sorusu olan kategorileri eşit olasılıkla seçer; kategori içinde `weight` kullanılır. Bir filtrede sorular bitince yalnızca o filtredeki soru geçmişi sıfırlanır. Mevcut `konuyok-<mod>` localStorage anahtarları ve soru kimlikleri korunur. Sorular eski şemayla da çalışır: eksik yoğunluk 2, eksik ağırlık 1 kabul edilir. Yoğunluklar soru bazında değerlendirilmiştir; ağırlık, yoğunluktan bağımsızdır. Tahmin ve hikâye yanıtları saklanmaz.
 
 Soru JSON'u her derlemede farklı bir URL sürümüyle ve tarayıcı önbelleği kullanılmadan istenir.

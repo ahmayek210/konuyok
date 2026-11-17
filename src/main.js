@@ -65,7 +65,7 @@ function choose(animate) {
     $('category').textContent = choice.category.label; $('level').textContent = `YOĞUNLUK ${choice.item.intensity ?? 2}/5`;
     $('topic').textContent = choice.item.topic; $('question').textContent = choice.item.question;
     $('followups').replaceChildren();
-    if (choice.item.followUps?.length) { const details = document.createElement('details'), summary = document.createElement('summary'); summary.textContent = 'Sohbeti derinleştir'; details.append(summary); choice.item.followUps.forEach(text => { const p = document.createElement('p'); p.textContent = text; details.append(p); }); $('followups').append(details); }
+    if (choice.item.followUps?.length) { const details = document.createElement('details'), summary = document.createElement('summary'); summary.textContent = 'Ek sorular'; details.append(summary); choice.item.followUps.forEach(text => { const p = document.createElement('p'); p.textContent = text; details.append(p); }); $('followups').append(details); }
     $('result').hidden = false; $('notice').textContent = choice.reset ? 'Bu seçimdeki sorular baştan karıştırıldı.' : '';
     $('announcement').textContent = `${choice.category.label}. ${choice.item.question}`; setBusy(false); $('question').focus();
   };

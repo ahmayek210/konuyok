@@ -1,8 +1,8 @@
-# KonuYok
+# KonuYok 2.0
 
-İki kişi veya küçük gruplar için mobil öncelikli, statik sohbet çarkı. Eğlence, Kişisel ve yedi Kişisel dokunuşuyla açılan Gizli Kişisel havuzları bulunur. Soruyu yanıtlamadan başka soruya geçilebilir.
+Mobil öncelikli, statik bir sohbet oyunu. Çark, Tahmin Et ve Birlikte Uyduralım deneyimleri hesap veya sunucu gerektirmez.
 
-## Yerelde çalıştırma
+## Çalıştırma ve doğrulama
 
 Node.js 20.19+ veya 22.12+ gerekir.
 
@@ -13,10 +13,10 @@ npm test
 npm run build
 ```
 
-Uygulamayı HTTP üzerinden açın. Vite `base: './'` sayesinde GitHub Pages depo alt yolunda çalışır. `main` dalındaki Actions iş akışı test ve derlemenin ardından Pages dağıtımı yapar.
+Siteyi dosyaya çift tıklayarak değil, HTTP sunucusu üzerinden açın. Vite `base: './'` kullandığından GitHub Pages depo alt yolunda çalışır. `main` dalındaki GitHub Actions iş akışı test ve derlemenin ardından Pages'e yayın yapar.
 
-## Soru seçimi ve geçmiş
+## Soru seçimi
 
-Çark, kullanılmamış sorusu olan kategorileri eşit olasılıkla seçer; her dilimdeki sorular `weight` ile seçilir. Bir kategori tükendiğinde sonraki seçimden önce çark yalnızca kullanılabilir kategorileri gösterir. Havuz bittiğinde yalnızca o havuzun geçmişi sıfırlanır. Eski `konuyok-<mod>` kayıtları ve soru kimlikleri korunur. Gizli havuzdan Kişisel havuzuna taşınan soruların geçmişi bir kez aktarılır. Sorular ve cevaplar sunucuya gönderilmez; özel cevaplar kaydedilmez. Depolama kullanılamıyorsa geçmiş açık sekmede tutulur.
+Çark, seçili yoğunlukta kullanılmamış sorusu olan kategorileri eşit olasılıkla seçer; kategori içinde `weight` kullanılır. Bir filtrede sorular bitince yalnızca o filtredeki soru geçmişi sıfırlanır. Mevcut `konuyok-<mod>` localStorage anahtarları ve soru kimlikleri korunur. Sorular eski şemayla da çalışır: eksik yoğunluk 2, eksik ağırlık 1 kabul edilir. Yoğunluklar soru bazında değerlendirilmiştir; ağırlık, yoğunluktan bağımsızdır. Tahmin ve hikâye yanıtları saklanmaz.
 
-Soru JSON'u her derlemede farklı bir URL sürümüyle ve tarayıcı önbelleği kullanılmadan istenir. İçerik kararları için `CONTENT_REVIEW.md` dosyasına bakın.
+Soru JSON'u her derlemede farklı bir URL sürümüyle ve tarayıcı önbelleği kullanılmadan istenir.

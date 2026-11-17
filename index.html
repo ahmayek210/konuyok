@@ -1,10 +1,27 @@
 <!doctype html>
-<html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#fff8f2"><meta name="description" content="Bir çark, iki oyun ve bolca sohbet."><title>KonuYok</title></head>
-<body><main class="app"><header><div class="brand"><span aria-hidden="true">✳</span><h1>KonuYok<span class="version"> 2.0</span></h1></div><p>Bir soru, koca bir sohbet.</p></header>
-<div id="error" class="card" hidden role="alert"><p>Sorular yüklenemedi. Bağlantını kontrol edip tekrar deneyebilirsin.</p><button id="retry" class="secondary">Yeniden dene</button></div>
-<div id="loading" role="status">Sorular hazırlanıyor…</div>
-<div id="app-content" hidden><section class="intro"><span class="eyebrow">BİRLİKTE DAHA GÜZEL</span><h2>Sohbet nereden başlasın?</h2><p>Bir deneyim seç, gerisini merakına bırak.</p></section>
-<nav class="experience" aria-label="Oyun seçimi"><button data-view="wheel" aria-pressed="true"><span>✳</span><strong>Çarkı çevir</strong><small>Bir soru seç</small></button><button data-view="guess" aria-pressed="false"><span>♡</span><strong>Tahmin et</strong><small>Birbirinizi keşfedin</small></button><button data-view="story" aria-pressed="false"><span>✦</span><strong>Birlikte uyduralım</strong><small>Bir dünya kurun</small></button></nav>
-<section id="wheel-view" aria-label="Konu çarkı"><div class="section-heading"><div><span class="eyebrow">SOHBET ÇARKI</span><h2>Biraz şansa bırakalım.</h2></div><span aria-hidden="true">↘</span></div><div class="tabs" role="group" aria-label="Soru kategorisi" id="tabs"></div><label class="filter" for="intensity">Sohbetin yoğunluğu <select id="intensity"><option value="">Hepsi</option><option value="1">1 · Hafif</option><option value="2">2 · Meraklı</option><option value="3">3 · Kişisel</option><option value="4">4 · Derin</option><option value="5">5 · Cesur</option></select></label><div class="wheel-area"><div class="pointer" aria-hidden="true"></div><div class="wheel-shell"><svg id="wheel" viewBox="-160 -160 320 320" role="img" aria-label="Eşit dilimli kategori çarkı"></svg></div><div class="hub" aria-hidden="true">✳</div></div><button id="spin" class="primary wide">Çarkı çevir <span aria-hidden="true">↻</span></button><p id="notice" class="notice" role="status"></p><article id="result" class="result card" hidden><div class="result-top"><span id="category"></span><span id="level"></span></div><p id="topic" class="topic"></p><h3 id="question" tabindex="-1"></h3><div id="followups"></div><p class="skip-hint">İstediğin soruyu cevaplamadan geçebilirsin.</p><div class="actions"><button id="another" class="primary">Başka soruya geç</button><button id="copy" class="secondary">Kopyala</button></div><p id="copy-status" role="status"></p></article></section>
-<section id="guess-view" class="game-panel" hidden aria-label="Tahmin et"><div class="section-heading"><div><span class="eyebrow">İKİ KİŞİLİK OYUN</span><h2>Tahmin et</h2></div><span aria-hidden="true">♡</span></div><div id="guess-card" class="card"></div></section>
-<section id="story-view" class="game-panel" hidden aria-label="Birlikte uyduralım"><div class="section-heading"><div><span class="eyebrow">HAYAL GÜCÜ OYUNU</span><h2>Birlikte uyduralım</h2></div><span aria-hidden="true">✦</span></div><div id="story-card" class="card"></div></section></div><div id="announcement" class="sr-only" aria-live="polite"></div></main><script type="module" src="/src/main.js"></script></body></html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f6f2">
+  <meta name="description" content="Çarkı çevir, bir soru seç, sohbete başla.">
+  <title>KonuYok</title>
+</head>
+<body>
+<main class="app">
+  <header class="header"><a class="brand" href="./" aria-label="KonuYok ana sayfa"><span aria-hidden="true">✳</span> KonuYok</a><span class="header-note">Bir çevir, konuşmaya başla.</span></header>
+  <div id="loading" class="message" role="status">Çark hazırlanıyor…</div>
+  <div id="error" class="message" hidden role="alert"><p>Sorular yüklenemedi.</p><button id="retry" class="secondary">Tekrar dene</button></div>
+  <section id="game" class="game" aria-label="Sohbet çarkı" hidden>
+    <div class="game-header"><div class="tabs" role="group" aria-label="Soru havuzu" id="tabs"></div></div>
+    <div id="secret-banner" class="secret-banner" hidden><span>Gizli Kişisel açık</span><button id="exit-secret" class="text-button">Kişisel’e dön</button></div>
+    <div class="wheel-area"><div class="pointer" aria-hidden="true"></div><div class="wheel-shell"><svg id="wheel" viewBox="-160 -160 320 320" role="img" aria-label="Kategori çarkı"></svg></div><div class="hub" aria-hidden="true">✳</div></div>
+    <button id="spin" class="primary spin">Çarkı çevir <span aria-hidden="true">↻</span></button>
+    <p id="notice" class="notice" role="status"></p>
+    <article id="result" class="result" hidden><span id="category" class="category"></span><h1 id="question"></h1><div id="followups"></div><div class="actions"><button id="another" class="primary">Başka soru</button><button id="copy" class="secondary">Kopyala</button></div><p id="copy-status" class="copy-status" role="status"></p></article>
+  </section>
+  <div id="announcement" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+</main>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

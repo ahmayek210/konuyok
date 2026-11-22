@@ -1,16 +1,35 @@
 import './style.css';
-import { selectItem, targetRotation, updateHistory, personalTap, intensityAvailability } from './logic.js';
+import {
+  historyKey, intensityAvailability, intensityFilter, personalDefault, personalTap,
+  selectItem, targetRotation, updateHistory
+} from './logic.js';
 import { guesses, stories, nextGuess, nextStory } from './games.js';
 const $ = id => document.getElementById(id);
 const svgNS = 'http://www.w3.org/2000/svg';
 const colors = ['#f3d4bd','#dc9c91','#a85069','#f8e5cc','#ca7c82','#873f5c','#efc0ae','#93445b'];
+const levelNames = ['Hafif', 'Meraklı', 'Kişisel', 'Derin', 'Cesur'];
 let data, mode, rotation = 0, busy = false, selected = null, personalTapCount = 0, view = 'wheel';
+let entertainmentIntensity = '';
 let guess = {index:0, player:'A', stage:'predict'}, prediction = '', answer = '', story = {index:0, step:0};
 const memory = {};
 const secret = () => mode?.id === data?.secretMode?.id;
 const reduceMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
-function readHistory(id) { try { const value = JSON.parse(localStorage.getItem('konuyok-' + id)); if (value && Array.isArray(value.used)) return value; } catch {} return memory[id] || {used:[],last:null}; }
-function saveHistory(id, value) { memory[id] = value; try { localStorage.setItem('konuyok-' + id, JSON.stringify(value)); } catch {} }
+function readHistory(id) {
+  const key = historyKey(id);
+  if (memory[key]) return memory[key];
+  try {
+    const value = JSON.parse(localStorage.getItem(key));
+    if (value && Array.isArray(value.used)) return value;
+  } catch {}
+  return { used: [], last: null };
+}
+function saveHistory(id, value) {
+  const key = historyKey(id);
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+    delete memory[key];
+  } catch { memory[key] = value; }
+}
 function clearResult() { selected = null; $('result').hidden = true; $('copy-status').textContent = ''; $('announcement').textContent = ''; }
 function draw() {
   const wheel = $('wheel'); wheel.replaceChildren(); wheel.style.transition = 'none'; rotation = 0; wheel.style.transform = 'rotate(0deg)';
@@ -33,18 +52,68 @@ function orientLabels(duration) {
 }
 function setMode(next) {
   mode = next; clearResult();
-  const filter = $('intensity'), availability = intensityAvailability(mode, filter.value);
-  for (const option of filter.options) {
-    if (!option.value) continue;
-    option.dataset.label ||= option.textContent;
-    option.disabled = !availability.available.has(Number(option.value));
-    option.textContent = option.dataset.label + (option.disabled ? ' (bu modda yok)' : '');
-  }
-  filter.value = availability.selected;
-  $('notice').textContent = availability.changed ? 'Seçtiğin yoğunluk bu modda yok; “Hepsi” seçildi.' : '';
+  const filter = $('intensity');
+  const defaultValue = personalDefault(mode.id);
+  const { available, selected: availableIntensity } = intensityAvailability(mode, entertainmentIntensity);
+  filter.replaceChildren();
+  if (defaultValue) filter.add(new Option(`Rahat · ${defaultValue.replace('-', '–')} (varsayılan)`, defaultValue));
+  filter.add(new Option(defaultValue ? 'Tüm seviyeler · 5 dahil' : 'Hepsi', ''));
+  levelNames.forEach((label, index) => {
+    const level = index + 1;
+    const disabled = !available.has(level);
+    const option = new Option(`${level} · ${label}${disabled ? ' (bu modda yok)' : ''}`, level);
+    option.disabled = disabled;
+    filter.add(option);
+  });
+  filter.value = defaultValue || availableIntensity;
+  $('wheel-view').classList.toggle('personal-wheel', Boolean(defaultValue));
+  if (defaultValue) $('question').setAttribute('aria-describedby', 'category level topic');
+  else $('question').removeAttribute('aria-describedby');
+  $('notice').textContent = secret() ? 'Gizli Kişisel açıldı.' : '';
 
   document.body.classList.toggle('secret-mode', secret());
   $('tabs').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.id === (secret() ? 'kisisel' : mode.id)))); draw();
+}
+function renderFollowUps(followUps, personal) {
+  const panel = $('followups');
+  panel.replaceChildren();
+  if (!followUps?.length) return;
+
+  if (!personal) {
+    const details = document.createElement('details');
+    const summary = document.createElement('summary');
+    summary.textContent = 'Ek sorular';
+    details.append(summary);
+    followUps.forEach(text => {
+      const paragraph = document.createElement('p');
+      paragraph.textContent = text;
+      details.append(paragraph);
+    });
+    panel.append(details);
+    return;
+  }
+
+  const prompt = document.createElement('p');
+  prompt.className = 'followup-prompt';
+  prompt.tabIndex = -1;
+  prompt.hidden = true;
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'followup-button';
+  button.textContent = 'Biraz daha derine in';
+  let index = 0;
+  button.onclick = () => {
+    prompt.hidden = false;
+    prompt.textContent = followUps[index++];
+    if (index === followUps.length) {
+      button.hidden = true;
+      prompt.focus();
+    } else {
+      button.textContent = 'Sonraki ek soru';
+      $('announcement').textContent = prompt.textContent;
+    }
+  };
+  panel.append(prompt, button);
 }
 function handleTab(next) {
   if (busy) return;
@@ -57,17 +126,23 @@ function choose(animate) {
   if (busy) return;
   personalTapCount = 0; clearResult(); $('notice').textContent = '';
   const history = readHistory(mode.id), value = $('intensity').value;
-  const choice = selectItem(mode, history.used, Math.random, history.last, value ? Number(value) : null);
-  if (choice.empty) { $('notice').textContent = 'Bu yoğunlukta soru yok. Başka bir yoğunluk veya “Hepsi” seçebilirsin.'; return; }
+  const choice = selectItem(mode, history.used, Math.random, history.last, intensityFilter(value));
+  if (choice.empty) { $('notice').textContent = 'Bu yoğunlukta soru yok. Başka bir yoğunluk seçebilirsin.'; return; }
+  const personal = Boolean(personalDefault(mode.id));
   setBusy(true);
   const finish = () => {
     saveHistory(mode.id, updateHistory(history, choice)); selected = choice;
-    $('category').textContent = choice.category.label; $('level').textContent = `YOĞUNLUK ${choice.item.intensity ?? 2}/5`;
+    const level = choice.item.intensity ?? 2;
+    $('category').textContent = choice.category.label;
+    $('level').textContent = personal ? `${level} · ${levelNames[level - 1]}` : `YOĞUNLUK ${level}/5`;
     $('topic').textContent = choice.item.topic; $('question').textContent = choice.item.question;
-    $('followups').replaceChildren();
-    if (choice.item.followUps?.length) { const details = document.createElement('details'), summary = document.createElement('summary'); summary.textContent = 'Ek sorular'; details.append(summary); choice.item.followUps.forEach(text => { const p = document.createElement('p'); p.textContent = text; details.append(p); }); $('followups').append(details); }
-    $('result').hidden = false; $('notice').textContent = choice.reset ? 'Bu seçimdeki sorular baştan karıştırıldı.' : '';
-    $('announcement').textContent = `${choice.category.label}. ${choice.item.question}`; setBusy(false); $('question').focus();
+    renderFollowUps(choice.item.followUps, personal);
+    const result = $('result');
+    result.classList.toggle('bold-result', personal && level === 5);
+    result.hidden = false;
+    $('notice').textContent = choice.reset ? 'Bu seçimdeki sorular baştan karıştırıldı.' : '';
+    if (!personal) $('announcement').textContent = `${choice.category.label}. ${choice.item.question}`;
+    setBusy(false); $('question').focus();
   };
   const index = mode.categories.indexOf(choice.category);
   if (!animate) { rotation = targetRotation(rotation, index, mode.categories.length, 0); $('wheel').style.transition = 'none'; $('wheel').style.transform = `rotate(${rotation}deg)`; orientLabels(0); finish(); return; }
@@ -78,9 +153,11 @@ function choose(animate) {
 }
 async function copy() {
   if (!selected) return;
-  const text = `Konu: ${selected.item.topic}\nSoru: ${selected.item.question}`;
+  const copiedChoice = selected;
+  const text = `Konu: ${copiedChoice.item.topic}\nSoru: ${copiedChoice.item.question}`;
   let copied = false;
   try { if (navigator.clipboard?.writeText) { await navigator.clipboard.writeText(text); copied = true; } } catch {}
+  if (selected !== copiedChoice) return;
   if (!copied) {
     const area = document.createElement('textarea'); area.value = text; area.setAttribute('readonly', '');
     area.style.position = 'fixed'; area.style.opacity = '0'; document.body.append(area); area.select();
@@ -115,4 +192,10 @@ async function load() {
   try { const response=await fetch(`${import.meta.env.BASE_URL}questions.json?v=${__QUESTIONS_BUILD_VERSION__}`,{cache:'no-store'}); if(!response.ok) throw Error(); const json=await response.json(); if(json.schemaVersion!==1 || !json.modes?.length || !json.secretMode?.categories?.length || json.modes.some(m=>!m.categories?.length)) throw Error(); data=json; $('tabs').replaceChildren(); data.modes.forEach(m=>{const b=document.createElement('button');b.textContent=m.label;b.dataset.id=m.id;b.onclick=()=>handleTab(m);$('tabs').append(b);}); $('app-content').hidden=false; setMode(data.modes[0]); }
   catch { $('app-content').hidden=true; $('error').hidden=false; } finally { $('loading').hidden=true; }
 }
-$('spin').onclick=()=>choose(true); $('another').onclick=()=>choose(false); $('copy').onclick=copy; $('retry').onclick=load; $('intensity').onchange=()=>{clearResult();$('notice').textContent='';}; document.querySelectorAll('.experience button').forEach(b=>b.onclick=()=>showView(b.dataset.view)); load();
+$('spin').onclick=()=>choose(true); $('another').onclick=()=>choose(false); $('copy').onclick=copy; $('retry').onclick=load;
+$('intensity').onchange = event => {
+  if (mode.id === 'eglence') entertainmentIntensity = event.target.value;
+  clearResult();
+  $('notice').textContent = '';
+};
+document.querySelectorAll('.experience button').forEach(b=>b.onclick=()=>showView(b.dataset.view)); load();

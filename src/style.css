@@ -5,3 +5,95 @@
 .wheel-shell{position:absolute;inset:0;overflow:hidden;border-radius:50%}
 
 .skip-hint{font-size:13px;color:#765662;margin:18px 0 0;line-height:1.5}
+
+.personal-wheel .filter {
+  display: grid;
+  gap: 6px;
+}
+
+.personal-wheel .filter select {
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+  font-size: 16px;
+}
+
+.personal-wheel .result {
+  padding: clamp(18px, 5vw, 30px);
+  overflow-wrap: anywhere;
+}
+
+.personal-wheel .result-top {
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: .2px;
+  color: #764052;
+}
+
+.personal-wheel #level {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #f5e7e0;
+  color: #692d45;
+}
+
+.personal-wheel .bold-result {
+  border-top: 3px solid #94506b;
+  background: #fff9f7;
+}
+
+.personal-wheel .bold-result #level {
+  background: #77334f;
+  color: #fff;
+}
+
+.personal-wheel .topic {
+  margin-top: 16px;
+  color: #764052!important;
+}
+
+.personal-wheel .actions {
+  margin-top: 13px;
+}
+
+.personal-wheel .actions button {
+  white-space: normal;
+}
+
+.followup-button {
+  min-height: 44px;
+  padding: 7px 12px;
+  border: 1px solid #ddbfca;
+  border-radius: 11px;
+  color: #6e2d48;
+  background: transparent;
+  font-weight: 700;
+}
+
+.followup-button:hover {
+  background: #f8ebe8;
+}
+
+.followup-prompt {
+  margin: 0 0 10px;
+  padding: 12px;
+  border-radius: 11px;
+  background: #f8ece7;
+  color: #623247;
+  line-height: 1.5;
+  animation: reveal-followup 160ms ease-out;
+}
+
+.followup-prompt:focus-visible {
+  outline: 3px solid #80304f;
+  outline-offset: 3px;
+}
+
+@keyframes reveal-followup {
+  from { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .followup-prompt { animation: none; }
+}

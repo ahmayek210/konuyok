@@ -1109,155 +1109,406 @@
           "label": "Günlük Hayat",
           "items": [
             {
-              "id": "gunluk-hayat-001",
-              "topic": "Küçük mutluluk",
-              "question": "Gün içinde seni sebepsizce mutlu eden küçük bir şey ne?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-001",
+              "topic": "Kaldırım seçimi",
+              "question": "Yürürken güneşli kaldırımı mı seçersin, gölgeli olanı mı?",
+              "intensity": 1,
               "weight": 1,
-              "type": "question",
-              "followUps": [
-                "En son ne zaman oldu?"
-              ]
+              "type": "question"
             },
             {
-              "id": "gunluk-hayat-002",
-              "topic": "Boş gün",
-              "question": "Yarın tamamen boş olsan günü nasıl geçirirdin?",
+              "id": "kisisel-gunluk-hayat-002",
+              "topic": "Açılış sesi",
+              "question": "Evin sabah bilgisayar gibi açılış sesi çıkarsa ne duyardık?",
               "intensity": 1,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "O gün en çok ne yapmak isterdin?"
+                "Hangi sesle kapansa günü bitmiş sayardın?"
               ]
             },
             {
-              "id": "gunluk-hayat-003",
-              "topic": "En sevilen saat",
-              "question": "Günün hangi saatinde kendini en çok kendin gibi hissediyorsun?",
+              "id": "kisisel-gunluk-hayat-003",
+              "topic": "Son lokma",
+              "question": "Bir tabakta özellikle sona bıraktığın lokma hangisi?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O lokmayı biri senden önce kaparsa ikinci tercihin ne?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-004",
+              "topic": "Boş durak",
+              "question": "Kimsenin olmadığı bir durakta beklerken ilk neye bakarsın?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gunluk-hayat-005",
+              "topic": "Küçük lüks",
+              "question": "Sıradan bir günü biraz şımartan en ucuz şey ne?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Ona bir reklam sloganı bulsan ne derdin?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-006",
+              "topic": "Mahalle saati",
+              "question": "Saate bakmadan mahallende günün hangi vakti olduğunu neyden anlarsın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O işaret başka bir yerde olsa aynı şeyi söyler miydi?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-007",
+              "topic": "Yedek tarif",
+              "question": "Evde hiçbir şey yok sandığında dolaptan ne çıkarıp kendine yemek yaparsın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Tarifi birine verirken hangi aşamayı özellikle tembihlersin?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-008",
+              "topic": "Kuyruk tercihi",
+              "question": "İki kuyruk aynı uzunluktaysa hangisinin daha hızlı ilerleyeceğini neye bakıp seçersin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gunluk-hayat-009",
+              "topic": "Evdeki VIP",
+              "question": "Evinde en iyi yeri kapmış eşya hangisi? Orayı nasıl hak etti?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Onu oradan kaldırmaya kalksan yerine ne geçer?",
+                "O yeri kapmaya çalışan başka bir eşya adına kim lobi yapardı?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-010",
+              "topic": "Yağmur arası",
+              "question": "Yağmur başlayınca yarım saat bir yere sığınman gerekse nerede oyalanmayı isterdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yağmur dindiğinde oradan çıkmanı zorlaştıracak ne olurdu?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-011",
+              "topic": "Çöp olmayan kutu",
+              "question": "Atmaya kıyamadığın bir ambalaj en son ne işe yaradı?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Onu eski işine mi yeni işine mi daha çok yakıştırıyorsun?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-012",
+              "topic": "Pazar alışverişi",
+              "question": "Pazarda hiç planlamadığın bir şeyi sana ne aldırır?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Tezgâhtaki hangi cümle seni tam tersine uzaklaştırır?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-013",
+              "topic": "Manzara koltuğu",
+              "question": "Her gün önünden geçtiğin bir yerin neresine oturup etrafı izlemek isterdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Beş dakikada en çok kimlerin gelip geçtiğini görürdün?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-014",
+              "topic": "Renk kararı",
+              "question": "Evdeki hangi sıradan eşyanın rengini seçmek beklediğinden uzun sürdü?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gunluk-hayat-015",
+              "topic": "Bozulan sipariş",
+              "question": "Yanlış gelen hangi siparişi kabul edip sonunda sevdiğin oldu?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sonradan bile isteye sipariş ettin mi?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-016",
+              "topic": "Ödünç eşya",
+              "question": "Ödünç aldığın neyi beklemediğin kadar benimsemiştin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Geri verdiğinde evde onun yerini ne aldı?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-017",
+              "topic": "Ters rota",
+              "question": "Yanlış yola sapınca denk geldiğin ve daha sonra isteyerek uğradığın yer neresi?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-004",
-              "topic": "Kafadaki konu",
-              "question": "Son zamanlarda aklını en çok meşgul eden güzel bir düşünce ne?",
+              "id": "kisisel-gunluk-hayat-018",
+              "topic": "Misafire göre ev",
+              "question": "Birinin geldiğinde rahat etmesi için evde yaptığın ufak bir hazırlık ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sen misafir olsan o hazırlığı fark eder miydin?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-019",
+              "topic": "Tek başına masa",
+              "question": "İlk kez tek başına gidince tuhaf gelen ama sonra rahat ettiğin yer neresiydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Rahatlamanı sağlayan şey mekân mıydı, oradaki bir ayrıntı mı?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-020",
+              "topic": "Yeni komşu",
+              "question": "Bir komşuyla ilk kez konuşmanı sağlayan gündelik olay neydi?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-005",
-              "topic": "Rahatlama yöntemi",
-              "question": "Yorucu bir günün ardından seni en hızlı ne rahatlatır?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-021",
+              "topic": "Tadilat sürprizi",
+              "question": "Bozuk diye elden çıkarmayı düşündüğün bir şeyi nasıl hayata döndürdün?",
+              "intensity": 3,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Bunu ilk ne zaman keşfettiğini hatırlıyor musun?"
+                "Yaptığın tamir görünür mü kaldı, yoksa kimse anlamaz mı?"
               ]
             },
             {
-              "id": "gunluk-hayat-006",
-              "topic": "Favori köşe",
-              "question": "Evde veya dışarıda en huzurlu hissettiğin yer neresi?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-022",
+              "topic": "Ev kokusu",
+              "question": "Kendi evinin kokusunu uzun bir aradan sonra fark ettiğinde neye benzetmiştin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gunluk-hayat-023",
+              "topic": "Günün pazarlığı",
+              "question": "Bir gününü kurtarmak için yapacağın işlerden hangisini eledin ve sonuç ne oldu?",
+              "intensity": 3,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Orayı farklı kılan ne?"
+                "O işi elemek ertesi günü nasıl etkiledi?"
               ]
             },
             {
-              "id": "gunluk-hayat-007",
-              "topic": "Günlük ritüel",
-              "question": "Her gün yapmayı sevdiğin küçük bir alışkanlık var mı?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gunluk-hayat-008",
-              "topic": "Beklenen an",
-              "question": "Gün içinde en çok hangi anı beklersin?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gunluk-hayat-009",
-              "topic": "Bugünün güzelliği",
-              "question": "Bugün iyi ki oldu dediğin küçücük bir şey var mı?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gunluk-hayat-010",
-              "topic": "Sabah motivasyonu",
-              "question": "Sabah seni yataktan kaldıran küçük bir motivasyon ne?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gunluk-hayat-011",
-              "topic": "Günü özel yapan",
-              "question": "Bir günü özel hissettiren tek bir ayrıntı seçsen ne olurdu?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-024",
+              "topic": "Fark edilen emek",
+              "question": "Sık gittiğin bir yerde çalışanların ne kadar iş yaptığını hangi olayda fark ettin?",
+              "intensity": 3,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Yakın zamanda böyle bir gün yaşadın mı?"
+                "O günden beri orada yaptığın küçük bir şey değişti mi?"
               ]
             },
             {
-              "id": "gunluk-hayat-012",
-              "topic": "Yeni keşif",
-              "question": "Son zamanlarda keşfettiğin güzel bir yer var mı?",
-              "intensity": 1,
+              "id": "kisisel-gunluk-hayat-025",
+              "topic": "Evde görünmeyen iş",
+              "question": "Bir evin günlük düzenini ayakta tutan ama çoğu zaman adı geçmeyen iş ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O işin paylaşıldığını ne zaman anlarsın?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-026",
+              "topic": "Mahallede yer açmak",
+              "question": "Mahallende sadece birine yer açılabiliyor. Sessiz bir parkı mı seçersin, gürültülü ama canlı bir meydanı mı?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Seçiminden en çok kim yararlanırdı?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-027",
+              "topic": "Eskitilmiş eşya",
+              "question": "Kullandığın bir şeyde izleri korumak mı daha güzel, onu ilk günkü hâline döndürmek mi? Aklına hangi eşya geliyor?",
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-013",
-              "topic": "Yorucu gün sonrası",
-              "question": "Kalabalık bir günün ardından yalnız kalmayı mı, biriyle konuşmayı mı seversin?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-028",
+              "topic": "Sessiz kural",
+              "question": "Aynı evi paylaşan insanların açıkça konuşması gereken ama genelde kendiliğinden anlaşılacağı sanılan konu ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İlk gün sorsan bunu nasıl dile getirirdin?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-029",
+              "topic": "Kapanan dükkân",
+              "question": "Bir mahalle dükkânı kapanınca ürünlerinin dışında o çevreden ne eksilir?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Ayakta kalması için ne değişse orası hâlâ aynı yer gibi gelirdi?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-030",
+              "topic": "Kalabalıkta dinlenmek",
+              "question": "Şehrin içinde hiçbir şey satın almadan rahatça vakit geçirebildiğin yerler var mı? Sence kimler için yok?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O yeri daha davetkâr yapan bir ayrıntı ne olurdu?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-031",
+              "topic": "Hayvanla aynı sokak",
+              "question": "Sokağındaki hayvanlarla insanlar aynı yeri paylaşırken iyi niyetin tek başına yetmediği bir durum ne?",
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-014",
-              "topic": "Favori hava",
-              "question": "En sevdiğin hava nasıl; o havada ne yaparsın?",
-              "intensity": 1,
+              "id": "kisisel-gunluk-hayat-032",
+              "topic": "Kiracı gözüyle",
+              "question": "Bir yere uzun süre emek vermek için oranın sana ait olması gerekir mi? Kendi yaşadığın yerden düşün.",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Emek verdiğin yerden ayrılırken geride ne bırakmak isterdin?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-033",
+              "topic": "Ortak eşya",
+              "question": "Apartmanda herkesin kullanabileceği bir eşya olsa neyi ortaklaştırırdın, neye kesinlikle karışmazdın?",
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-015",
-              "topic": "Günün on dakikası",
-              "question": "Bir günün en keyifli on dakikası genellikle ne zaman?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-034",
+              "topic": "Rahatlığın bedeli",
+              "question": "Sana çok zaman kazandıran hangi gündelik kolaylığın yükünü aslında başkası taşıyor olabilir?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kolaylığı daha adil hâle getirmek için ödeme dışında ne işe yarardı?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-035",
+              "topic": "Kaçak tadım",
+              "question": "Başkasının tabağından bir lokma almak için kullandığın en yüzsüz ama zararsız taktik ne?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-016",
-              "topic": "Çantadaki gereksiz şey",
-              "question": "Evden çıkarken yanında taşıdığın gereksiz ama sevdiğin bir şey var mı?",
-              "intensity": 2,
+              "id": "kisisel-gunluk-hayat-036",
+              "topic": "Kendi tarifine ihanet",
+              "question": "Yemek konusunda ahkâm kesip yalnızken ilk çiğnediğin kural ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Seni suçüstü yakalayan kişiye yaptığını nasıl savunurdun?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-037",
+              "topic": "Reyon bahanesi",
+              "question": "Alışverişte tanıdık birini görünce selam vermemek için ilk hangi reyonun arkasına kaçardın?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gunluk-hayat-017",
-              "topic": "Bu haftanın tekrarı",
-              "question": "Bu hafta yeniden yapmak istediğin keyifli bir şey ne?",
-              "intensity": 1,
+              "id": "kisisel-gunluk-hayat-038",
+              "topic": "Zil çaldı",
+              "question": "En hazırlıksız hâlinde kapın çalsa misafirin görmesin diye önce neyi ortadan kaldırırdın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Ortada kalırsa onu nasıl savunurdun?"
+              ]
+            },
+            {
+              "id": "kisisel-gunluk-hayat-039",
+              "topic": "Sokağın dedikodusu",
+              "question": "Sokağındaki bir kaldırım taşı seni her gün izlese hangi küçük kabahatine tanık olurdu?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
+            },
+            {
+              "id": "kisisel-gunluk-hayat-040",
+              "topic": "Kılık değiştiren kap",
+              "question": "İçine bambaşka bir şey doldurup açan kişiyi en fena ters köşeye düşürdüğün kap hangisi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Pakete uyarı yazsan sürprizi bozmadan ne yazardın?"
+              ]
             }
           ]
         },
@@ -1266,144 +1517,394 @@
           "label": "Alışkanlıklar",
           "items": [
             {
-              "id": "aliskanliklar-001",
-              "topic": "Garip huy",
-              "question": "Pek kimsenin bilmediği garip bir huyun var mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-002",
-              "topic": "Karar verme",
-              "question": "Önemli kararları hızlı mı verirsin, uzun uzun düşünür müsün?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-003",
-              "topic": "Yeni insanlarla",
-              "question": "Yeni tanıştığın insanlarda ilk neye dikkat edersin?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-004",
-              "topic": "Sevilen rutin",
-              "question": "Bir gün aksatınca eksikliğini hissettiğin rutin ne?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-005",
-              "topic": "Erteleme konusu",
-              "question": "En çok ne tür işleri erteliyorsun?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-006",
-              "topic": "Dikkat dağıtıcı",
-              "question": "Bir işe odaklanmaya çalışırken dikkatin en kolay neyle dağılır?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-007",
-              "topic": "Müzik alışkanlığı",
-              "question": "Müzik dinlerken en çok sözlere mi, melodiye mi dikkat edersin?",
+              "id": "kisisel-aliskanliklar-001",
+              "topic": "İlk çorap",
+              "question": "Çorap giyerken hep aynı ayaktan mı başlarsın? Şimdi düşünmeden söyleyebilir misin?",
               "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "aliskanliklar-008",
-              "topic": "Sohbet tarzı",
-              "question": "Bir sohbette daha çok dinleyen mi, anlatan mı olursun?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-009",
-              "topic": "Küçük detay",
-              "question": "Çoğu insanın önemsemediği ama senin dikkat ettiğin bir detay ne?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-010",
-              "topic": "Başlama biçimi",
-              "question": "Yeni bir şeye başlarken önce araştırır mısın, doğrudan dener misin?",
-              "intensity": 2,
+              "id": "kisisel-aliskanliklar-002",
+              "topic": "Yeni defter",
+              "question": "Yepyeni bir defterin ilk sayfasını hemen doldurur musun, bir süre boş mu bırakırsın?",
+              "intensity": 1,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Seçtiğin yolun sana en çok yardımcı olduğu bir örnek var mı?"
+                "İlk sayfaya alışveriş listesi yakışır mı?"
               ]
             },
             {
-              "id": "aliskanliklar-011",
-              "topic": "Öğrenme şekli",
-              "question": "Bir şeyi öğrenirken izleyerek mi, yaparak mı daha hızlı kavrarsın?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "aliskanliklar-012",
-              "topic": "Çalışma sesi",
-              "question": "Çalışırken sessizlik mi, arka plan sesi mi istersin?",
+              "id": "kisisel-aliskanliklar-003",
+              "topic": "Durdurma tuşu",
+              "question": "Bir şarkı kapanmak üzereyken en çok hangi kısmı bitmeden durdurmaya kıyamazsın?",
               "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "aliskanliklar-013",
-              "topic": "Yeni fikirlere yaklaşım",
-              "question": "Yeni bir fikre hemen mi ısınırsın, zaman mı tanırsın?",
-              "intensity": 2,
+              "id": "kisisel-aliskanliklar-004",
+              "topic": "Kalem seçimi",
+              "question": "Bir kalemi sırf elde iyi duruyor diye sahiplenmen için nasıl olması gerekir?",
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "aliskanliklar-014",
-              "topic": "Bozulan planlar",
-              "question": "Planların bozulduğunda yenisini mi yaparsın, akışına mı bırakırsın?",
+              "id": "kisisel-aliskanliklar-005",
+              "topic": "Yıkama sırası",
+              "question": "Bulaşık yıkarken ilk hangisine girişirsin, bardaklara mı tencerelere mi?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "En sona bırakıp evire çevire baktığın şey ne?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-006",
+              "topic": "Yarım bırakılan bölüm",
+              "question": "Bir diziye devam etmeyeceğini hangi işaretten anlarsın?",
               "intensity": 2,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Beklenmedik bir değişikliğin güzel bir sonuca dönüştüğü oldu mu?"
+                "Bir arkadaşın o noktadan sonra açılıyor dese şans verir misin?"
               ]
             },
             {
-              "id": "aliskanliklar-015",
-              "topic": "Sevdiğini paylaşmak",
-              "question": "Bir şeyi çok sevdiğinde herkese mi anlatırsın, kendine mi saklarsın?",
+              "id": "kisisel-aliskanliklar-007",
+              "topic": "Yer tutma",
+              "question": "Her seferinde benzer bir yere oturuyorsan orayı seçmene ne sebep oluyor?",
               "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "aliskanliklar-016",
-              "topic": "Sık kullanılan kelime",
-              "question": "En sık kullandığın ama fark etmediğin kelime ne olabilir?",
+              "id": "kisisel-aliskanliklar-008",
+              "topic": "Yedek plan refleksi",
+              "question": "İşlerin yolunda gittiği bir günde bile hangi konuda yedek plan yaparsın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yedeğin olmayınca en çok hangi kısmına söylenirsin?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-009",
+              "topic": "Zihinden kurgu",
+              "question": "Yalnız yürürken kafanda en sık neyin provasını yaparsın?",
               "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "aliskanliklar-017",
-              "topic": "Kendini ödüllendirmek",
-              "question": "Başladığın bir işi bitirdiğinde kendini nasıl ödüllendirirsin?",
+              "id": "kisisel-aliskanliklar-010",
+              "topic": "Bitirme töreni",
+              "question": "Uzun bir işi kapattığında gerçekten bittiğini kendine ne yaparak belli edersin?",
               "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bunu yapmazsan zihnin işe dönmeye devam eder mi?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-011",
+              "topic": "Tuhaf ölçü birimi",
+              "question": "Vakti ya da mesafeyi ölçmek için kullandığın tuhaf bir ölçü birimi ne? Mesela bir şarkı uzunluğu gibi.",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-012",
+              "topic": "Sepete atmak",
+              "question": "Bir şeyi almadan önce defalarca sepete ekleyip çıkarmana ne sebep olur?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sabaha kadar bekleyince hangisinden vazgeçtiğini daha iyi anlarsın?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-013",
+              "topic": "Uygulama düzeni",
+              "question": "Telefonunda herkesin başka yere koyacağını düşündüğün bir uygulamayı nereye yerleştirdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bir hafta yerini değiştirsen parmağın hâlâ nereye gider?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-014",
+              "topic": "Kendi işaretin",
+              "question": "Kendine not alırken başkasının anlamayacağı hangi işareti kullanıyorsun?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Acelen varken yazdığın bir notu sonradan nasıl çözdün?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-015",
+              "topic": "Zahmetli kısayol",
+              "question": "Zamandan kazanmak için geliştirdiğin ama daha çok zamanını alan yöntem neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bunu bırakman mı daha zor oldu, kullandığını fark etmen mi?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-016",
+              "topic": "El yordamıyla",
+              "question": "İlk kez birinden öğrenip yıllarca onun yaptığı gibi sürdürdüğün iş ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Kendi yolunu bulduğunda hangi adımı değiştirdin?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-017",
+              "topic": "Önce görüntü",
+              "question": "Düzenli görünmesine uğraşıp aslında hiç düzenli kullanmadığın köşe neresi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-018",
+              "topic": "İlk denemede bırakmak",
+              "question": "İlk seferinde beceremediğin için bıraktığın, sonradan geri döndüğün bir uğraş neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İkinci seferinde başlamak için neyi daha küçük tuttun?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-019",
+              "topic": "Telaştaki ses",
+              "question": "Acelede olduğunu senden önce ele veren bir hareketin ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yanındaki biri bunu görünce sana nasıl yetişir?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-020",
+              "topic": "Yavaşça bulaşan huy",
+              "question": "Birlikte vakit geçirdiğin birinden istemeden kaptığın hangi huy sende kaldı?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kişi bu huyun sana geçtiğini fark etti mi?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-021",
+              "topic": "Silinmeyen liste",
+              "question": "Bir zamanlar hayatını düzenleyen ama artık açmadığın bir listenin son maddesi neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-022",
+              "topic": "Özlenen mecburiyet",
+              "question": "Yapmak zorunda olduğun için yakındığın hangi rutin bitince onu özledin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Rutinden ayırıp geri almak istediğin parça ne?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-023",
+              "topic": "Kendi tarifinle öğrenmek",
+              "question": "Herkesin önerdiği yöntem yerine tamamen kendine göre öğrendiğin bir beceri neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yöntemini başka birine öğretmek işine yarar mıydı?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-024",
+              "topic": "Çıkış saati",
+              "question": "Tam zamanında yetişmeye çalışırken seni sürekli oyalayan son iş ne oluyor?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-025",
+              "topic": "Rahatlatan tekrar",
+              "question": "Gergin bir anda aynı şeyi tekrar tekrar yapmak sana ne zaman iyi geliyor, ne zaman seni oyalıyor?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Farkı davranışın kendisinden önce nasıl anlarsın?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-026",
+              "topic": "Hak edilen ara",
+              "question": "Mola vermeyi hak etmek için önce bir şey bitirmiş olman gerektiğini düşündüğün bir dönem oldu mu? Bu fikir nereden gelmişti?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-027",
+              "topic": "Huyun kalkanı",
+              "question": "Eskiden sana çok faydası dokunmuş bir huyun bugün hangi durumda işini zorlaştırıyor?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O huyun iyi tarafını korumak için neyi bırakman gerekirdi?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-028",
+              "topic": "Verimli gün kime göre",
+              "question": "Bütün yapılacakları bitirip yine de boşa geçmiş gibi hissettiğin bir günde aslında eksik kalan neydi?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-029",
+              "topic": "Kestirmeden gitmemek",
+              "question": "Daha kolay bir yolu olduğu hâlde özellikle uzun yolunu seçtiğin işi sana değerli kılan ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-030",
+              "topic": "Sana benzemeyen düzen",
+              "question": "Herkese kolaylık sağlayan hangi düzenin senin çalışma biçimine uymadığını fark ettin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Uyum sağlaman gerekse kendin için hangi küçük değişikliği isterdin?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-031",
+              "topic": "Başka yerde başka huy",
+              "question": "Yer değiştirince kendiliğinden kaybolan bir huyun sana çevren hakkında ne öğretti?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-032",
+              "topic": "Paylaşılan ritim",
+              "question": "Rutinlerin bir başkasınınkine uymadığında neyi esnetmek kolay, neyi esnetmek zor oluyor?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İkisinin farkını karşı tarafa nasıl anlatırsın?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-033",
+              "topic": "Yapmayı bırakınca",
+              "question": "Bir alışkanlığı terk ettikten sonra aslında onun sana ne sağladığını ne zaman fark ettin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O ihtiyacı bugün başka ne karşılıyor?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-034",
+              "topic": "Yardımın sırası",
+              "question": "Bir şeyi kendi başına çözmeye çalışırken yardım istemeyi geciktirdiğini ne zaman anlarsın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-035",
+              "topic": "Tamamen uydurma yöntem",
+              "question": "Kimse görmüyorken bir işi yapmak için kullandığın en komik yöntem ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Seni o işi yaparken yakalasalar yöntemine nasıl ciddi bir isim takardın?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-036",
+              "topic": "Plan var gibi",
+              "question": "Hiç planın yokken planlı görünmek için başvurduğun küçük numara ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Numaranı bozmak isteyen biri hangi basit soruyu sorsa yeter?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-037",
+              "topic": "Kapalı gişe prova",
+              "question": "Tek başına kaldığında provasını yapıp gerçekte asla o kadar havalı söyleyemediğin replik nasıl bir şey?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Hayalindeki seyirciler kimler?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-038",
+              "topic": "Sadece kapağını açtım",
+              "question": "Sırf başlayacakmış hissini sevdiğin için alıp ilk aşamada bıraktığın en komik şey ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-aliskanliklar-039",
+              "topic": "Haksız suçlama",
+              "question": "Kendi unuttuğun bir şeyi önce telefona, saate ya da bir eşyaya yüklediğin bir anı anlatır mısın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Asıl sorumlunun sen olduğunu ne ele verdi?"
+              ]
+            },
+            {
+              "id": "kisisel-aliskanliklar-040",
+              "topic": "Yasak geleneğim",
+              "question": "Çok gereksiz bulduğunu söyleyip yine de her seferinde yaptığın zararsız bir batıl hareket ne?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
             }
@@ -1414,152 +1915,392 @@
           "label": "Anılar",
           "items": [
             {
-              "id": "anilar-001",
-              "topic": "Unutulmaz kahkaha",
-              "question": "Son zamanlarda en çok güldüğün an neydi?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-002",
-              "topic": "Çocukluk oyunu",
-              "question": "Çocukken oynamayı en sevdiğin oyun neydi?",
+              "id": "kisisel-anilar-001",
+              "topic": "Okul çantası",
+              "question": "Okul çantanda olması gerektiği hâlde hep kaybolan şey neydi?",
               "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "anilar-003",
-              "topic": "Güzel tesadüf",
-              "question": "İyi ki yaşanmış dediğin küçük bir tesadüf anlatır mısın?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question",
-              "followUps": [
-                "O tesadüfü bugün hatırlamana ne yardımcı oluyor?"
-              ]
-            },
-            {
-              "id": "anilar-004",
-              "topic": "Komik utanç",
-              "question": "Önceden utandığın ama şimdi gülerek anlattığın bir olay var mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-005",
-              "topic": "Eski şarkı",
-              "question": "Sana belirli bir anıyı hatırlatan şarkı var mı?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-006",
-              "topic": "Tekrar yaşamak",
-              "question": "Geçmişinden bir günü yeniden yaşayabilsen hangisini seçerdin?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-007",
-              "topic": "Aklında kalan söz",
-              "question": "Aklında kalmış komik veya garip bir söz var mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-008",
-              "topic": "Unutulmayan yer",
-              "question": "Gittiğin bir yerle ilgili hâlâ anlattığın bir anı var mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-009",
-              "topic": "Çocukluk hayali",
-              "question": "Küçükken büyüyünce ne olmak isterdin?",
+              "id": "kisisel-anilar-002",
+              "topic": "Oyuncak repliği",
+              "question": "Çocukken oyuncaklarını konuştursan en çok hangisinin sesini çıkarırdın?",
               "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "anilar-010",
-              "topic": "İlkokul kahkahası",
-              "question": "İlkokuldan aklında kalan en komik sınıf olayı ne?",
-              "intensity": 2,
+              "id": "kisisel-anilar-003",
+              "topic": "Teneffüs parası",
+              "question": "Teneffüste cebine azıcık para girince neye harcardın?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Paran yarısına yetse ne yapardın?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-004",
+              "topic": "Evdeki çizgi film",
+              "question": "Evdeki büyüklerden birinin seninle seyrettiği hangi çizgi filmi hatırlıyorsun?",
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "anilar-011",
-              "topic": "Çocukluk kokusu",
-              "question": "Çocukken çok sevdiğin bir kokuyu hatırlıyor musun?",
-              "intensity": 2,
+              "id": "kisisel-anilar-005",
+              "topic": "Doğum günü ayrıntısı",
+              "question": "Çocukluğundaki doğum günlerinden aklında kalan bir süs, renk veya tat ne?",
+              "intensity": 1,
               "weight": 1,
-              "type": "question"
+              "type": "question",
+              "followUps": [
+                "Bugün aynısını önüne koysalar hemen tanır mısın?"
+              ]
             },
             {
-              "id": "anilar-012",
-              "topic": "İlk başarı",
-              "question": "İlk kez tek başına başardığın ve gururlandığın şey neydi?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-013",
-              "topic": "Yeniden çekilecek kare",
-              "question": "Geçmişten bir fotoğrafı tekrar çekebilsen hangisi olurdu?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-014",
-              "topic": "Fikir değiştiren zevk",
-              "question": "Eskiden sevmediğin ama şimdi sevdiğin bir şey var mı?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-015",
-              "topic": "Yolculuk ayrıntısı",
-              "question": "Bir yolculuktan aklında kalan küçük ama güzel bir ayrıntı ne?",
+              "id": "kisisel-anilar-006",
+              "topic": "Aile deyimi",
+              "question": "Evde herkesin normal sandığı ama dışarıda söyleyince kimsenin anlamadığı bir söz neydi?",
               "intensity": 2,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "O yolculuğa bir ses veya renk eşlik etse ne olurdu?"
+                "Bu sözü en çok kim söylerdi?"
               ]
             },
             {
-              "id": "anilar-016",
-              "topic": "Beklenmedik iyilik",
-              "question": "Biri sana hiç beklemediğin bir iyilik yapmış mıydı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-017",
-              "topic": "Anının sesi",
-              "question": "Bir anıyı sadece bir sesle anlatman gerekse hangi sesi seçerdin?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "anilar-018",
-              "topic": "Beklenmedik macera",
-              "question": "Sürpriz bir olay yüzünden hiç beklemediğin bir macera yaşadın mı?",
+              "id": "kisisel-anilar-007",
+              "topic": "Masa altı dünyası",
+              "question": "Çocukken sıradan bir yeri kendi oyun alanına çevirdiğin bir yer neresiydi?",
               "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-008",
+              "topic": "Gezi hatırası",
+              "question": "Bir geziden getirdiğin en alakasız hatıra neydi?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Resmî hatıra dükkânında satılsa etiketi ne derdi?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-009",
+              "topic": "Küçükken harita",
+              "question": "Çocukken sana dev gibi gelen ama büyüyünce aslında epey küçükmiş dediğin yer neresi?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-010",
+              "topic": "Nesiller arası oyun",
+              "question": "Ailenden öğrendiğin bir oyunun sizin evdeki kuralı diğer evlerden nasıl farklıydı?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İki ev aynı masada oynasa hangi kuralı kabul ettirmek zor olurdu?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-011",
+              "topic": "Anons hafızası",
+              "question": "Yıllar önce duyduğun hangi anonsu ya da reklamı hâlâ tonlamasıyla taklit edebilirsin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Onu günümüzde ne için kullanırdın?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-012",
+              "topic": "Dördüncü kare",
+              "question": "Bir çocukluk fotoğrafının hemen dışında kaldığını hatırladığın şey ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kareyi çeken kişi de onu hatırlıyor olabilir mi?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-013",
+              "topic": "İlk bilet",
+              "question": "Biletini bir süre sakladığın ilk etkinlik neydi? Biletin üzerinde ne vardı?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-014",
+              "topic": "Mevsimin kanıtı",
+              "question": "Çocukken yazın gerçekten başladığını nereden anlardın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-015",
+              "topic": "Yol üstünde karşılaşma",
+              "question": "Hiç alakasız bir yerde tanıdık biriyle karşılaştığında yolculuğun nasıl değişti?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İlk anda gözlerine mi inandın, durup tekrar mı baktın?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-016",
+              "topic": "Emanet eşya",
+              "question": "Birinin sana emanet ettiği ve başına bir şey gelmesin diye aşırı özen gösterdiğin şey neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sahibi onu geri alırken gösterdiğin özeni fark etti mi?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-017",
+              "topic": "Kayıp bulundu",
+              "question": "Kayboldu sandığın bir şeyi hiç beklemediğin nerede buldun?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Oraya giden yolu sonradan çözebildin mi?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-018",
+              "topic": "Eski yükseliş",
+              "question": "Sana ilk kez kendinden büyük biri gibi davranıldığını hatırladığın an hangisi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O anda daha çok sevindin mi, gerildin mi?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-019",
+              "topic": "Sonradan fark edilen şaka",
+              "question": "Çocukken ciddiye alıp yıllar sonra şaka olduğunu anladığın şey neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-020",
+              "topic": "Beklenmedik usta",
+              "question": "İlk bakışta hiç beceremeyeceğini sandığın bir konuda sana kim çok basit bir şey gösterdi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İpucunu bugün hâlâ birine aktarabilir misin?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-021",
+              "topic": "Yeniden anlatılan gün",
+              "question": "Aynı günü yaşamış iki kişinin bambaşka ayrıntılarla anlattığı bir anı ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Senin anlattığın sürümde hangi ayrıntı başrolde?",
+                "İkisini yan yana dinleyen biri hangi noktada aynı günden bahsettiğinizi anlardı?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-022",
+              "topic": "Birlikte susmak",
+              "question": "Birinin yanında sessiz kalmanın aslında iyi geldiğini ilk hangi anda fark ettin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-023",
+              "topic": "Değişen mekân",
+              "question": "Yıllar sonra uğradığın bir yerde gördüğün hangi ayrıntı sana aradan geçen zamanı hissettirdi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-024",
+              "topic": "Ödüllük çaba",
+              "question": "Sonucu pek iyi olmasa da uğraşırken çok eğlendiğin bir şeyi hatırlıyor musun? Ne yapıyordun?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O gün çekilmiş bir fotoğrafın altyazısı ne olurdu?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-025",
+              "topic": "Çocuk gözü yetişkin gözü",
+              "question": "Küçükken bir yetişkine kızıp şimdi o kişinin işinin zor olduğunu gördüğün bir anı ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O gün onun yapabileceği en küçük farklı şey ne olurdu?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-026",
+              "topic": "İçten bir teşekkür",
+              "question": "Vaktiyle çok sıradan karşıladığın bir iyiliğin değerini ne zaman anladın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-027",
+              "topic": "Anının sahibi",
+              "question": "Başkasından dinleye dinleye kendi anın gibi bildiğin bir aile hikâyesi var mı? Senin hatırladığın kısım nerede başlıyor?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bir gün başka türlü anlatılsa hikâyenin hangi parçasını savunursun?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-028",
+              "topic": "Son kez habersiz",
+              "question": "Son kez yaptığını o gün bilmediğin bir şey var mı? O anı bugün anmak istemen neyi değiştiriyor?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Vedalaşsaydın anı aynı kalır mıydı?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-029",
+              "topic": "Yerine oturan söz",
+              "question": "Duyduğunda ne demek olduğunu anlamayıp yıllar sonra bir anda kafana yatan söz neydi?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-030",
+              "topic": "O güne ait gurur",
+              "question": "Bugün önemsiz görünen ama o günkü sen için büyük bir iş olan neyi hatırlamak istersin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O gün bunu anlayan biri olmuş muydu?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-031",
+              "topic": "Bakış açısının borcu",
+              "question": "Birinin seninle tartışmadan dünyaya bakışını değiştirdiği bir an neydi?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-032",
+              "topic": "Eski grupta yeni rol",
+              "question": "Yıllar sonra eski bir grupla buluşunca üstünde kalan hangi rol artık sana uymuyordu?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Biri bu değişimi fark ettiğinde sana ne iyi gelirdi?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-033",
+              "topic": "Yol ayrımını fark etmek",
+              "question": "O sırada küçük bir seçim gibi görünen ama yıllar sonra hayatında iz bıraktığını anladığın olay neydi?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu seçim hiç karşına çıkmasaydı aynı yere başka nasıl varabilirdin?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-034",
+              "topic": "Paylaşılmayan sevinç",
+              "question": "O sırada kimseyle paylaşmadığın bir sevincin yıllar sonra sana hâlâ neyi hatırlatıyor?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-035",
+              "topic": "Kime el salladım",
+              "question": "Sana selam verildi sanıp karşılık verdikten sonra durumu nasıl kurtardın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-036",
+              "topic": "Kostüm kazası",
+              "question": "Üzerinde olduğunu unutup dışarıya onunla çıktığın bir şey neydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Biri fark edince hikâyeyi nasıl anlattın?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-037",
+              "topic": "Yanlış kişiye hikâye",
+              "question": "Bir anıyı, zaten olayın içindeki kişiye baştan sona anlattığını ne zaman anladın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-anilar-038",
+              "topic": "Fazla erken kutlama",
+              "question": "Her şey yolunda sandığın için erken sevindiğin en komik an neydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kutlamanın en unutulmaz kısmı ne oldu?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-039",
+              "topic": "Kendime rol biçtim",
+              "question": "Çocukken arkadaşlarının gözünde çok havalı görünmek için kendine hangi özelliği yakıştırmıştın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İnanmaları için ortaya nasıl bir kanıt koymuştun?"
+              ]
+            },
+            {
+              "id": "kisisel-anilar-040",
+              "topic": "Kahkaha saklama",
+              "question": "Gülmemen gereken bir anda seni asıl ele veren ne oldu?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
             }
@@ -1570,166 +2311,387 @@
           "label": "Düşünceler",
           "items": [
             {
-              "id": "dusunceler-001",
-              "topic": "İyi sohbet",
-              "question": "Sence bir sohbeti gerçekten güzel yapan şey ne?",
+              "id": "kisisel-dusunceler-001",
+              "topic": "Hava durumu adı",
+              "question": "Bugünkü havaya tahmin bültenindekinden daha iyi bir isim versen ne derdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-002",
+              "topic": "Tabelanın harfi",
+              "question": "Bir dükkân tabelasında ilk fark ettiğin ne olur, isim mi yazı tipi mi?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-003",
+              "topic": "Ayraç olarak",
+              "question": "Bir kitabı kaldığın yerden açmak için araya koyulabilecek en tuhaf ama işe yarar şey ne?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Kitabın sonraki sahibi onu bulsa hakkında ne tahmin eder?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-004",
+              "topic": "Geri getirilen eşya",
+              "question": "Artık pek görmediğin eski eşyalardan hangisi yeniden moda olsun isterdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-005",
+              "topic": "Küçük icat ödülü",
+              "question": "Gündelik hayatta kimin aklına geldiyse iyi ki gelmiş dediğin ufak icat ne?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Aynı ödüle aday olacak bir başka icat seçebilir misin?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-006",
+              "topic": "Eksik emoji",
+              "question": "Telefonda hâlâ bulunmamasına şaşırdığın emoji neyi anlatırdı?",
               "intensity": 2,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Böyle bir sohbette kendini en rahat hissettiren şey ne?"
+                "En son kime, hangi durumda gönderirdin?"
               ]
             },
             {
-              "id": "dusunceler-002",
-              "topic": "Bilgiye güven",
-              "question": "Sence bir bilginin güvenilir olduğunu nasıl anlarsın?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "dusunceler-003",
-              "topic": "İlk merak",
-              "question": "Yeni bir konuyu öğrenirken ilk neyi merak edersin?",
+              "id": "kisisel-dusunceler-007",
+              "topic": "Filmin sonu",
+              "question": "Bir filmin sonunu bilmek hangi türde tadını kaçırır, hangi türde hiçbir şeyi değiştirmez?",
               "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "dusunceler-004",
-              "topic": "Farklı düşünmek",
-              "question": "Sence insanları farklı kılan alışkanlıkları mı, düşünme biçimleri mi?",
+              "id": "kisisel-dusunceler-008",
+              "topic": "Eşyanın adı",
+              "question": "Türkçede adı yaptığı işi çok iyi anlatan ya da hiç anlatmayan bir eşya ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Adını değiştirebilsen ne koyardın?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-009",
+              "topic": "Biriktirmelik",
+              "question": "Alıp saklamayı bir türlü anlayamadığın ama bir koleksiyoncuya sormak isteyeceğin şey ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-010",
+              "topic": "Uzatılması gereken",
+              "question": "İnsanların gereğinden kısa tuttuğunu düşündüğün keyifli bir etkinlik ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İki katına çıksa ne zaman sıkılmaya başlardın?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-011",
+              "topic": "Kulaktan dolma",
+              "question": "Yaygın bir sözün nereden çıktığını araştırmaya kalksan ilk hangisini seçerdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-012",
+              "topic": "Yetenek yanılgısı",
+              "question": "Hangi becerinin kolay olduğunu, ancak onu çok iyi yapan birini izlediğimiz için sanıyoruz?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-013",
+              "topic": "İyi kusur",
+              "question": "Bir filmin, kitabın veya şarkının kusuru gibi görünen ama senin hoşuna giden bir yanı ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Düzeltilse onda ne kaybolurdu?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-014",
+              "topic": "Havayı bozan ses",
+              "question": "Güzel bir mekânı tek bir sesle tatsız hâle getirebilseydin hangi sesi eklerdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-015",
+              "topic": "Yanlış anlaşılmış eser",
+              "question": "Başkasının çok farklı okuduğunu duyup şaşırdığın bir şarkı sözü ya da film sahnesi neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İkinci yorumdan sonra aynı şeyi izlemek veya dinlemek değişti mi?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-016",
+              "topic": "Herkes öyle diyor",
+              "question": "Sırf çok sık duyduğun için bir süre doğru sandığın zararsız bir bilgi neydi?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "dusunceler-005",
-              "topic": "Fikir ayrılığı",
-              "question": "Bir konuda çok farklı düşünen iki kişi iyi bir tartışma yapabilir mi?",
+              "id": "kisisel-dusunceler-017",
+              "topic": "Zor açıklama",
+              "question": "Birine çok iyi bildiğini sandığın bir konuyu anlatırken nerede takıldığını hatırlıyor musun?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bugün onu anlatmaya neyle başlardın?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-018",
+              "topic": "Zararsız deneme",
+              "question": "Doğru olup olmadığını görmek için bizzat denediğin küçük bir iddia neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Deneyde çıkmasını umduğun sonuçla çıkan sonuç aynı mıydı?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-019",
+              "topic": "Hak veren itiraz",
+              "question": "Bir tartışmada karşı tarafın haklı bulduğun ama sonucuna katılmadığın kısmı neydi?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "dusunceler-006",
-              "topic": "Yanıldığını fark etmek",
-              "question": "Bir fikrinin yanlış olduğunu fark ettiğinde ne yaparsın?",
+              "id": "kisisel-dusunceler-020",
+              "topic": "Cümlenin gücü",
+              "question": "Aynı öneriyi başka kelimelerle duyduğunda bakışın değişti mi? Hatırladığın örnek ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-021",
+              "topic": "Bir işin ölçüsü",
+              "question": "İyi yapıldığını anlamak için çoğu kişiden farklı şeye baktığın bir iş ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bir örneğini görsek önce neresine dikkatimizi çekerdin?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-022",
+              "topic": "Kendi hatanı saymak",
+              "question": "Ne kadar sık yaptığını yanlış tahmin ettiğini ancak saymaya başlayınca anladığın şey neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sayıyı öğrenince davranışın da değişti mi?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-023",
+              "topic": "Alışılmış soru",
+              "question": "Bir konu açılınca herkes aynı şeyi soruyor diye merak ettiğin asıl soru neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-024",
+              "topic": "Gözden düşen söz",
+              "question": "Eskiden inandırıcı gelen ama artık etkisini kaybetmiş bir tavsiye ne? Onun yerine ne söylersin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-025",
+              "topic": "Sıranın istisnası",
+              "question": "Herkesin uyduğu bir kurala tek bir istisna ekleyebilseydin hangi durumda sıra bozulabilirdi?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İstisnanın gerçekten gerekmesini kim, nasıl anlayabilirdi?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-026",
+              "topic": "Hata ve imza",
+              "question": "Bir ekipte başarı ortak, hata bir kişiye ait sayıldığında bu ne zaman adil olur?",
               "intensity": 4,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "dusunceler-007",
-              "topic": "Farklı bakış",
-              "question": "Son zamanlarda fikrini değiştirdiğin bir konu var mı?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-027",
+              "topic": "Tesadüfi iyilik",
+              "question": "Birinin niyeti kötü olsa bile yaptığı iş iyi sonuç verdiyse onu takdir etmek gerekir mi?",
+              "intensity": 4,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Fikrinin değişmesinde bir deneyim veya konuşma etkili oldu mu?"
+                "Aynı işi tekrar yapmasını ister miydin?"
               ]
             },
             {
-              "id": "dusunceler-008",
-              "topic": "İyi ekip",
-              "question": "Sence iyi bir ekipte en önemli şey ne?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-028",
+              "topic": "Konu kapandı mı",
+              "question": "Artık geçerli olmayan bir görüşü yıllar önce savunmuş biri bugün hâlâ o görüşle anılıyorsa bunu değiştirmesi için ne yeter?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-029",
+              "topic": "Görülmeyen ödün",
+              "question": "Herkesin çok iyi dediği bir kararın kime neye mal olduğunu anlamak için sormamız gereken ilk soru ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-030",
+              "topic": "Tekrar etmek adil mi",
+              "question": "Bir arkadaşının anlattığı bir haksızlıktan başkalarını haberdar etmekle onun hikâyesini izinsiz anlatmak arasındaki çizgi nerede?",
+              "intensity": 4,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Bir ekip çalışmasında en çok neye sinir olursun?"
+                "Ayrıntıları değiştirmen yeterli olur muydu?"
               ]
             },
             {
-              "id": "dusunceler-009",
-              "topic": "Duygu ve mantık",
-              "question": "Zor bir seçimde duyguların mı, mantığın mı daha baskın olur?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "dusunceler-010",
-              "topic": "Bilgi mi merak mı",
-              "question": "Bir insanı ilginç yapan bilgi birikimi mi, merakı mı?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "dusunceler-011",
-              "topic": "Fikrini değiştirmek",
-              "question": "Bir tartışmada fikrini değiştirebilmek sence güç mü, zayıflık mı?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-031",
+              "topic": "Kopya mı iz mi",
+              "question": "İki kişi birbirinden habersiz aynı fikri bulursa, onu ilk duyuran kişiyle ilk uygulayan kişi arasında hakkı nasıl paylaştırırsın?",
+              "intensity": 4,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Birinin fikrini rahatça değiştirebilmesi için nasıl bir ortam gerekir?"
+                "İlk duyuran fikrin nasıl uygulanacağını da anlatmışsa cevabın değişir mi?"
               ]
             },
             {
-              "id": "dusunceler-012",
-              "topic": "Verimli gün",
-              "question": "Bir günü verimli yapan çok iş bitirmek mi, tatmin olmak mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "dusunceler-013",
-              "topic": "Güzel soru",
-              "question": "Sence iyi bir soru, iyi bir cevaptan daha değerli olabilir mi?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-032",
+              "topic": "Küçük oy çok büyük konu",
+              "question": "Bir grubun çoğunlukla karar vermesi hangi kararda yetersiz kalır?",
+              "intensity": 4,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Aklında kalan bir soru sana yeni bir bakış açısı açtı mı?"
+                "Azınlıkta kalan birinin karar üzerinde ne kadar söz hakkı olmalı?"
               ]
             },
             {
-              "id": "dusunceler-014",
-              "topic": "Farklı yorumlar",
-              "question": "Aynı olaya iki kişinin tamamen farklı yorum getirmesi seni şaşırtır mı?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-033",
+              "topic": "Yeniden yapılmış eser",
+              "question": "Bir hikâyeyi yeni kuşak için değiştirirken hangi ayrıntıya dokunulursa artık bambaşka bir hikâye anlatılmış olur?",
+              "intensity": 4,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "dusunceler-015",
-              "topic": "Kusur ve hikâye",
-              "question": "Bir şeyi güzel yapan kusursuzluğu mu, hikâyesi mi?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "dusunceler-016",
-              "topic": "Mizah ve karakter",
-              "question": "Sence mizah bir insanın karakteri hakkında ne anlatır?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "dusunceler-017",
-              "topic": "Nadir konuşulan konu",
-              "question": "Merak ettiğin ama çevrende pek konuşulmayan bir konu var mı?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-034",
+              "topic": "Yüzde kaç emin",
+              "question": "Karar vermek için daha fazla bilgi beklemek hangi durumda dikkatli olmak, hangi durumda sorumluluk almamak olur?",
+              "intensity": 4,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "O konuyu merak eden birine nereden başlamasını önerirdin?"
+                "Hangi kararda daha az bilgiyle hareket etmeye razı olursun?"
               ]
             },
             {
-              "id": "dusunceler-018",
-              "topic": "Yanlış tahmin",
-              "question": "En son hangi konuda ilk düşüncenin yanlış çıktığını fark ettin?",
-              "intensity": 3,
+              "id": "kisisel-dusunceler-035",
+              "topic": "Savunması zor zevk",
+              "question": "İyi olmadığını bildiğin hâlde sevmekten vazgeçmediğin bir eseri iki cümleyle nasıl savunurdun?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-036",
+              "topic": "Görüşü geri çekmek",
+              "question": "Sırf inat ettiğin için savunmaya devam ettiğin en komik fikir neydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O tartışmadaki biri şimdi burada olsa neyi kabul ederdin?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-037",
+              "topic": "Sahte derinlik",
+              "question": "Vaktinde çok derinmiş gibi söyleyip bugün duysan güleceğin cümle neydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O gün yanında oturan biri sana ne sorsa foyan ortaya çıkardı?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-038",
+              "topic": "Övgü korosu",
+              "question": "Herkes överken içinden “Bunda ne buluyorlar?” dediğin popüler şey ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Onu seven birinin seni ikna etmek için gösterebileceği en iyi örnek ne olur?"
+              ]
+            },
+            {
+              "id": "kisisel-dusunceler-039",
+              "topic": "Bilmişlik sınavı",
+              "question": "Bildiğin izlenimi verip biri ayrıntı sorunca ortada kaldığın konu hangisiydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-dusunceler-040",
+              "topic": "Özel veto",
+              "question": "Kimse gücenmeyecek olsa, bir hafta boyunca herkese hangi zararsız klişeyi yasaklardın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yasağı bozarsan ilk hangi cümlede yakalanırsın?"
+              ]
             }
           ]
         },
@@ -1738,161 +2700,379 @@
           "label": "Biraz Derin",
           "items": [
             {
-              "id": "biraz-derin-001",
-              "topic": "Değişen sen",
-              "question": "Geçen seneki kendinle şimdiki kendin arasında en büyük fark ne?",
-              "intensity": 4,
+              "id": "kisisel-biraz-derin-001",
+              "topic": "İltifat türü",
+              "question": "Bugün bir cümle duymak iyi gelse, “Çok iyi yaptın” mı, “İyi ki geldin” mi olsun isterdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sen o cümleyi bugün kime söylemek isterdin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-002",
+              "topic": "Güzel bir mola",
+              "question": "Sana mola verdiğini hissettiren en küçük hareket hangisi?",
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "biraz-derin-002",
-              "topic": "Küçük cesaret",
-              "question": "Yapmak isteyip de biraz cesaret gerektirdiğini düşündüğün bir şey var mı?",
+              "id": "kisisel-biraz-derin-003",
+              "topic": "Emanet şans",
+              "question": "Bugün birine bir parça şans yollayabilsen o şans ne işe yarasın isterdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sonucu öğrenmek ister miydin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-004",
+              "topic": "Bana göre yer",
+              "question": "Bir mekâna ilk kez gidip “Burada rahat ederdim” dedirten basit ayrıntı ne?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-005",
+              "topic": "Günün imzası",
+              "question": "Senden kalan bir el yazısında ilk tanıyacağın harf hangisi?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O harf yazarken nasıl bir hareket yapıyorsun?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-006",
+              "topic": "Övgünün ayrıntısı",
+              "question": "Yaptığın bir işte fark edilmesi seni en çok sevindiren ayrıntı hangisi?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O ayrıntıyı fark eden kişiye işin hangi aşamasını gösterirdin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-007",
+              "topic": "Köşede kalan ilgi",
+              "question": "Kimse yönlendirmeden, sırf kendi merakınla öğrendiğin en alakasız bilgi ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-008",
+              "topic": "Adınla hitap",
+              "question": "Birinin adını söyleyişinden aranızdaki yakınlığı anlayabildiğin bir örnek geliyor mu aklına?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-009",
+              "topic": "Bir yere ait olmak",
+              "question": "Bir yerde ilk günkü gibi misafir hissetmeyi bıraktığını hangi küçük işaretten anlarsın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bunun olmasını sen de bir hareketinle kolaylaştırabilir misin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-010",
+              "topic": "Kendine yakıştırmak",
+              "question": "Bir rengin, tarzın ya da uğraşın sana yakıştığına karar vermen için kendini hangi hâlde görmen gerekir?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-011",
+              "topic": "Küçük seçim alanı",
+              "question": "Başkalarının önemsiz bulduğu ama kendin seçince içinin açıldığı bir ayrıntı ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Biri senin yerine seçse ilk nereden fark edersin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-012",
+              "topic": "İçini açan iş",
+              "question": "Bitmiş hâline bakınca “Bunu ben yaptım” demeyi sevdiğin en küçük şey ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-013",
+              "topic": "Saklanan hatıra",
+              "question": "Kötü bir günün sonunda eline alıp bakınca etkisi değişen bir eşya var mı? Neyi hatırlatıyor?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-014",
+              "topic": "Kendi sesini duymak",
+              "question": "Bir ses kaydında ya da yazdığın bir cümlede kendine en çok benzeyen ayrıntı ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-015",
+              "topic": "Sessizce başarmak",
+              "question": "Başardığını bir süre sadece kendin bilmek istediğin bir iş neydi?",
               "intensity": 3,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Bu konuda atılabilecek küçük bir ilk adım nasıl olurdu?"
+                "Sonunda paylaşmak istediğinde bunu kime nasıl söyledin?"
               ]
             },
             {
-              "id": "biraz-derin-003",
-              "topic": "Geleceğe soru",
-              "question": "Beş yıl sonraki kendine bir soru sorabilsen ne sorardın?",
+              "id": "kisisel-biraz-derin-016",
+              "topic": "Tanıdık cümle",
+              "question": "Kendi ağzından senden büyük birinin sözü çıkınca şaşırdığın oldu mu? Ne söylerken yakaladın kendini?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "biraz-derin-004",
-              "topic": "Doğru karar",
-              "question": "Bir kararı doğru bulman için hangi ölçüt daha önemli?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-005",
-              "topic": "Unutulmayan anlar",
-              "question": "Sence bir anıyı unutulmaz yapan sürprizler mi, küçük ayrıntılar mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-006",
-              "topic": "Başarı hissi",
-              "question": "Hangi küçük başarın seni beklediğinden fazla mutlu etmişti?",
+              "id": "kisisel-biraz-derin-017",
+              "topic": "Farklı bir rol",
+              "question": "Birinden yardım alacağını düşünürken kendini ona yardım ederken bulduğun bir an ne?",
               "intensity": 3,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "O başarıyı senin için özel kılan neydi?"
+                "Bu, birbirinizle ilişkinizde neyi değiştirdi?"
               ]
             },
             {
-              "id": "biraz-derin-007",
-              "topic": "Fikrin değişince",
-              "question": "Eskiden kesin doğru bildiğin ama sonradan fikrini değiştirdiğin bir konu var mı?",
-              "intensity": 4,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-008",
-              "topic": "İyi ki denemişim",
-              "question": "Beklenmedik şekilde 'iyi ki denemişim' dediğin bir şey var mı?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-009",
-              "topic": "Söylemek mi susmak mı",
-              "question": "Hangi konuda susmak, fikrini söylemekten daha zor geliyor?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-010",
-              "topic": "Küçük değişim",
-              "question": "Seni düşündüğünden daha fazla değiştiren küçük bir olay yaşadın mı?",
-              "intensity": 4,
-              "weight": 1,
-              "type": "question",
-              "followUps": [
-                "O olaydan sonra fark ettiğin küçük bir değişiklik oldu mu?"
-              ]
-            },
-            {
-              "id": "biraz-derin-011",
-              "topic": "Görünmeyen özelliğin",
-              "question": "İnsanların sende fark etmesini istediğin ama pek görmediği özellik ne?",
-              "intensity": 4,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-012",
-              "topic": "Yavaşlayan zaman",
-              "question": "Zamanın yavaşlamasını istediğin bir an oldu mu?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-013",
-              "topic": "Anının değeri",
-              "question": "İyi bir anının değerini yaşarken mi, sonradan mı anlarsın?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-014",
-              "topic": "Geçmişe teşekkür",
-              "question": "Bugünkü sen geçmişteki kendine ne için teşekkür ederdi?",
-              "intensity": 4,
-              "weight": 1,
-              "type": "question",
-              "followUps": [
-                "Bugün de aynı seçimi yapar mıydın?"
-              ]
-            },
-            {
-              "id": "biraz-derin-015",
-              "topic": "Başkalarının fikri",
-              "question": "Bir karar verirken başkalarının fikri seni ne kadar etkiler?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-016",
-              "topic": "Yeni farkındalık",
-              "question": "Kendin hakkında son zamanlarda fark ettiğin bir şey ne?",
-              "intensity": 4,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "biraz-derin-017",
-              "topic": "Hayatta yer açmak",
-              "question": "Hayatında daha çok yer açmak istediğin şey ne?",
+              "id": "kisisel-biraz-derin-018",
+              "topic": "İyi ki söylemiş",
+              "question": "Sana ilk anda ters gelen ama düşününce işine yarayan bir geri bildirim neydi?",
               "intensity": 3,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Bunu yapmanı en çok ne engelliyor?"
+                "Bunu veren kişinin söyleyişinde işini kolaylaştıran bir şey oldu mu?"
               ]
             },
             {
-              "id": "biraz-derin-018",
-              "topic": "Söylenmeyen düşünce",
-              "question": "Bir düşünceni anlatmak isteyip doğru kelimeleri bulamadığın oldu mu?",
+              "id": "kisisel-biraz-derin-019",
+              "topic": "Başka bir güçlü yan",
+              "question": "Belli bir konuda iyi olduğunu düşünmüyordun ama ileride işine yarayan parçası hangisi çıktı?",
               "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-020",
+              "topic": "Övgüyü taşımak",
+              "question": "Birinin sana yakıştırdığı hangi özellik zamanla üstünde biraz ağır gelmeye başladı?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O özelliğin sende hangi hâli kalsın istersin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-021",
+              "topic": "İşin adı",
+              "question": "Uzun süre tesadüf sandığın hangi becerin, yaptığın birkaç şey yan yana gelince görünür oldu?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-022",
+              "topic": "Geçici cesaret",
+              "question": "Bir şeyin üstesinden gelmek için bir süre kendini olduğundan daha cesur varsaydığın bir an neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Gerçekten cesaretlendin mi, rol yapmak mı işini gördü?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-023",
+              "topic": "Kendin karar verdin",
+              "question": "Küçük ama tamamen kendi kararın olduğu için iyi hatırladığın bir seçim ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-024",
+              "topic": "Fotoğrafta kendin",
+              "question": "Dışarıdan pek bir şey anlatmayan ama sen bakınca kendini çok iyi gördüğün bir fotoğrafta ne oluyor?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-025",
+              "topic": "Seni tanımanın yolu",
+              "question": "Birinin seni iyi tanıdığını sana dair bildiği şeylerden mi, senin değişebileceğine yer açmasından mı anlarsın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İkisi ters düştüğünde nasıl bir tepkiyi samimi bulursun?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-026",
+              "topic": "Affın koşulu",
+              "question": "Özür duymadan da birini affedebileceğin bir durumla, özür dilense de mesafe koyacağın bir durumu ne ayırır?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-027",
+              "topic": "İlk kez rahat",
+              "question": "Eskiden açıklama gereği duyduğun hangi tercihin için artık “Bana böyle iyi geliyor” diyebiliyorsun?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu rahatlığı kazanmana ne yardım etti?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-028",
+              "topic": "Tek taraflı emek",
+              "question": "Emek verdiğin bir şey dönüş vermediğinde ne zaman daha fazla sabır gerekir, ne zaman yön değiştirmek iyi gelir?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-029",
+              "topic": "İyi olma iddiası",
+              "question": "Bir konuda iyi olduğun için onu sürdürmen bekleniyorsa ama keyif almıyorsan hangisini dinlersin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu beklenti senin kendine bakışını nasıl değiştiriyor?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-030",
+              "topic": "İki doğru çarpışınca",
+              "question": "İkisini de önemsediğin için birbirine ters gelen iki değer arasında kaldığın bir karar neydi?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-031",
+              "topic": "Nazik olmak",
+              "question": "Kendine yumuşak davranmakla kendi bahanene inanmak arasındaki farkı nasıl anlıyorsun?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-032",
+              "topic": "Önce kime inanırsın",
+              "question": "Birinin senin hakkında söylediği bir şeyle kendin hakkında bildiğin çeliştiğinde, o söze ne zaman kulak verirsin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Söyleyen kişinin kim olması cevabını değiştirirdi?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-033",
+              "topic": "Örnek alınmak",
+              "question": "Biri senin sıradan gördüğün bir davranışını örnek alsa onda hangi etkiyi bırakmaktan memnun olurdun?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-034",
+              "topic": "Bir sözün ağırlığı",
+              "question": "Daha önce verdiğin bir sözü koşullar değişince yeniden konuşman gerekse hangi noktada sözünü tutmaya devam ederdin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu konuşmayı erkenden açmak kararı nasıl etkilerdi?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-035",
+              "topic": "Takdir beklediğim yer",
+              "question": "İçten içe takdir beklediğin ama kimsenin fark etmediği bir konuda bugün kendine ödül versen adı ne olurdu?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-036",
+              "topic": "Daha önce kabul etmemiştim",
+              "question": "Hoşuna gittiğini kabul etmekte geciktiğin bir iltifat neydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O iltifata bugün daha dürüst bir cevap veriyor olsan ne derdin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-037",
+              "topic": "Kıskandığım beceri",
+              "question": "Birini kıskandığını fark edip aslında onun hangi becerisini istediğini anladığın bir anı paylaşır mısın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kişiden bir tek ders alabilsen ondan ne göstermesini isterdin?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-038",
+              "topic": "Şaşırtıcı sınır",
+              "question": "“Bundan hiç hoşlanmıyorum” demeni duyanların en çok şaşıracağı zararsız şey ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-biraz-derin-039",
+              "topic": "Şimdilik bilmesinler",
+              "question": "Çevrendekiler haber alsa şaşıracak diye henüz ilan etmediğin zararsız bir hevesin ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sana gülmeyeceğini bildiğin biri duysa ilk neyi öğrenmek isterdi?"
+              ]
+            },
+            {
+              "id": "kisisel-biraz-derin-040",
+              "topic": "Hep iyi olduğum sanılıyor",
+              "question": "İyi olduğun sanıldığı için itiraz etmeyip yaptığın ama aslında birinden devralmasını istediğin şey hangisi?",
+              "intensity": 5,
               "weight": 1,
               "type": "question"
             }
@@ -1903,108 +3083,387 @@
           "label": "Gelecek",
           "items": [
             {
-              "id": "gelecek-001",
-              "topic": "Bir yıl sonraki beceri",
-              "question": "Bir yıl sonra daha iyi olmak istediğin tek beceri ne?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gelecek-002",
-              "topic": "Çalışma ortamın",
-              "question": "Hayalindeki çalışma ortamı nasıl bir yer?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gelecek-003",
-              "topic": "Özgür proje",
-              "question": "Para kazanma zorunluluğun olmasa hangi projeyi denemek isterdin?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gelecek-004",
-              "topic": "Görmek istediğin yer",
-              "question": "İleride mutlaka görmek istediğin bir şehir veya doğa manzarası ne?",
+              "id": "kisisel-gelecek-001",
+              "topic": "İlk boş raf",
+              "question": "Yeni bir eve taşınsan ilk rafa hangi eşyayı koyardın?",
               "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gelecek-005",
-              "topic": "Gelecekte bir gün",
-              "question": "Gelecekte bir gününü şimdiden planlasan nasıl başlardı?",
+              "id": "kisisel-gelecek-002",
+              "topic": "Yarınki atıştırma",
+              "question": "Yarın sana bir sürpriz atıştırmalık hazırlanacak olsa paketin içinden ne çıksın?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-003",
+              "topic": "Hayalden pencere",
+              "question": "Bir sabah pencerenin manzarasını değiştirme hakkın olsa dışarıda ne görmek isterdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Daha çok pencereden mi bakardın, dışarı mı çıkardın?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-004",
+              "topic": "Serbest saat",
+              "question": "Yarın bütün şehir bir saat boyunca işlerini bıraksa o saatte sokakta ne yapmak isterdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Saat sona ererken herkesin işine dönmesini hangi ses haber versin?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-005",
+              "topic": "Ödünç yetenek",
+              "question": "Hafta sonu için bir hayvanın zararsız bir hünerini ödünç alabilsen hangisini seçerdin?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Onu ilk nerede denerdin?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-006",
+              "topic": "Günün uydurma tatili",
+              "question": "Herkesin katılabileceği ama kimsenin hediye almak zorunda olmadığı bir tatil günü tasarlasan o gün ne yapılırdı?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İnsanlar o gün birbirlerine ne derdi?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-007",
+              "topic": "Misafirlik bir yıl sonra",
+              "question": "Bir yıl sonra sana uğrayan birini evinde hangi yeni ayrıntıyla şaşırtmak isterdin?",
               "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gelecek-006",
-              "topic": "Anında öğrenmek",
-              "question": "Bir beceriyi anında öğrenme hakkın olsa ne seçerdin?",
+              "id": "kisisel-gelecek-008",
+              "topic": "Unutulmasın",
+              "question": "Bugüne ait hangi sıradan sesi kaydedip gelecekte merak eden birine dinletirdin?",
               "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gelecek-007",
-              "topic": "Kalıcı alışkanlık",
-              "question": "On yıl sonra hangi alışkanlığını korumuş olmak istersin?",
+              "id": "kisisel-gelecek-009",
+              "topic": "Biletin açık ucu",
+              "question": "Gidiş bileti hazır olsa ama nerede ineceğine yolda karar versen nasıl bir yeri görünce kalkardın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Oraya iner inmez ilk kime ne anlatırdın?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-010",
+              "topic": "Ters hobi",
+              "question": "Kendine asla yakıştıramayacağın ama bir günlüğüne keyifle deneyeceğin hobi ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-011",
+              "topic": "Yavaş gezi",
+              "question": "Bir yeri gezmek için bir tam hafta verilip yalnızca üç sokağa girebilsen sokaklarını nasıl seçerdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-012",
+              "topic": "Geleceğe tamir",
+              "question": "Bugünkü hangi eşyayı, yirmi yıl sonra da işini görsün diye tamir ettirirdin?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O eşyanın modern versiyonunda eksik bulduğun ne var?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-013",
+              "topic": "Öğrenme daveti",
+              "question": "Bir arkadaşınla birlikte sıfırdan bir kursa gitsen kursta kendinizi en çok nerede gülerken hayal ediyorsun?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-014",
+              "topic": "Çocuk müzesi",
+              "question": "Yüz yıl sonra bugünün çocukluğunu anlatan bir müzeye tek bir şey yollasan ne yollardın?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yanına konan açıklamaya hangi ayrıntı mutlaka yazılmalı?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-015",
+              "topic": "Fikri devralmak",
+              "question": "Yarım kalmış bir işi devralıp tamamlayabilsen kimin hangi işini seçerdin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Senden önceki kişinin izini en çok neresinde korurdun?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-016",
+              "topic": "İlk seyirci",
+              "question": "Henüz başlamadığın bir şeyi günün birinde gösterdiğinde ilk kimin tepkisini merak edersin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kişi neyi iyi bulsa özellikle sevinirdin?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-017",
+              "topic": "Vedadan sonraki ilk gün",
+              "question": "Bir dönem kapanıp yerine başka bir şey geldiğinde geride kalmasını istemediğin bir ayrıntı ne?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gelecek-008",
-              "topic": "Hayal evinin köşesi",
-              "question": "Hayalindeki evin en önemli köşesi neresi olurdu?",
-              "intensity": 2,
+              "id": "kisisel-gelecek-018",
+              "topic": "Bir daha öğrensem",
+              "question": "Bir beceriyi sil baştan öğrenme şansın olsa bu kez ilk hangi adımı atardın?",
+              "intensity": 3,
               "weight": 1,
-              "type": "question"
+              "type": "question",
+              "followUps": [
+                "O adımı vaktiyle atmanı ne engellemişti?"
+              ]
             },
             {
-              "id": "gelecek-009",
-              "topic": "Kendi etkinliğin",
-              "question": "Bir gün kendi etkinliğini düzenlesen insanları ne için toplardın?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gelecek-010",
-              "topic": "Öğrenilecek konu",
-              "question": "Öğrenmeyi merak ettiğin ama henüz başlamadığın konu ne?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "gelecek-011",
-              "topic": "Gelecek tavsiyesi",
-              "question": "İleride biri senden ne konuda tavsiye alsın isterdin?",
+              "id": "kisisel-gelecek-019",
+              "topic": "Güzergâh değişirse",
+              "question": "Bu yıl kendin için düşündüğün plan değişirse, yerine bambaşka ne koymak seni yine de heyecanlandırır?",
               "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gelecek-012",
-              "topic": "Küçük icat",
-              "question": "Bir şeyi icat edebilsen hangi küçük günlük sorunu çözerdin?",
-              "intensity": 2,
+              "id": "kisisel-gelecek-020",
+              "topic": "Paylaşılan yan proje",
+              "question": "Yakın çevrendekilerle bir defalığına bir şey üretip ortaya bıraksanız ne yapardınız?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İşin hangi kısmına gönüllü olurdun?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-021",
+              "topic": "Parayla ölçülmez",
+              "question": "İleride bir konuda ustalaşsan bile ücret almadan yapmayı sürdürmek isteyeceğin bir şey ne?",
+              "intensity": 3,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "gelecek-013",
-              "topic": "Bir aylık yenilik",
-              "question": "Önündeki bir ayda yapmak istediğin küçük bir yenilik var mı?",
-              "intensity": 2,
+              "id": "kisisel-gelecek-022",
+              "topic": "Gizli zaman kapsülü",
+              "question": "Kendine bir yıl sonra açmak üzere küçük bir kutu hazırlasan içine gerçekten neyi koyardın?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O eşyayı açarken yanında biri olsun ister miydin?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-023",
+              "topic": "Kendine verilen söz",
+              "question": "Uzun zamandır yapmak istediğin bir şeyi nihayet başlatsan devam etmeni ne sağlar?",
+              "intensity": 3,
               "weight": 1,
               "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-024",
+              "topic": "Ölümsüz tavsiye",
+              "question": "Şu anda iyi bildiğin bir şeyi gelecekte birine öğretirken hangi eski yöntemi korumak isterdin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-025",
+              "topic": "Başka bir şehir",
+              "question": "Taşınacağın yerde aynı hayatı sürdürmekle yeniden başlamak arasında sana en çekici gelen fark ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yeni bir yerde bile kesinlikle yanında götüreceğin alışkanlık hangisi?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-026",
+              "topic": "Geleceğin gündeliği",
+              "question": "Çok istediğin bir işi yapmak için gündelik hayatında neyden vazgeçmek içine siner, neyi mutlaka korurdun?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu hesabı yaparken dışarıdan küçük görünüp senin için büyük olan ne?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-027",
+              "topic": "Kendin çizdiğin ölçü",
+              "question": "Yaşıtlarınla kıyaslamaya gerek kalmadan ilerlediğini nasıl anlayabileceğin bir hedef ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu hedefi sana göre iyi bir sonuca ulaştıran ölçü ne olur?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-028",
+              "topic": "Bir yıl deneme hakkı",
+              "question": "Hayatın bir yönünü bir yıllığına değiştirip hiçbir şey kaybetmeden geri dönebilseydin neyi değiştirirdin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Geri dönmek isteyip istemediğini hangi işaretten anlardın?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-029",
+              "topic": "Hızlı sonuç yavaş fayda",
+              "question": "Bir amacın için hızlı ama geçici bir sonuçla yavaş ama kalıcı bir sonuç arasında kaldığında neye bakarsın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-030",
+              "topic": "Karar vermemek de karar",
+              "question": "Önündeki bir seçimde beklemek, hangi noktada seçeneklerinden birini kaybetmek anlamına gelir?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Beklemeyi seçtiğinde elinde neyi korumak istiyorsun?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-031",
+              "topic": "Eski planın hakkı",
+              "question": "Bir zamanlar çok istediğin bir hedefi bırakmadan önce kendine son bir soru soracak olsan ne sorardın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-032",
+              "topic": "Sana sunulan yol",
+              "question": "İstediğin ama çevrenin başka türlüsünü önerdiği bir gelecek planında nelere hâlâ açıksın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-033",
+              "topic": "Kırk yıl sonra mahalle",
+              "question": "Yaşadığın yerin gelecekte nasıl değişeceğini belirlerken nesi özellikle el değmeden kalsın isterdin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O ayrıntıyı korurken kimin ihtiyacını gözden kaçırma ihtimalin var?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-034",
+              "topic": "Planların sahibi",
+              "question": "Sana ait sandığın bir gelecek planının aslında bir başkasının beklentisi olduğunu ne zaman fark edersin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-035",
+              "topic": "Tabelada adım",
+              "question": "Yapacak olsan arkadaşlarının ilk “Ciddi misin?” diyeceği, gizliden gizliye istediğin iş ya da rol ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-036",
+              "topic": "Cep hayali",
+              "question": "Sana “Hadi, yarın başlıyoruz” dense en çok hangi hayalini savunmak için afallardın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Başlangıç için ilk kimin kapısını çalardın?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-037",
+              "topic": "Önceden prova edilmiş konuşma",
+              "question": "Hayalindeki ödül konuşmasında ciddi başlamışken itiraf edeceğin en komik acemilik ne olurdu?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-038",
+              "topic": "Gelecekteki dedikodu",
+              "question": "İleride arkadaşlarının “Ondan beklemezdik ama yaptı” diye anlatmasını isteyeceğin şey ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Hikâyeyi anlatan kişi en çok nereyi abartır?"
+              ]
+            },
+            {
+              "id": "kisisel-gelecek-039",
+              "topic": "Hobinin ilanı",
+              "question": "Kendine komik duruma düşme izni versen hangi hobinin ilk gösterisine en önden katılırdın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-gelecek-040",
+              "topic": "Gelecekten gelen fiş",
+              "question": "Beş yıl sonraki kendinin cebinden hangi alışveriş fişi çıksa bugünkü sen “Yok artık, o kadar da değil” derdi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O günkü sen bu alışverişi bugünkü sana nasıl açıklardı?"
+              ]
             }
           ]
         },
@@ -2013,130 +3472,381 @@
           "label": "Sosyal Hayat",
           "items": [
             {
-              "id": "baglar-001",
-              "topic": "Grup sohbeti",
-              "question": "Bir grup içinde daha çok konuşan mı, dinleyen mi olursun?",
-              "intensity": 3,
+              "id": "kisisel-baglar-001",
+              "topic": "Son dakika masa",
+              "question": "Bir arkadaşın sohbete ortasından katılsa “Biz burada ne konuşuyorduk?” diye özetlemek için hangi cümleyle başlarsın?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-002",
+              "topic": "Vedalaşma hareketi",
+              "question": "Samimi bir buluşmanın sonunda el sallaman mı daha doğal, uzaktan seslenmen mi?",
+              "intensity": 1,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-003",
+              "topic": "Paylaşılan atıştırma",
+              "question": "Ortaya atıştırmalık koyan biri hangi yiyeceği seçerse ilk sen uzanırsın?",
+              "intensity": 1,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Kalabalık bir sohbette söze nasıl girersin?"
+                "Son parça kaldığında masada ne olur?"
               ]
             },
             {
-              "id": "baglar-002",
-              "topic": "Yanlış anlaşılma",
-              "question": "Duyduğun en tuhaf yanlış anlaşılma neydi?",
-              "intensity": 2,
+              "id": "kisisel-baglar-004",
+              "topic": "Uğurlama sözü",
+              "question": "Biri giderken ağzından en doğal çıkan uğurlama cümlesi ne?",
+              "intensity": 1,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "baglar-003",
-              "topic": "Katılmadığını söylemek",
-              "question": "Birine katılmadığında bunu açıkça söyler misin?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "baglar-004",
-              "topic": "Kalabalık mı küçük grup mu",
-              "question": "Kalabalık bir ortamda mı, küçük bir grupta mı daha rahat konuşursun?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "baglar-005",
-              "topic": "Söz kesmek",
-              "question": "Sence biri konuşurken sözünü kesmek hangi durumda kabul edilebilir?",
-              "intensity": 3,
+              "id": "kisisel-baglar-005",
+              "topic": "Masa dolu mu",
+              "question": "Arkadaşların gelmeden bir masayı tutman gerekse yalnızken masaya ilk ne koyarsın?",
+              "intensity": 1,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Sohbetlerde seni en çok hangi alışkanlık rahatsız eder?"
+                "O masa dolu görünsün diye kaç kişilik çaba harcarsın?"
               ]
             },
             {
-              "id": "baglar-006",
-              "topic": "Farklı zevkler",
-              "question": "Farklı zevkleri olan insanlarla ortak etkinlik bulmak kolay mı?",
+              "id": "kisisel-baglar-006",
+              "topic": "Grup alameti",
+              "question": "Arkadaş grubundaki herkeste ortak olup yeni gelenin hemen fark edeceği bir alışkanlık ne?",
               "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "baglar-007",
-              "topic": "Grup aksiliği",
-              "question": "Bir grubun başına gelebilecek en komik aksilik ne olabilir?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "baglar-008",
-              "topic": "Grup gezisi",
-              "question": "Bir arkadaş grubuyla gezi planlasan ilk nereyi seçerdin?",
-              "intensity": 2,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "baglar-009",
-              "topic": "Plan yapmak",
-              "question": "Bir grup etkinliğinde planı yapan mı, plana uyan mı olursun?",
-              "intensity": 3,
-              "weight": 1,
-              "type": "question"
-            },
-            {
-              "id": "baglar-010",
-              "topic": "Sohbete giriş",
-              "question": "Yeni bir grupta sohbet açmak için hangi konuyu seçersin?",
+              "id": "kisisel-baglar-007",
+              "topic": "Sessiz ortaklık",
+              "question": "Tanışmak için konuşmaya gerek kalmadan iki insanı yan yana getirebilen bir uğraş ne?",
               "intensity": 2,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Hangi giriş sorusu sence en sıkıcı?"
+                "O uğraş bittikten sonra sohbeti ne başlatır?"
               ]
             },
             {
-              "id": "baglar-011",
-              "topic": "Uzayan tartışma",
-              "question": "Sence bir tartışmayı gereksiz yere uzatan en yaygın alışkanlık ne?",
-              "intensity": 3,
+              "id": "kisisel-baglar-008",
+              "topic": "Sürpriz davet",
+              "question": "Normalde aklına gelmeyen ama birinden davet gelirse hemen kabul edeceğin etkinlik ne?",
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "baglar-012",
-              "topic": "Fikir ayrılığı",
-              "question": "Arkadaşlarınla fikir ayrılığı yaşadığında genellikle ne yaparsın?",
-              "intensity": 3,
+              "id": "kisisel-baglar-009",
+              "topic": "Buluşma saati",
+              "question": "Buluşmaya herkesten önce geldiğinde o vakti nasıl değerlendirirsin?",
+              "intensity": 2,
               "weight": 1,
               "type": "question"
             },
             {
-              "id": "baglar-013",
-              "topic": "Grup etkinliği",
-              "question": "Daha önce denemediğin hangi grup etkinliğini merak ediyorsun?",
+              "id": "kisisel-baglar-010",
+              "topic": "Sohbeti taşıyan şey",
+              "question": "Arkadaşlarınla sohbet nerede daha iyi akıyor: yürürken mi, masada mı, başka bir yerde mi?",
               "intensity": 2,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Bunu eğlenceli kılacak tek kural ne olurdu?"
+                "Aynı grupla daha resmî bir yerde buluşsan sohbet nasıl değişirdi?"
               ]
             },
             {
-              "id": "baglar-014",
-              "topic": "Günlük nezaket",
-              "question": "Biri sırada öne geçmeye çalışsa nasıl tepki verirsin?",
+              "id": "kisisel-baglar-011",
+              "topic": "Uzak selam",
+              "question": "Bir süredir görmediğin ama karşılaşınca kaldığın yerden konuşabildiğin biriyle en doğal başlangıç konunuz ne?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-012",
+              "topic": "Aracı arkadaş",
+              "question": "Birbirini hiç tanımayan iki arkadaşını nasıl bir konuda tanıştırırdın?",
               "intensity": 2,
               "weight": 1,
               "type": "question",
               "followUps": [
-                "Günlük hayatta seni en çok hangi küçük kabalık sinirlendirir?"
+                "İkisi de daha önce nerede yolları kesişmiş olabilir diye düşünürdü?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-013",
+              "topic": "Buluşma geleneği",
+              "question": "Her buluşmada birinizin mutlaka yaptığı küçük bir şey var mı? Gruba nasıl yerleşti?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-014",
+              "topic": "İsim seçme",
+              "question": "Arkadaş grubunuzun lakabı, dışarıdan duyanın hiç anlamayacağı neye gönderme yapardı?",
+              "intensity": 2,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-015",
+              "topic": "Bir kişilik yer",
+              "question": "Bir gruba yeni katıldığında seni gerçekten aralarına aldıklarını hangi hareketten anladın?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Yeni gelen birine sen o duyguyu nasıl verirsin?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-016",
+              "topic": "Ayrı telden gülmek",
+              "question": "Bir arkadaşınla ilk defa ikinizin de çok güldüğü ama başkasına anlatınca komik gelmeyen ne olmuştu?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-017",
+              "topic": "Karşılıksız davet",
+              "question": "Bir davete gidemediğin hâlde davet edilmiş olmak hangi durumda seni sevindirmişti?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-018",
+              "topic": "Durup dinlemek",
+              "question": "Anlatırken dinlenmediğini sanıp karşı tarafın daha sonra bir ayrıntıyı hatırlaması seni ne zaman şaşırttı?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O ayrıntı neden aklında kalmış olabilir?",
+                "O kişinin anlattıklarından senin hatırladığın benzer bir ayrıntı ne?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-019",
+              "topic": "İlk ricam",
+              "question": "Bir arkadaşından ilk kez yardım istediğinde aranızda ne değişti?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-020",
+              "topic": "Yarıda kesilen laf",
+              "question": "Bir grupta yarım bıraktığın bir cümlenin peşine sonradan biri düştü mü? Neyi duymak istemişti?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-021",
+              "topic": "İki kişilik iş",
+              "question": "Bir arkadaşla yıllardır konuşsan da birlikte bir iş yapınca onda ilk kez fark ettiğin şey neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "O kişi de sende ne görmüş olabilir?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-022",
+              "topic": "Eski yanlış anlama",
+              "question": "Bir arkadaşının sana kızdığını sanıp sonradan işin bambaşka olduğunu ne zaman öğrendin?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Aranızda ne zaman bu yanlış anlama gülünecek bir şeye dönüştü?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-023",
+              "topic": "İyi gelen karşı çıkış",
+              "question": "Bir arkadaşın sana katılmadığında buna sonradan sevindiğin bir örnek ne?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Aynı şeyi samimi olmadığın biri söylese dinler miydin?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-024",
+              "topic": "Rötarlı selam",
+              "question": "Birine geç de olsa ulaşıp konuşmaya değdiğini düşündüğün bir an neydi?",
+              "intensity": 3,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-025",
+              "topic": "Kimin şakası",
+              "question": "Bir arkadaşın hakkında yapılan şakanın samimi takılmadan incitmeye geçtiğini nereden anlarsın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-026",
+              "topic": "İyilik kime göre",
+              "question": "Birine yardım etmek istediğinde yardımının gerçekten işine yarayıp yaramadığını nasıl anlarsın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "İstediğin biçimde yardım edemediğinde ilişkiye ne iyi gelir?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-027",
+              "topic": "Söz hakkı açmak",
+              "question": "Grupta çok az söz alan birine alan açmakla onu konuşmaya zorlamak arasındaki fark nerede?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-028",
+              "topic": "Araya giren zaman",
+              "question": "Bir arkadaşlık eskisi kadar sık görüşmeden de yakın kalabiliyorsa onu yakın tutan ne?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Zaman değişince hangi ortak alışkanlığı bırakıp hangisini korumak isterdin?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-029",
+              "topic": "Sadakat nereye kadar",
+              "question": "Bir arkadaşına sadık olmak, haklı bulmadığın bir davranışını desteklemeyi hangi noktada bırakmayı gerektirir?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Konuyu onunla baş başa açmak kararı nasıl değiştirir?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-030",
+              "topic": "Buluşmanın emeği",
+              "question": "Hep aynı kişi plan yapıyorsa diğerlerinin de bu arkadaşlığa emek verdiğini nereden anlarsın?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-031",
+              "topic": "Başkasının adına",
+              "question": "Bir arkadaşının rahatsız olduğunu düşündüğün bir durumda onun adına konuşmadan nasıl yanında durursun?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Cevabı onun vermek istediğini fark edersen ne yaparsın?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-032",
+              "topic": "Eskiye dönmek",
+              "question": "İki arkadaş arasını düzelttiğinde, hangi durumda eski yakınlığa dönmeleri gerekmeyebilir?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-033",
+              "topic": "Farklı paylaşım",
+              "question": "Bir arkadaşın güzel haberini senden önce başka birine anlatsa hangi koşulda bunun çok doğal olduğunu düşünürsün?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-034",
+              "topic": "Çevrelerin çarpışması",
+              "question": "İki arkadaş çevren bir araya geldiğinde her birinde farklı davrandığını fark edersen hangisini korumak istersin?",
+              "intensity": 4,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bu farklılıkların ikisi de senin bir parçan olabilir mi?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-035",
+              "topic": "Yanlış veda",
+              "question": "Birine uzun uzun veda ettikten sonra aynı yöne yürüdüğünüzü fark edince ne söylersin?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-036",
+              "topic": "Mecburi alkış",
+              "question": "Birinin söylediklerine hiç katılmadığın hâlde ortamın gazıyla alkışladığın ya da onay verdiğin bir an neydi?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bugün aynı ortamda yüzün nasıl bir ifade alırdı?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-037",
+              "topic": "Susup kurtulamadım",
+              "question": "Komik bulmadığın bir espriye gülünce onu bir daha dinlemek zorunda kaldığın oldu mu? O anı nasıl atlattın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question"
+            },
+            {
+              "id": "kisisel-baglar-038",
+              "topic": "Grup sohbeti cesareti",
+              "question": "Ortak bir plan yapılırken herkes onaylasa da “Ben bunu hiç istemiyorum” diyeceğin en masum etkinlik ne?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Onun yerine ne önerirdin?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-039",
+              "topic": "İltifat hamlesi",
+              "question": "Birini hafifçe etkilemek için yapabileceğin en doğal iltifat nasıl olurdu?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Sana söylense içten geldiğini nasıl anlardın?"
+              ]
+            },
+            {
+              "id": "kisisel-baglar-040",
+              "topic": "Ortada kalan espri",
+              "question": "Yaptığın espriyi kimse anlamayınca o sessizliği bozmak için ne yaptın?",
+              "intensity": 5,
+              "weight": 1,
+              "type": "question",
+              "followUps": [
+                "Bir daha olsa konuyu mu değiştirirdin, espriyi inadına anlatır mıydın?"
               ]
             }
           ]
@@ -2153,508 +3863,1004 @@
         "label": "İlk İzlenim",
         "items": [
           {
-            "id": "gizli-hoslanma-001",
-            "topic": "İlk dikkatini çeken",
-            "question": "Tanımadığın bir ortamda ilk dikkatini çeken ayrıntı ne?",
+            "id": "gizli-kisisel-hoslanma-001",
+            "topic": "Aynı ayrıntı",
+            "question": "Yeni tanıştığın biri senin de fark ettiğin minicik bir ayrıntıya gülerse bu onun hakkında sana ne düşündürür?",
+            "intensity": 2,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O ayrıntıyı örnekleyecek bir sahne uydurabilir misin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-002",
+            "topic": "İlk cümlenin havası",
+            "question": "Birinin daha ilk cümleden sohbeti rahatlatmasını sağlayan şey ne? Aklına bir örnek geliyor mu?",
             "intensity": 2,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-hoslanma-002",
-            "topic": "Yanlış tahmin",
-            "question": "İlk tahmininin tamamen yanlış çıktığı bir olay oldu mu?",
+            "id": "gizli-kisisel-hoslanma-003",
+            "topic": "İlk beş dakika",
+            "question": "Tanıştığın birine ilk beş dakikada büsbütün hatalı bir izlenim verdiğini hangi olaydan anladın?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Sonra düzeltmeye çalıştın mı, zamanın halletmesine mi bıraktın?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-004",
+            "topic": "Isınma noktası",
+            "question": "Başta yanında kasıldığın birinin yanında ne olunca gevşeyip rahat konuşmaya başladın?",
             "intensity": 3,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-hoslanma-003",
-            "topic": "Farklı sonuçlar",
-            "question": "İnsanların aynı olaydan farklı sonuçlar çıkarmasının nedeni ne olabilir?",
+            "id": "gizli-kisisel-hoslanma-005",
+            "topic": "İkinci karşılaşma",
+            "question": "İlk görüşmede hiçbir şey konuşmadığın biriyle ikinci sefer ne açılınca sohbet ilerledi?",
             "intensity": 3,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "O ilk sessizlik sonradan aranızda bir şakaya dönüştü mü?"
+            ]
           },
           {
-            "id": "gizli-hoslanma-004",
-            "topic": "Mimikleri okumak",
-            "question": "İnsanların mimiklerini okumakta iyi misin?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-hoslanma-005",
-            "topic": "Sessiz gözlem",
-            "question": "Sence az konuşan insanlar daha çok mu gözlem yapar?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-hoslanma-006",
-            "topic": "Yeni bir ortam",
-            "question": "Yeni bir ortama girince önce etrafı mı incelersin, sohbete mi katılırsın?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-hoslanma-007",
-            "topic": "Fark edilmeyen alışkanlık",
-            "question": "Dışarıdan pek fark edilmeyen ama sende belirgin olan bir alışkanlık var mı?",
+            "id": "gizli-kisisel-hoslanma-006",
+            "topic": "Güven işareti",
+            "question": "Yeni tanıştığın birinin sana güvenli gelen ilk hareketi neydi?",
             "intensity": 3,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Bu hareketi fark edince sen de daha farklı mı davrandın?"
+            ]
           },
           {
-            "id": "gizli-hoslanma-008",
-            "topic": "Göründüğü kadar kolay değil",
-            "question": "İlk bakışta kolay görünen ama seni epey zorlayan bir şey oldu mu?",
-            "intensity": 3,
+            "id": "gizli-kisisel-hoslanma-007",
+            "topic": "İlk karşılaşmanın payı",
+            "question": "Birini tuhaf bir zamanda veya ortamda tanıdığın için ona haksızlık ettiğini ne zaman fark edersin?",
+            "intensity": 4,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "İkinci bir tanışma için daha iyi bir ortam seçsen neresi olurdu?"
+            ]
           },
           {
-            "id": "gizli-hoslanma-009",
-            "topic": "Kendini keşfetmek",
-            "question": "Kendinle ilgili sonradan keşfettiğin şaşırtıcı bir özellik var mı?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-hoslanma-010",
-            "topic": "İlk tepki",
-            "question": "Bir fikri ilk duyduğunda mı, üzerinde düşününce mi daha iyi değerlendirirsin?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-hoslanma-011",
-            "topic": "Beklenmedik tercihler",
-            "question": "Sence insanlar senin hangi tercihini yanlış tahmin eder?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-hoslanma-012",
-            "topic": "Söz mü davranış mı",
-            "question": "Bir insanı anlamak için söylediklerine mi, yaptıklarına mı bakmak gerekir?",
+            "id": "gizli-kisisel-hoslanma-008",
+            "topic": "Gözünde büyüdü",
+            "question": "Tanışmadan önce çok etkilendiğin birinin yanında zamanla kendi sesini rahatça çıkarabilmeni ne sağladı?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-009",
+            "topic": "Ün peşinden gelirken",
+            "question": "Birine dair önceden duyduğun bir şeyle onun yanında bizzat gördüklerin çelişirse nasıl bir yol izlersin?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "İkisini birden açık tutabileceğin bir ihtimal var mı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-010",
+            "topic": "Sana ait olmayan beklenti",
+            "question": "Birinin seni ilk tanışmada ona benzeyen birine çevirmeye çalıştığını hangi işaretlerden anlarsın?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-011",
+            "topic": "Benzerliğin cazibesi",
+            "question": "Biri senin gibi düşündüğü için onu daha dürüst ya da daha iyi sanma ihtimalin hangi konuda yükselir?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Bir farkınız ortaya çıkınca bu yargıya ne olur?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-012",
+            "topic": "Etki ve özen",
+            "question": "İnsanlara ilk anda iyi görünmekle yanlarında gerçek bir özen göstermek arasında bocaladığın bir karşılaşma neydi?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-013",
+            "topic": "Sen sandım",
+            "question": "Karşındakini daha önce tanıyor gibi davrandıktan sonra aslında tamamen başka biri olduğunu fark etsen ne derdin?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Buradaki biri o anda yanınızda olsa seni kurtarmak için ne söyleyebilirdi?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-014",
+            "topic": "Lakabın hazır",
+            "question": "Seni ilk kez gören biri yalnızca o günkü hâline göre sana lakap taksa, en komik ihtimal ne olurdu?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Bir sene sonra bile o lakap sana hangi açıdan uyuyor olurdu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-015",
+            "topic": "İlk buluşma menüsü",
+            "question": "Heyecandan menüdeki en yanlış şeyi sipariş etme ihtimalin hangi yemekte en yüksek?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-016",
+            "topic": "Yanlış sinyal",
+            "question": "Birinin sana ilgisi olduğunu sanıp sonradan aslında sadece nazik olduğunu anladığın zararsız bir anı varsa neyi yanlış okumuştun?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Benzer bir işareti bugün nasıl karşılardın?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-017",
+            "topic": "Biraz fazla hazır",
+            "question": "Bir karşılaşmanın tesadüf gibi görünmesini isteyip aslında hazırlandığın en komik ayrıntı neydi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-018",
+            "topic": "Uydurma bahane",
+            "question": "Biriyle biraz daha vakit geçirmek için bulduğun ya da bulabileceğin en bariz bahane ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Bahane anında anlaşılırsa gülüp dürüstçe ne söylerdin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-019",
+            "topic": "İlk cümle felaketi",
+            "question": "Seni etkilemek isteyen birinin ağzından çıkabilecek hangi ilk cümle seni hem güldürür hem de biraz meraklandırır?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O cümleyi duyduğunda gülmekten sonra ilk ne dersin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-hoslanma-020",
+            "topic": "Gözüme takıldı",
+            "question": "Birinin sende hemen fark etmesini istediğin ama bunu belli etmekten çekindiğin tatlı bir ayrıntı ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O ayrıntıyı fark edene nasıl karşılık verirdin?"
+            ]
           }
         ]
       },
       {
         "id": "ilk-adim",
-        "label": "Sohbet ve Merak",
+        "label": "Söz Arası",
         "items": [
           {
-            "id": "gizli-ilk-adim-001",
-            "topic": "Zamanı unutturan sohbet",
-            "question": "Zamanın nasıl geçtiğini fark etmediğin bir sohbet hatırlıyor musun?",
+            "id": "gizli-kisisel-ilk-adim-001",
+            "topic": "Sohbet freni",
+            "question": "Çok keyifli bir sohbetin yönünü en beklenmedik biçimde değiştirebilen masum kelime ne?",
             "intensity": 2,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-ilk-adim-002",
-            "topic": "Konudan konuya",
-            "question": "Bir sohbetin hiç planlamadığın bir konuya kaymasını sever misin?",
+            "id": "gizli-kisisel-ilk-adim-002",
+            "topic": "Yan masa konusu",
+            "question": "Yan masadan duyunca istemeden kulak kabartacağın en tuhaf sohbet konusu ne?",
             "intensity": 2,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Hikâyenin devamını öğrenmek için aklına ilk gelen soru ne olurdu?"
+            ]
           },
           {
-            "id": "gizli-ilk-adim-003",
-            "topic": "İyi açılış sorusu",
-            "question": "Bir sohbetin başında duyunca ilgini çekecek soru ne olurdu?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-ilk-adim-004",
-            "topic": "Mizahın arka planı",
-            "question": "Bir esprinin komik gelmesi için aynı geçmişi paylaşmak gerekir mi?",
+            "id": "gizli-kisisel-ilk-adim-003",
+            "topic": "Durup yeniden sorunca",
+            "question": "Cevaplamadan önce biraz durup düşündüğün bir soruyu hatırlıyor musun? Onu ne farklı kılmıştı?",
             "intensity": 3,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-ilk-adim-005",
-            "topic": "Sohbet alışkanlıkları",
-            "question": "Sohbette en çok hangi alışkanlık seni rahatsız eder?",
+            "id": "gizli-kisisel-ilk-adim-004",
+            "topic": "Konu kaçakçısı",
+            "question": "Hiç beklemediğin bir sohbetin içine sinsice sızıp gündemi ele geçiren konu neydi?",
             "intensity": 3,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Sohbet başlayınca herkesin aklına yeni bir örnek gelmiş miydi?"
+            ]
           },
           {
-            "id": "gizli-ilk-adim-006",
-            "topic": "Sohbetin ritmi",
-            "question": "Uzun sessizlikler mi, sürekli yeni konular mı sana daha doğal gelir?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-ilk-adim-007",
-            "topic": "Saatlerce anlatmak",
-            "question": "Herkesin sıkıcı bulabileceği ama senin saatlerce anlatabileceğin konu ne?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-ilk-adim-008",
-            "topic": "Beklenmedik merak",
-            "question": "Hiç beklemediğin bir konuda yeni bir merak keşfettin mi?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-ilk-adim-009",
-            "topic": "Tekrar okudukların",
-            "question": "Tekrar tekrar okumaktan sıkılmadığın bir yazı veya söz var mı?",
+            "id": "gizli-kisisel-ilk-adim-005",
+            "topic": "Sözü sahibine bırakmak",
+            "question": "Biri senin de bildiğin bir hikâyeyi anlatırken araya girmemeyi seçtiğin zaman neyi fark ettin?",
             "intensity": 3,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Sen olsan o hikâyeyi nerede bitirirdin?"
+            ]
           },
           {
-            "id": "gizli-ilk-adim-010",
-            "topic": "Soru sormak",
-            "question": "İnsanlara soru sormayı mı, onların sana soru sormasını mı daha çok seversin?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-ilk-adim-011",
-            "topic": "Espriyi açıklamak",
-            "question": "Bir espriyi açıklamak zorunda kalınca neden komikliği kaybolur?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-ilk-adim-012",
-            "topic": "Yarım kalan konu",
-            "question": "Yarım kaldığı için hâlâ merak ettiğin bir sohbet konusu var mı?",
+            "id": "gizli-kisisel-ilk-adim-006",
+            "topic": "İşe yaramayan espri",
+            "question": "Şaka yaparak ortamı rahatlatmaya çalışıp sohbetin aslında başka bir şeye ihtiyacı olduğunu anladığın bir an neydi?",
             "intensity": 3,
             "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Ortamı toparlayan şey ne oldu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-007",
+            "topic": "Onay arayan soru",
+            "question": "Birinin gerçekten fikrini mi merak ettiğini, yoksa sadece ona hak vermeni mi beklediğini neyden anlarsın?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Dürüst bir cevap duymaya daha açık hâle gelmesi için soru nasıl sorulabilirdi?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-008",
+            "topic": "İki tarafı da duymak",
+            "question": "Bir arkadaş derdini anlatırken konudaki öbür kişiyi de anladığını fark edersen dışarıdan nasıl görünmek istemezsin?",
+            "intensity": 4,
+            "weight": 1,
             "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-009",
+            "topic": "Cevap yetiştirme telaşı",
+            "question": "Bir konuşmada sıradaki cevabını hazırlarken önemli bir şeyi kaçırdığını sana hangi işaret söyler?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-010",
+            "topic": "Söylenmeyen cevap",
+            "question": "Karşındaki bir sorunu yanıtlamak yerine konuyu değiştirdiğinde ne zaman peşini bırakırsın, ne zaman sonra yeniden açarsın?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Konuyu yeniden açsan ona zaman tanıyan bir başlangıç nasıl olurdu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-011",
+            "topic": "Kime kulak verilir",
+            "question": "Bir grupta az önce duyulmayan bir fikir başka biri söyleyince beğenilirse orada nasıl davranırsın?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-012",
+            "topic": "Haklı kalma dürtüsü",
+            "question": "Bir konuşmanın sonunda anlaşılmayı mı, karşı tarafın “Haklısın” demesini mi istediğini nasıl ayırt edersin?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "İkisi aynı anda olmayacaksa konuşmayı nasıl bitirmek içine siner?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-013",
+            "topic": "Dedikodunun öznesi",
+            "question": "Bir sohbette birinin senden bahsettiğini sonradan anladığında duyduğun en masum ve komik yorum neydi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-014",
+            "topic": "Unuttuğum isim",
+            "question": "Adını üçüncü kez unuttuğun birine yeniden sormak için aklına gelen en açık sözlü cümle ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Sana aynı cümle söylense nasıl karşılardın?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-015",
+            "topic": "Yanlış kelimeyle girdim",
+            "question": "Bir sohbetin tam ortasına bir kelimeyi yanlış duyarak dalıp konuyu bambaşka yere çektiğin oldu mu? Sen ne duymuştun?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-016",
+            "topic": "Telefon çalıyor numarası",
+            "question": "Tatlı tatlı uzayan bir sohbetten çıkmak için aklına gelen en kötü bahane ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Bahaneden vazgeçsen aynı sohbetten nasıl nazikçe çıkardın?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-017",
+            "topic": "Söz düellosu",
+            "question": "Biri sana takıldığında aklına ancak eve dönünce gelen o mükemmel cevap neydi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O anda aklına gelseydi ortamın havası nasıl değişirdi?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-018",
+            "topic": "Yersiz ciddiyet",
+            "question": "Bir lafı fazla ciddiye aldığın için masadaki herkesi güldürdüğün bir an oldu mu? Ne sanmıştın?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-019",
+            "topic": "Sohbetten çalınan söz",
+            "question": "Mesaj yazarken düzgün gözüksün diye koyduğun, yüz yüze olsan asla söylemeyeceğin kelime ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Bunu yüksek sesle okumadan doğal duyurmanın yolu var mı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-ilk-adim-020",
+            "topic": "Cesur itiraf cümlesi",
+            "question": "İlgini çeken birine konuşmayı sürdürmek istediğini çok belli etmeden nasıl söylerdin?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "İma hiç anlaşılmazsa doğrudan ne demek daha kolay gelirdi?",
+              "Benzer bir cümle sana gelse hangi ton hoşuna giderdi?"
+            ]
           }
         ]
       },
       {
         "id": "yakinlik",
-        "label": "Sınırlar ve Tercihler",
+        "label": "Sınırlar",
         "items": [
           {
-            "id": "gizli-yakinlik-001",
-            "topic": "Kendini savunmak",
-            "question": "Kendi kararlarını en rahat hangi durumlarda savunursun?",
+            "id": "gizli-kisisel-yakinlik-001",
+            "topic": "Sessizlik biçimi",
+            "question": "Yan yana oturup herkesin kendi işiyle uğraştığı bir buluşmada sen ne yapardın?",
+            "intensity": 2,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-002",
+            "topic": "Sürprizin ölçüsü",
+            "question": "Sana sürpriz yapılırken hiç haberin olmaması mı hoşuna gider, yalnızca gününü bilmek mi?",
+            "intensity": 2,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Sürprizin hangi kısmını hep sen seçmek istersin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-003",
+            "topic": "Acele cevap bekleme",
+            "question": "Biri sana düşünmen için zaman bıraktığında bir konuşmanın nasıl daha iyi gittiğini gördün?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O arayı kendin istemen gerekse nasıl rica ederdin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-004",
+            "topic": "Günün boş köşesi",
+            "question": "Yoğun geçen bir günün içinde başkasına ayırmayı sevdiğin vakitle yalnız kalmak istediğin vakti nasıl ayırırsın?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-005",
+            "topic": "İlginin iyi geldiği hâl",
+            "question": "Biri seni neşelendirmek için uğraşırken yaptığı hangi küçük şey diğerlerinden daha iyi gelmişti?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Aynı şeyi bugün kendin istesen nasıl dile getirirdin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-006",
+            "topic": "İstemediğin yardım",
+            "question": "İyi niyetle sunulsa da senin yerine yapılmasını istemediğin bir şey ne?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Yardım etmek isteyen biri ne yaparsa daha rahat hissedersin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-007",
+            "topic": "Şakanın eskisi",
+            "question": "Bir zamanlar birlikte güldüğünüz bir şaka artık sana iyi gelmiyorsa bunu ilk hangi anda konuşmak daha kolay olur?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-yakinlik-002",
-            "topic": "Sezgi ve kanıt",
-            "question": "Bir karar verirken sezgine mi, kanıta mı daha çok güvenirsin?",
-            "intensity": 3,
+            "id": "gizli-kisisel-yakinlik-008",
+            "topic": "Kendi vaktin",
+            "question": "Bir arkadaşın ilgilenmeni bekliyor ama senin dinlenmeye ihtiyacın var. İkinize de sürdürülebilir olanı nasıl söylersin?",
+            "intensity": 4,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Aynı beklenti sürekli tekrarlansa konuşmada neyi değiştirirdin?"
+            ]
           },
           {
-            "id": "gizli-yakinlik-003",
-            "topic": "Anlatma biçimi",
-            "question": "Sana zor gelen bir konuyu konuşmayı mı, yazmayı mı tercih edersin?",
+            "id": "gizli-kisisel-yakinlik-009",
+            "topic": "Haber verme mesafesi",
+            "question": "Bir kararın seni ilgilendirmediği hâlde sana söylenmesini istemen hangi durumda yakınlığın parçası olur?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-yakinlik-004",
-            "topic": "Yalnız kalmak",
-            "question": "Bazen tek başına zaman geçirmek sana iyi gelir mi?",
-            "intensity": 3,
+            "id": "gizli-kisisel-yakinlik-010",
+            "topic": "Hesap verme hissi",
+            "question": "Birinin merakla sorduğu bir soru hangi noktada sana hesap soruluyor gibi gelmeye başlar?",
+            "intensity": 4,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Bu farkı tek bir cümleyle o kişiye nasıl anlatabilirdin?"
+            ]
           },
           {
-            "id": "gizli-yakinlik-005",
-            "topic": "Hayır demek",
-            "question": "Hayır demekte en çok zorlandığın durum ne?",
+            "id": "gizli-kisisel-yakinlik-011",
+            "topic": "Kapısı açık mı",
+            "question": "Birine mesafeye ihtiyacın olduğunu söylerken, ileride yeniden yakınlaşma ihtimalini açık tutmak istiyorsan neyi netleştirirsin?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-yakinlik-006",
-            "topic": "Zor günler",
-            "question": "Zor bir günde yalnız kalmak mı, bir şeyle uğraşmak mı seni rahatlatır?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-yakinlik-007",
-            "topic": "Küçük alışkanlık",
-            "question": "Görünüşte küçük ama hayatını kolaylaştıran bir alışkanlık var mı?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-yakinlik-008",
-            "topic": "Doğru zamanı beklemek",
-            "question": "Bir gerçeği açıkça söylemek mi, doğru zamanı beklemek mi daha zor?",
+            "id": "gizli-kisisel-yakinlik-012",
+            "topic": "Yan yana farklı",
+            "question": "Seni seven biri senin için çok önemli bir konuda farklı düşünüyorsa bu farkın ilişkinizde sorun olmaması için neye ihtiyaç duyarsın?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-yakinlik-009",
-            "topic": "Sıradan günler",
-            "question": "Sıradan bir günü sonradan önemli hâle getiren şey ne olabilir?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-yakinlik-010",
-            "topic": "Değişen alışkanlıklar",
-            "question": "Eskiden rahatça yapamadığın ama artık zorlanmadığın bir şey var mı?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-yakinlik-011",
-            "topic": "Dışarıdan bakış",
-            "question": "Başkalarının seni nasıl gördüğünü ne kadar önemsersin?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-yakinlik-012",
-            "topic": "Yanlış kararı düzeltmek",
-            "question": "Yanlış karar verdiğini kabul etmek mi, düzeltmeye çalışmak mı daha zor?",
+            "id": "gizli-kisisel-yakinlik-013",
+            "topic": "Şimdilik pas",
+            "question": "Buradaki herkesin merak etmiş olabileceği hangi masum soruya “Bugün pas geçiyorum” demek sana iyi hissettirir?",
             "intensity": 5,
             "weight": 1,
             "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-014",
+            "topic": "Kısaltalım mı",
+            "question": "Bir buluşmanın kötü gitmesini beklemeden “Ben erken ayrılmak istiyorum” demeni en çok ne zorlaştırıyor?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Nazikçe ayrılmak için ezberlemeye razı olacağın tek cümle ne?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-015",
+            "topic": "Hediye değişimi",
+            "question": "İçinden “Keşke fişi de içinde olsa” dediğin bir hediye neydi? İsim vermeden anlatabilirsin.",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O hediyenin daha uygun bir versiyonunu seçsen ne olurdu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-016",
+            "topic": "Lakabı veto etmek",
+            "question": "İyi niyetle takılsa bile kabul etmeyeceğin lakap türü hangisi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-017",
+            "topic": "Ben seçeyim",
+            "question": "Herkes senin adına seçim yaparken “Durun, bu sefer ben seçiyorum” demek isteyeceğin en komik konu ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-018",
+            "topic": "Romantik olmayan sürpriz",
+            "question": "Birinin çok romantik sanarak yapabileceği ama seni güldürecek en abartılı jest ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Aynı jestin daha sade hâli hoşuna gider miydi?",
+              "Sana göre romantik olup başkasının anlamayacağı küçük bir jest ne?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-019",
+            "topic": "Fotoğraftan çıkıyorum",
+            "question": "Çekilmiş bir grup fotoğrafını görüp “Bunu paylaşmayalım” demene sebep olabilecek en komik ayrıntı ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Aynı fotoğrafı tekrar çekerken ilk hangi ayrıntıyı değiştirirdin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-yakinlik-020",
+            "topic": "İzin fişi",
+            "question": "İnsanların yapmadan önce senden bir izin fişi almasını isteyeceğin en zararsız şey ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Kibarca reddedilirse fişin arkasında hangi küçük alternatif yazsın?"
+            ]
           }
         ]
       },
       {
         "id": "itiraflar",
-        "label": "Kendine Dair",
+        "label": "İtiraflar",
         "items": [
           {
-            "id": "gizli-itiraflar-001",
-            "topic": "Anlatması zor",
-            "question": "Kendinle ilgili anlatmakta zorlandığın ama önemli bulduğun bir özellik ne?",
-            "intensity": 5,
+            "id": "gizli-kisisel-itiraflar-001",
+            "topic": "Çekmecenin dibinde",
+            "question": "Kimsenin saklamaya değer bulmayacağı ama sende birkaç yıldır duran şey ne?",
+            "intensity": 2,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-itiraflar-002",
-            "topic": "Sessiz değişim",
-            "question": "Fark edilmeden değişen bir düşüncen veya alışkanlığın var mı?",
+            "id": "gizli-kisisel-itiraflar-002",
+            "topic": "İnternette en derin kuyu",
+            "question": "Masum bir merakla bakmaya başlayıp kendini ayrıntılarına dalmış bulduğun en alakasız konu ne?",
+            "intensity": 2,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Videoyu ya da yazıyı kapattığında aklında ne kaldı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-003",
+            "topic": "Ödünç karakter",
+            "question": "Bir kurmaca karakteri biraz fazla benimseyip farkında olmadan onun gibi davrandığın bir dönem oldu mu? Neyi taklit etmiştin?",
             "intensity": 3,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-itiraflar-003",
-            "topic": "Kendine not",
-            "question": "Geçmişteki kendine bir cümle yazsan ne derdin?",
+            "id": "gizli-kisisel-itiraflar-004",
+            "topic": "Erken vazgeçtim sandım",
+            "question": "Vazgeçtiğini söylediğin hâlde fırsatı çıkınca yine heyecanlandığın bir uğraş ne?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-005",
+            "topic": "Küçük kıyak",
+            "question": "Hiç üstüne alınmadığın ama aslında senin ayarladığın küçük bir güzellik neydi?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Onu senin yaptığını öğrenen biri nasıl tepki verirdi?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-006",
+            "topic": "İtiraz etmedim",
+            "question": "Sana dair bariz bir yanlış bilgi dolaşırken düzeltmeye üşendiğin ve sonra işin büyüdüğü oldu mu? Nasıl?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-007",
+            "topic": "Konuşmayan başarı",
+            "question": "Övgü aldığın bir işin hikâyesi anlatılırken hangi önemli ayrıntının hep atlandığını düşündün?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Hikâyeyi sen anlatsan kimin ya da neyin payını geri koyardın?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-008",
+            "topic": "Kolay gelen yargı",
+            "question": "Bir huyu başkasında görünce çabuk eleştirip kendinde görünce daha kolay açıkladığın bir örnek ne?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Kendi açıklamanı o kişi yapsa bunu duymaya açık olur muydun?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-009",
+            "topic": "İyi niyetin içinde",
+            "question": "Birine güzel bir şey yaparken içten içe karşılığında haber beklediğini hangi durumda fark edersin?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-itiraflar-004",
-            "topic": "Öğrenilen ders",
-            "question": "Keşke dediğin bir olaydan öğrendiğin yararlı bir şey oldu mu?",
+            "id": "gizli-kisisel-itiraflar-010",
+            "topic": "Kendini yanlış yazmak",
+            "question": "Kendinle ilgili yıllardır anlatıp durduğun, artık tam olarak sana uymayan bir cümle ne?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Onu değiştirdiğinde hangi yeni ihtimale yer açılır?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-011",
+            "topic": "Fazlasını söylememe hakkı",
+            "question": "Bir hikâyeni anlatırken bazı ayrıntıları kendine saklamanla hikâyeyi çarpıtman arasındaki çizgi nerede?",
             "intensity": 4,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-itiraflar-005",
-            "topic": "Küçük korku",
-            "question": "Başkalarına komik gelebilecek ama seni gerçekten tedirgin eden bir şey var mı?",
-            "intensity": 5,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-itiraflar-006",
-            "topic": "Gerçek istek",
-            "question": "Son zamanlarda gerçekten istediğin ama ertelediğin bir şey ne?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-itiraflar-007",
-            "topic": "Bakış açısı",
-            "question": "Hangi küçük olay sana yepyeni bir bakış açısı kazandırdı?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-itiraflar-008",
-            "topic": "Yanlış anlaşılan yön",
-            "question": "İnsanların sende sıkça yanlış anladığı bir özellik var mı?",
+            "id": "gizli-kisisel-itiraflar-012",
+            "topic": "Haklı mazeret",
+            "question": "Aslında haklı bir mazeretin olduğu hâlde dürüstçe “Bunu yapmak istemiyorum” demenin daha iyi olacağı bir durum var mı?",
             "intensity": 4,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Sebep söylemediğinde insanlar bunu nasıl yanlış anlayabilir?"
+            ]
           },
           {
-            "id": "gizli-itiraflar-009",
-            "topic": "Sorulmayan soru",
-            "question": "Sana hiç sorulmayan ama anlatmak isteyeceğin bir konu var mı?",
+            "id": "gizli-kisisel-itiraflar-013",
+            "topic": "Arama motoru şaşırdı",
+            "question": "Son zamanlarda cevap aradığın en saçma ama tamamen masum soru neydi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Cevabı seni tatmin etti mi, yoksa daha tuhaf bir soruya mı geçtin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-014",
+            "topic": "Ters övünme",
+            "question": "Övündüğün bir beceri için şimdi en kolay seviyede sınava girsen hangi kısımda yakalanırsın?",
             "intensity": 5,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-itiraflar-010",
-            "topic": "Aklında kalan söz",
-            "question": "Duyduğunda günlerce düşündüğün bir cümle var mı?",
-            "intensity": 3,
+            "id": "gizli-kisisel-itiraflar-015",
+            "topic": "Alkışım kendime",
+            "question": "Odada kimse yokken bitirdiğin bir iş için kendi kendine yaptığın en abartılı kutlama neydi?",
+            "intensity": 5,
             "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "Arka planda çalacak tek bir şarkı seçsen ne olurdu?"
+            ]
           },
           {
-            "id": "gizli-itiraflar-011",
-            "topic": "Karar anı",
-            "question": "En çok hangi konuda başkalarının fikrine ihtiyaç duyarsın?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-itiraflar-012",
-            "topic": "Kendine dürüstlük",
-            "question": "Kendine karşı daha dürüst olman gerektiğini düşündüğün bir konu var mı?",
+            "id": "gizli-kisisel-itiraflar-016",
+            "topic": "Gereksiz inat",
+            "question": "Sırf davet etmediler diye istemiyormuş gibi davrandığın ama aslında katılmak isteyeceğin zararsız bir etkinlik ne?",
             "intensity": 5,
             "weight": 1,
             "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-017",
+            "topic": "Biraz abartmış olabilirim",
+            "question": "Defalarca anlattığın bir hikâyenin her anlatışta azıcık büyüyen ayrıntısı hangisi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Gerçek ölçüsü neydi, son anlattığında nereye vardı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-018",
+            "topic": "Sahte rahatlık",
+            "question": "Birini etkilemeye çalışırken hiç heyecanlanmamış gibi yaptığını ele veren en komik şey neydi?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-019",
+            "topic": "Başkasının hobisi",
+            "question": "Sırf biriyle ortak konun olsun diye merak ediyormuş gibi yapıp sonra gerçekten sevdiğin şey ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Şimdi bunu birine sen anlatsan onu nereden yakalardın?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-itiraflar-020",
+            "topic": "Kendim yazdım kendim güldüm",
+            "question": "Sonradan dönüp okuyunca “Bunu yazan cidden ben miyim?” dediğin masum bir not ya da cümle ne hakkındaydı?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Kimseye göstermeden ona bir başlık verebilir misin?"
+            ]
           }
         ]
       },
       {
         "id": "bir-tik-cesur",
-        "label": "Zor Sorular",
+        "label": "Açık Kartlar",
         "items": [
           {
-            "id": "gizli-bir-tik-cesur-001",
-            "topic": "Önemli ama zor konu",
-            "question": "Fikrini söylemekten çekindiğin ama önemli bulduğun bir konu var mı?",
+            "id": "gizli-kisisel-bir-tik-cesur-001",
+            "topic": "Sürprizli yetenek",
+            "question": "Birinin sana ilk kez basit bir numara ya da beceri öğretmesi için hangi şeyi seçerdin?",
+            "intensity": 2,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-002",
+            "topic": "Yerime sen konuş",
+            "question": "Pizzaya ne konacağı gibi zararsız bir konuda senin fikrini en hararetli kim savunurdu?",
+            "intensity": 2,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O kişinin giriş cümlesi ne olurdu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-003",
+            "topic": "Alışılmadık ricam",
+            "question": "Birinin seni şaşırtacak kadar doğrudan sorduğu ve iyi ki sormuş dediğin zararsız bir soru neydi?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-004",
+            "topic": "Haksız sessizlik",
+            "question": "Bir arkadaşını merak ettiğin hâlde rahatsız etmekten çekinip sormadığın bir durumda sonradan ne öğrendin?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-005",
+            "topic": "Yarım özür",
+            "question": "Bir kez özür dileyip durumu tamamlayan asıl şeyi özürden sonra yaptığın bir an neydi?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Karşındaki için farkı hangi davranış yarattı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-006",
+            "topic": "Yüz yüze daha kolay",
+            "question": "Yazıyla söylemeye çalışırken içinden çıkamadığın neyi yüz yüze daha kolay söyledin?",
+            "intensity": 3,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-007",
+            "topic": "Sessizce vazgeçilen hak",
+            "question": "Kimseyi üzmemek için bir karara itiraz etmiyorsan hangi noktada susmanın bedeli sana fazla gelmeye başlar?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Bunu ortamı gereksiz germeden açacak kişi sen olsan ilk cümle ne olurdu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-008",
+            "topic": "Tepki yerine merak",
+            "question": "Sana haksız davrandığını düşündüğün birine önce ne olduğunu sormanın işe yarayacağı bir durum ne olabilir?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-009",
+            "topic": "Arada kalmak",
+            "question": "İki arkadaşın anlaşamıyorsa hangi durumda ikisini de dinler ama arabuluculuk yapmazsın?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "İkisine de aynı cümleyi kurman gerekse ne derdin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-010",
+            "topic": "Saygılı hayal kırıklığı",
+            "question": "Seni hayal kırıklığına uğratan birini yüz yüze suçlamadan neyin değişmesini istediğini nasıl tarif edersin?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "O kişinin yapabileceği en küçük ama gerçek adım ne olurdu?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-011",
+            "topic": "Eski bir kırgınlık",
+            "question": "Birinden yıllar önceki ufak bir kırgınlığı açmasını beklemeden sen açacak olsan bu konuşmayı hâlâ değerli kılan ne olurdu?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question"
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-012",
+            "topic": "Zor iyi haber",
+            "question": "Çok istediğin bir haberi, o sırada aynı konuda zorlanan bir arkadaşınla hangi koşulda rahatça paylaşabilirsin?",
+            "intensity": 4,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Paylaştıktan sonra onun nasıl karşılık vermesini beklemek adil olur?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-013",
+            "topic": "Şu anda sorabilsem",
+            "question": "Bu masada sormaya çekindiğin ama cevabını merak ettiğin zararsız soru ne? İsteyen cevaplayabilir.",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Aynı soru sana gelse nasıl cevap verirdin?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-014",
+            "topic": "İlk özür cümlesi",
+            "question": "Hafif bir tartışmada haksız olduğunu anlayınca ağzından en komik hangi gönül alma cümlesi çıkar?",
             "intensity": 5,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-bir-tik-cesur-002",
-            "topic": "Beklenmedik beceri",
-            "question": "Hangi konuda beklediğinden daha yetenekli olduğunu fark ettin?",
-            "intensity": 4,
+            "id": "gizli-kisisel-bir-tik-cesur-015",
+            "topic": "Boşuna trip",
+            "question": "Küçücük bir şeye alınıp sonra kendi tepkine güldüğün olay neydi?",
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-bir-tik-cesur-003",
-            "topic": "Söylenmeyen fikir",
-            "question": "Bir konuda fikrini söylemeyip sonradan pişman olduğun oldu mu?",
-            "intensity": 4,
+            "id": "gizli-kisisel-bir-tik-cesur-016",
+            "topic": "Beş saniye afallama",
+            "question": "Seni beş saniyeliğine ne diyeceğini bilmez hâle getirecek eğlenceli ve saygılı iltifat ne olurdu?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Gülerek mi karşılarsın, aynı tonda bir iltifatla mı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-017",
+            "topic": "İlk hamleyi kim yapacak",
+            "question": "Bir kahve teklifini almak isteyip kendin yapmaya çekinsen nasıl bir cümle işi ikiniz için de kolaylaştırırdı?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Kahve yerine daha hafif hissettiren bir davet var mı?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-018",
+            "topic": "Benden beklenmez",
+            "question": "Arkadaşların seni bir anda sahneye çağırsa kimse beklemese de gösterebileceğin en komik yetenek ne?",
+            "intensity": 5,
+            "weight": 1,
+            "type": "question",
+            "followUps": [
+              "Sunucu seni tek cümleyle anons etse ne derdi?"
+            ]
+          },
+          {
+            "id": "gizli-kisisel-bir-tik-cesur-019",
+            "topic": "Sahte unutkanlık",
+            "question": "“Aa, tamamen unutmuşum” dediğin ama aslında en baştan yapmak istemediğin bir şey neydi?",
+            "intensity": 5,
             "weight": 1,
             "type": "question"
           },
           {
-            "id": "gizli-bir-tik-cesur-004",
-            "topic": "Kelimeleri seçmek",
-            "question": "Bir düşünceni anlatırken kelimeleri defalarca değiştirdiğin oldu mu?",
-            "intensity": 3,
+            "id": "gizli-kisisel-bir-tik-cesur-020",
+            "topic": "Son söz benim",
+            "question": "Geçmişte utandığın ufak bir yanlış anlaşılmayı bu kez sen anlatsan hikâyenin komik finali hangi replik olurdu?",
+            "intensity": 5,
             "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-005",
-            "topic": "Soru sınırı",
-            "question": "Sence bir sorunun fazla kişisel olduğuna kim karar vermeli?",
-            "intensity": 4,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-006",
-            "topic": "Beklenmedik neşe",
-            "question": "Kötü geçen bir günde seni şaşırtıcı şekilde ne neşelendirir?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-007",
-            "topic": "Hazırlıksız etkinlik",
-            "question": "Şu an hiç hazırlık yapmadan hangi etkinliğe katılabilirdin?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-008",
-            "topic": "Sıra dışı etkinlik",
-            "question": "İstediğin hâlde kimseye önermediğin sıra dışı bir etkinlik var mı?",
-            "intensity": 2,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-009",
-            "topic": "Unutulan ayrıntı",
-            "question": "Kendin hakkında en sık unuttuğun küçük bir ayrıntı var mı?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-010",
-            "topic": "Telefonsuz bir hafta",
-            "question": "Telefonunu bir hafta kullanamasan en çok hangi özelliğini özlerdin?",
-            "intensity": 3,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-011",
-            "topic": "Toplumsal beklenti",
-            "question": "Toplumun normal bulduğu ama senin uymak istemediğin bir beklenti var mı?",
-            "intensity": 4,
-            "weight": 1,
-            "type": "question"
-          },
-          {
-            "id": "gizli-bir-tik-cesur-012",
-            "topic": "Açık konuşmak",
-            "question": "Bir konuda gerçekten ne düşündüğünü açıkça söylemek sana kolay mı?",
-            "intensity": 4,
-            "weight": 1,
-            "type": "question"
+            "type": "question",
+            "followUps": [
+              "O sırada karşı tarafın aklından ne geçtiğini uydursan hikâye nasıl değişirdi?"
+            ]
           }
         ]
       }

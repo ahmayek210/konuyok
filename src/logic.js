@@ -1,6 +1,24 @@
+export function personalDefault(modeId) {
+  if (modeId === 'kisisel') return '1-3';
+  if (modeId === 'gizli-kisisel') return '2-3';
+  return '';
+}
+
+export function historyKey(modeId) {
+  const version = personalDefault(modeId) ? '-v2' : '';
+  return `konuyok-${modeId}${version}`;
+}
+
+export function intensityFilter(value) {
+  if (value === '1-3') return [1, 2, 3];
+  if (value === '2-3') return [2, 3];
+  return value === '' ? null : Number(value);
+}
+
 export function selectItem(mode, usedIds = [], random = Math.random, lastId = null, intensity = null) {
+  const levels = intensity == null ? null : new Set(Array.isArray(intensity) ? intensity : [intensity]);
   const categories = (mode?.categories || []).map(category => ({
-    category, items: (category.items || []).filter(item => intensity == null || (item.intensity ?? 2) === intensity)
+    category, items: (category.items || []).filter(item => !levels || levels.has(item.intensity ?? 2))
   })).filter(group => group.items.length);
   if (!categories.length) return { empty: true, reset: false };
   const used = new Set(usedIds);

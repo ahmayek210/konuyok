@@ -1,19 +1,33 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
-import { selectItem, targetRotation, updateHistory } from './src/logic.js';
+import {
+  historyKey, intensityAvailability, intensityFilter, personalDefault, personalTap,
+  selectItem, targetRotation, updateHistory
+} from './src/logic.js';
+import { guesses, stories, nextGuess, nextStory } from './src/games.js';
 const data = JSON.parse(await readFile(new URL('./public/questions.json', import.meta.url), 'utf8'));
 assert.equal(data.schemaVersion, 1);
+assert.deepEqual(data.modes.map(mode => mode.id), ['eglence', 'kisisel']);
 assert.equal(data.secretMode.id, 'gizli-kisisel');
+const [entertainment, personal] = data.modes;
+assert.equal(createHash('sha256').update(JSON.stringify(entertainment)).digest('hex'),
+  '2ce2a0cfb17d5393c75009034d581b3c29c313e4aa7f0d418d6b1879a3e1220b',
+  'Kişisel çark güncellemesi Eğlence soru bankasını değiştirmemeli.');
+const normalize = text => text.normalize('NFC').toLocaleLowerCase('tr').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 const ids = new Set(), questions = new Set();
 for (const mode of [...data.modes, data.secretMode]) {
   assert.ok(mode.categories.length);
-  for (const category of mode.categories) for (const item of category.items) {
-    assert.ok(item.id && item.topic && item.question);
-    assert.ok(!ids.has(item.id)); ids.add(item.id);
-    const q = item.question.toLocaleLowerCase('tr').replace(/\s+/g, ' ').trim();
-    assert.ok(!questions.has(q), `Tekrarlanan soru: ${q}`); questions.add(q);
-    if (item.intensity != null) assert.ok(Number.isInteger(item.intensity) && item.intensity >= 1 && item.intensity <= 5);
-    if (item.weight != null) assert.ok(Number.isFinite(item.weight) && item.weight > 0);
+  for (const category of mode.categories) {
+    assert.ok(Array.isArray(category.items) && category.items.length, category.id);
+    for (const item of category.items) {
+      assert.ok([item.id, item.topic, item.question].every(value => typeof value === 'string' && value.trim()));
+      assert.ok(!ids.has(item.id), item.id);
+      ids.add(item.id);
+      const q = normalize(item.question);
+      assert.ok(q && !questions.has(q), `Tekrarlanan soru: ${q}`);
+      questions.add(q);
+    }
   }
   const all = mode.categories.flatMap(c => c.items), history = { used: [], last: null };
   for (let i = 0; i < all.length; i++) {
@@ -34,8 +48,6 @@ const filteredReset = selectItem(sample, ['a1','a2','a3','b1'], () => 0, 'a3', 1
 assert.ok(filteredReset.reset); assert.deepEqual(updateHistory({used:['a1','a2','a3','b1']}, filteredReset).used, ['b1', 'a1']);
 assert.equal(selectItem({categories:[]}).empty, true);
 console.log(`Doğrulama başarılı: ${ids.size} benzersiz soru; seçim, geçmiş ve çark eşleşmesi.`);
-import { personalTap } from './src/logic.js';
-import { guesses, stories, nextGuess, nextStory } from './src/games.js';
 let taps = 0;
 for (let i=1;i<=7;i++) { const result=personalTap(taps,'kisisel',false); taps=result.count; assert.equal(result.action, i===7?'secret':'normal'); }
 assert.equal(personalTap(6,'eglence',false).count,0);
@@ -73,7 +85,6 @@ for (const mode of [...data.modes, data.secretMode]) {
 const oldHistory = {used:['a1','b1'],last:'b1'};
 assert.deepEqual(updateHistory(oldHistory,{item:{id:'a2'},resetIds:[]}),{used:['a1','b1','a2'],last:'a2'});
 console.log('Şema, eski geçmiş ve kategori dağılımı doğrulandı:', categoryCounts);
-import { intensityAvailability } from './src/logic.js';
 const available = intensityAvailability(sample, '2');
 assert.deepEqual([...available.available].sort(), [1,2]);
 assert.equal(available.selected, '2'); assert.equal(available.changed, false);
@@ -86,7 +97,66 @@ for (const mode of [...data.modes, data.secretMode]) {
   const levels = intensityAvailability(mode).available;
   for (const item of mode.categories.flatMap(c => c.items)) assert.ok(levels.has(item.intensity ?? 2));
 }
-const followUps = [...data.modes, data.secretMode].flatMap(m => m.categories.flatMap(c => c.items.flatMap(i => i.followUps || [])));
-assert.ok(followUps.length >= 20 && followUps.length <= 30);
-assert.equal(new Set(followUps.map(s => s.toLocaleLowerCase('tr').trim())).size, followUps.length);
-console.log(`Yoğunluk seçenekleri ve ${followUps.length} benzersiz devam sorusu doğrulandı.`);
+const itemsOf = mode => mode.categories.flatMap(category => category.items);
+const personalItems = [...itemsOf(personal), ...itemsOf(data.secretMode)];
+const bankExpectations = [
+  { mode: personal, count: 280, categories: 7, levels: [5, 9, 10, 10, 6], safe: [1, 2, 3] },
+  { mode: data.secretMode, count: 100, categories: 5, levels: [0, 2, 4, 6, 8], safe: [2, 3] }
+];
+for (const { mode, count, categories, levels, safe } of bankExpectations) {
+  const bank = itemsOf(mode);
+  assert.equal(bank.length, count);
+  assert.equal(mode.categories.length, categories);
+  const withFollowUps = bank.filter(item => item.followUps?.length);
+  assert.ok(withFollowUps.length / count >= .5 && withFollowUps.length / count <= .65, mode.id);
+  assert.ok(bank.every(item => !item.followUps || item.followUps.length <= 2));
+  for (const category of mode.categories) {
+    const counts = levels.map((_, index) => category.items.filter(item => item.intensity === index + 1).length);
+    assert.deepEqual(counts, levels, category.id);
+  }
+
+  const filter = intensityFilter(personalDefault(mode.id));
+  assert.deepEqual(filter, safe);
+  const eligible = bank.filter(item => safe.includes(item.intensity));
+  let history = { used: [], last: null };
+  for (let i = 0; i < eligible.length; i++) {
+    const choice = selectItem(mode, history.used, random, history.last, filter);
+    assert.ok(safe.includes(choice.item.intensity) && !choice.reset && !history.used.includes(choice.item.id));
+    history = updateHistory(history, choice);
+  }
+  const bold = selectItem(mode, history.used, random, history.last, intensityFilter('5'));
+  assert.equal(bold.item.intensity, 5);
+  history = updateHistory(history, bold);
+  const availableInAll = selectItem(mode, bank.filter(item => item.id !== bold.item.id).map(item => item.id), random, null, intensityFilter(''));
+  assert.equal(availableInAll.item.id, bold.item.id);
+  const reset = selectItem(mode, history.used, random, history.last, filter);
+  assert.ok(reset.reset && safe.includes(reset.item.intensity));
+  assert.ok(updateHistory(history, reset).used.includes(bold.item.id));
+}
+const personalReset = selectItem(personal, itemsOf(personal).map(item => item.id), () => 0,
+  personal.categories[0].items[0].id, intensityFilter(personalDefault(personal.id)));
+assert.ok(personalReset.reset);
+assert.notEqual(personalReset.item.id, personal.categories[0].items[0].id);
+assert.equal(historyKey('eglence'), 'konuyok-eglence');
+assert.equal(historyKey('kisisel'), 'konuyok-kisisel-v2');
+assert.equal(historyKey('gizli-kisisel'), 'konuyok-gizli-kisisel-v2');
+assert.equal(personalDefault('eglence'), '');
+
+// Word overlap catches obvious rewrites with trivial word swaps.
+const signatures = [...itemsOf(entertainment), ...personalItems].map(item => ({
+  id: item.id,
+  words: new Set(normalize(item.question).split(' '))
+}));
+for (const [index, first] of signatures.entries()) {
+  for (let other = index + 1; other < signatures.length; other++) {
+    const second = signatures[other];
+    let shared = 0;
+    for (const word of first.words) if (second.words.has(word)) shared++;
+    const similarity = 2 * shared / (first.words.size + second.words.size);
+    assert.ok(similarity < .84, `Benzer sorular: ${first.id} / ${second.id} (${similarity})`);
+  }
+}
+const followUps = [...itemsOf(entertainment), ...personalItems].flatMap(item => item.followUps || []).map(normalize);
+assert.ok(followUps.every(text => text && !questions.has(text)));
+assert.equal(new Set(followUps).size, followUps.length);
+console.log(`Kişisel setler, güvenli başlangıç, sürümlü geçmiş ve ${followUps.length} benzersiz devam sorusu doğrulandı.`);
